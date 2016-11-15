@@ -1,0 +1,1061 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0163F124001AF710A3674613F415F58B /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D08DB03C434E5F9CE760E93835CA860 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		02CF1F43E4FA2E17E3BB966890586CCE /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC999044281C5DF0E61EE178FB02095 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02F3EDCAACB080415B18768327ECD93B /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B90577482FC4980963DFAF187E0168C1 /* Valet-dummy.m */; };
+		040E30C6D1DD43CF3439CF46DFE86B1D /* NOZCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = 92DD37F4FBE3E324C3E74AB8BF1AC8F6 /* NOZCompression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		070B95469C9B95BDCEA96A0749B4F3A8 /* NOZZipEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A5D920481F34B9B8ECED409B32A0A6 /* NOZZipEntry.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0DB2106D69F3B23BAC91CD926A62A3F8 /* WPZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C7BBA393D1B857B936B4F7776917CD /* WPZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10A20D16FEFECC9211EBD12943A1F0AC /* WPZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D00BE2209E63DE47A72ABDF9223465 /* WPZipArchive-dummy.m */; };
+		136939DB39DF90C44F1407314FEC8D2E /* NOZError.h in Headers */ = {isa = PBXBuildFile; fileRef = E98FE69AD7C6E8788E80A083A4642EDA /* NOZError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		145B1BF61BA63A5171FEC8E987E6CC00 /* VALValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3488E214B594167953E8EFD93630BCDF /* VALValet.m */; };
+		146D78B67D72E0F5C3F9AC8350CC68AB /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 48ECC4A10E44E5E4D3CA6D8FFDB1AA9B /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1632EBFE53135B59C21F8C25CE353F50 /* NOZRawCoders.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9300885C6C7E0D7E4B7779EDDFDA /* NOZRawCoders.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1637E76186EE6E3A0DD9B322A31AADBB /* NOZZipEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = F90D2F6209A6C4920E0A13F8A7A2326E /* NOZZipEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17B32338C9A53B56B77943CF8585898B /* ZipUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B0BAF93BF46168891C9CFCFB7DA316 /* ZipUtilities-dummy.m */; };
+		2308FE9387D6D54A596B1E7495D53F0F /* Pods-AddZip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B49BEA26DC93F1CCE7449710598F3A65 /* Pods-AddZip-dummy.m */; };
+		25CE48654AEADC81ED83682435758BC5 /* NOZ_Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B490F15A93320C213F641E05388AB1 /* NOZ_Project.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		26F18528EE4F3AB4B6F1C380F7B2B4B1 /* VALValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C6A0B39806563B1CB20306F1641983 /* VALValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A34F4864CD1C7846EDCF6C25775166A /* NSStream+NOZAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978602E91DEB4B2D0933A05362E9CEB /* NSStream+NOZAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		30CCA99A708B26C1F23BD9127751BA42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
+		39EF2670C13C5F9C55CF87DB5F61310B /* NOZZipper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26EDCB1FFF37F3769DF3A6A2876F73 /* NOZZipper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		436E011F04808280CAA2C6FAB2102263 /* VALSynchronizableValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F68D6F18B85F1497369AE544037A5B4 /* VALSynchronizableValet.m */; };
+		4648E9F8C6CCC12E25F37A3ED9415F4B /* NSData+NOZAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AC758EE7C4267CD72C2F14613D732F /* NSData+NOZAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		487511D66612D391C2E55AAAE19B2A53 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8533F84408E3E1D37402B064045DE0A8 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4E48F992B68EFC2540D4B51B035020A0 /* ValetDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = C56EDEFC9B68B5A4094914245E821CC0 /* ValetDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54FC9836296DA54F06728DDCBE5A09C9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFD15069DBFFAF7E7CD48183E2D230C /* Security.framework */; };
+		5BBCB1CC32FDEB7364D5BF47CD08E473 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = EF4E65E36489FBF1F6202A5FFD886ED4 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5D5E361CAC33B65CDE29ABF5D16D1457 /* NSData+NOZAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E28F395E4F9F8CE33338B2E4BAD1C9 /* NSData+NOZAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6454BADF0F6E207F6B756CE4BA4143EF /* NOZUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ECDCA89E5A47E4FA70033832011F4D /* NOZUtils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6AA2BBC4FF1229ABF2812B0A9D596CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
+		6B78B022371D11C66B53D2D718CAA5E4 /* NOZCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = 73561CA619AEA02793FA6A39B8BA4B29 /* NOZCompress.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		745DB3154C8F1EB1C0CDCFB24DC17DE2 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 85505E8AA26164382B88070A1E80F0F6 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7EE0EF40781EF95FA25CACBA8E6DF750 /* NOZ_Project.h in Headers */ = {isa = PBXBuildFile; fileRef = C8BBDAEFEC4DA805B532512B64D1B347 /* NOZ_Project.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83A4093BD5D4EC91DF9FA35B6645E94A /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = E05071CCD28D05BA47D86087C2E5A4DE /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83E43B0A7A9AAD9079916A7E151044A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
+		905835D0BF3500D0A6200D052FAB3E3A /* WPZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBAE84E9D483D0B5DCC761EF5E3BA66 /* WPZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		92D3961C77939636AC241B1B87A35DFE /* VALSynchronizableValet.h in Headers */ = {isa = PBXBuildFile; fileRef = A45F26180586948DBD1C842E928795CB /* VALSynchronizableValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92FD48E1117752BDE94EA1AB0EF9B5F3 /* NOZZipper.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F5736E0072E9044A65813D95C78171 /* NOZZipper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97756CEEEB76E96B5E414E7E1DB758B9 /* NOZUtils_Project.h in Headers */ = {isa = PBXBuildFile; fileRef = 34BD713606D16658686F8EC315A253DC /* NOZUtils_Project.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B0EFDACEA2191AADD9BF7525D926BB3 /* NOZEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 569F9F74DEDF2169B26062BA7C9D9D35 /* NOZEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB85E4C6D9A6582F583C4B3493EAECE /* NOZCompress.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7DBA5E29CF112967D9AB7B607F464C /* NOZCompress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A19634611438511D2EF24C930E0FD09D /* NOZDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 671B95E2BFAD6B029D8D6EEF7843AAAC /* NOZDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3BB779A4DF7CAA522041E252EF41A86 /* NOZUnzipper.h in Headers */ = {isa = PBXBuildFile; fileRef = B2EDFB548C401CF6E86E9EECF722DFF4 /* NOZUnzipper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8D7848AF831E2C8CC7BB3F9E3DF9356 /* NOZCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 690B498A53748BB2E269E070D076E4E2 /* NOZCompression.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A961CA73197DB0E1DB1D7CE4D1EAF4B1 /* NOZDecompress.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B84E137B62979515A2B0F2BA1852851 /* NOZDecompress.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AB8B84725CB2B4DAD9DA6C4BA761C59B /* NOZSyncStepOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF368E850233F2F06B8F5F382625E2D /* NOZSyncStepOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ACB8CE13CD31AB3A8758AF0C971D41CE /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = CC8A81D64CBDB6E422480C2152B613FE /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AFCED44E5B180D49AE9CBE3C0D0D8CBF /* VALSecureEnclaveValet.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2EA40A713EE73BB40D83C6995B6D31 /* VALSecureEnclaveValet.m */; };
+		B167C116611DD8DDF21C13F09CB264D6 /* VALValet_Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B01C9268E3496D66A6932B4C7A2BF8 /* VALValet_Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BCB06878B91276EB2BCD917D19DAAC1A /* NSStream+NOZAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE5D4CF9D445E1A6CD89FDB8CF435B5 /* NSStream+NOZAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C69752BD04B12339B6D45E7705B71AFF /* VALSecureEnclaveValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D2F7F404B365E05A5C37F6FFAC5A1B /* VALSecureEnclaveValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDCB6D539E44E390630CA5F0F9ACF127 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
+		D1B0ABEF3A1EC940CE695B8A0C1F9606 /* NOZUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C30471C9D28D68893292394F184C2029 /* NOZUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2AF1FD9856FD7E5F4665B64FCDA180D /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = C4EE5B7327A0B1AC18FDCC9CB57F9703 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D37475E975265BAC32FEA5254E80F157 /* NOZError.m in Sources */ = {isa = PBXBuildFile; fileRef = CD136F52DB40E50F5557ED01F3EFD972 /* NOZError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DEA53E3A63DEFA6E25FE6D03E481E0B9 /* NOZDecompress.h in Headers */ = {isa = PBXBuildFile; fileRef = 437907C28D1C34F65F6F63A150F9E952 /* NOZDecompress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5D9634DE27F5D6FC503A3BBCA4FAA32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
+		F14FB4B8C73F2D8BD876528F2F89B81C /* NOZSyncStepOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AC2AADB6594049F8AB805F245F83714 /* NOZSyncStepOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3D000AA40F54EB3A0D025D27525723D /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEE735E1CB37A07CBE0C0C9F6B30826 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3DEA62244BE583E8BC6E989513C0DEA /* NOZUnzipper.m in Sources */ = {isa = PBXBuildFile; fileRef = 324C770FF9BF0DFDD3BEDF01378F6622 /* NOZUnzipper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F6FDD77669261631F9AA775643492BB9 /* NOZDeflateCoders.m in Sources */ = {isa = PBXBuildFile; fileRef = 41566ADB4176B7A904A8ED4F4830A4A3 /* NOZDeflateCoders.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FD017092AF674F2A746434042BC13683 /* Pods-Pass-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3012332916B09ED7DD96B400FFBC6D /* Pods-Pass-dummy.m */; };
+		FD7E02384D996E961638D0D5D29DECAA /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 12F21AE10A4355C7D56D9782E015D079 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32E47C08A5D99205CA8D8C74982615D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB72435EE980BBD9D9D6F55C4345BA51;
+			remoteInfo = Valet;
+		};
+		77F4602200B9A12D7C9E2F5D9A107CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85230D924C7FE02AC1F493CCC7CE24B0;
+			remoteInfo = WPZipArchive;
+		};
+		C88FE1D54E73F2FF38AD409832549B56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E96472981D716549B5F4795A39D9047;
+			remoteInfo = ZipUtilities;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D5625AA13A154268AC4A14D28C0C16B /* libValet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libValet.a; path = libValet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F68D6F18B85F1497369AE544037A5B4 /* VALSynchronizableValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSynchronizableValet.m; path = Valet/VALSynchronizableValet.m; sourceTree = "<group>"; };
+		12F21AE10A4355C7D56D9782E015D079 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = WPZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		1DE5D4CF9D445E1A6CD89FDB8CF435B5 /* NSStream+NOZAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSStream+NOZAdditions.h"; path = "ZipUtilities/NSStream+NOZAdditions.h"; sourceTree = "<group>"; };
+		25D2F7F404B365E05A5C37F6FFAC5A1B /* VALSecureEnclaveValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSecureEnclaveValet.h; path = Valet/VALSecureEnclaveValet.h; sourceTree = "<group>"; };
+		2DD23CFB79A83997290DDE84FC56809A /* Pods-Pass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pass.release.xcconfig"; sourceTree = "<group>"; };
+		319C5568EDEB90384484249658166977 /* Pods-AddZip-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AddZip-acknowledgements.markdown"; sourceTree = "<group>"; };
+		324C770FF9BF0DFDD3BEDF01378F6622 /* NOZUnzipper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZUnzipper.m; path = ZipUtilities/NOZUnzipper.m; sourceTree = "<group>"; };
+		3488E214B594167953E8EFD93630BCDF /* VALValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALValet.m; path = Valet/VALValet.m; sourceTree = "<group>"; };
+		34BD713606D16658686F8EC315A253DC /* NOZUtils_Project.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZUtils_Project.h; path = ZipUtilities/NOZUtils_Project.h; sourceTree = "<group>"; };
+		365DC9ACDA13A86A0B3516B2B7AB6834 /* ZipUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipUtilities-prefix.pch"; sourceTree = "<group>"; };
+		3B84E137B62979515A2B0F2BA1852851 /* NOZDecompress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZDecompress.m; path = ZipUtilities/NOZDecompress.m; sourceTree = "<group>"; };
+		3D615622F42E75377F439EF01CD40CB5 /* Pods-AddZip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AddZip.release.xcconfig"; sourceTree = "<group>"; };
+		41566ADB4176B7A904A8ED4F4830A4A3 /* NOZDeflateCoders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZDeflateCoders.m; path = ZipUtilities/NOZDeflateCoders.m; sourceTree = "<group>"; };
+		41C6A0B39806563B1CB20306F1641983 /* VALValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet.h; path = Valet/VALValet.h; sourceTree = "<group>"; };
+		437907C28D1C34F65F6F63A150F9E952 /* NOZDecompress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZDecompress.h; path = ZipUtilities/NOZDecompress.h; sourceTree = "<group>"; };
+		48ECC4A10E44E5E4D3CA6D8FFDB1AA9B /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = WPZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
+		4978602E91DEB4B2D0933A05362E9CEB /* NSStream+NOZAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSStream+NOZAdditions.m"; path = "ZipUtilities/NSStream+NOZAdditions.m"; sourceTree = "<group>"; };
+		499711C2D13880D0D82CCDDBA7F724AA /* Pods-AddZip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AddZip.debug.xcconfig"; sourceTree = "<group>"; };
+		4CEE735E1CB37A07CBE0C0C9F6B30826 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = WPZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		51ECDCA89E5A47E4FA70033832011F4D /* NOZUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZUtils.m; path = ZipUtilities/NOZUtils.m; sourceTree = "<group>"; };
+		54C7BBA393D1B857B936B4F7776917CD /* WPZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPZipArchive.h; path = WPZipArchive/WPZipArchive.h; sourceTree = "<group>"; };
+		56797FFF49F2C27BAF4DD82ED13DE4F1 /* libWPZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWPZipArchive.a; path = libWPZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		569F9F74DEDF2169B26062BA7C9D9D35 /* NOZEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZEncoder.h; path = ZipUtilities/NOZEncoder.h; sourceTree = "<group>"; };
+		5AC999044281C5DF0E61EE178FB02095 /* Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Common.h; path = WPZipArchive/Common.h; sourceTree = "<group>"; };
+		6353B6A236EA66FC6CD8D3119057526D /* Pods-Pass-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pass-frameworks.sh"; sourceTree = "<group>"; };
+		671B95E2BFAD6B029D8D6EEF7843AAAC /* NOZDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZDecoder.h; path = ZipUtilities/NOZDecoder.h; sourceTree = "<group>"; };
+		690B498A53748BB2E269E070D076E4E2 /* NOZCompression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZCompression.m; path = ZipUtilities/NOZCompression.m; sourceTree = "<group>"; };
+		6D08DB03C434E5F9CE760E93835CA860 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = WPZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		701E02CC4293FABB036919F1F3B0785C /* WPZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		71B01C9268E3496D66A6932B4C7A2BF8 /* VALValet_Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet_Protected.h; path = Valet/VALValet_Protected.h; sourceTree = "<group>"; };
+		73561CA619AEA02793FA6A39B8BA4B29 /* NOZCompress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZCompress.m; path = ZipUtilities/NOZCompress.m; sourceTree = "<group>"; };
+		7C0DD6565EE4DCDCA8E9ECEB2A2EA0BC /* libZipUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZipUtilities.a; path = libZipUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		836BB5EB549F8AD4D1AB7BE305908768 /* Pods-Pass-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pass-acknowledgements.plist"; sourceTree = "<group>"; };
+		83F5736E0072E9044A65813D95C78171 /* NOZZipper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZZipper.h; path = ZipUtilities/NOZZipper.h; sourceTree = "<group>"; };
+		852D3BF6877C56040356B4F02718B627 /* Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.xcconfig; sourceTree = "<group>"; };
+		8533F84408E3E1D37402B064045DE0A8 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = WPZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		85505E8AA26164382B88070A1E80F0F6 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = WPZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
+		86E28F395E4F9F8CE33338B2E4BAD1C9 /* NSData+NOZAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+NOZAdditions.m"; path = "ZipUtilities/NSData+NOZAdditions.m"; sourceTree = "<group>"; };
+		916C6A0C628FCCA3B278A3D2449A810C /* Pods-Pass-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pass-acknowledgements.markdown"; sourceTree = "<group>"; };
+		92DD37F4FBE3E324C3E74AB8BF1AC8F6 /* NOZCompression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZCompression.h; path = ZipUtilities/NOZCompression.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AC2AADB6594049F8AB805F245F83714 /* NOZSyncStepOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZSyncStepOperation.h; path = ZipUtilities/NOZSyncStepOperation.h; sourceTree = "<group>"; };
+		9C2957142867C274CE9EAB0B2F6C0097 /* Pods-Pass-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pass-resources.sh"; sourceTree = "<group>"; };
+		9F7DBA5E29CF112967D9AB7B607F464C /* NOZCompress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZCompress.h; path = ZipUtilities/NOZCompress.h; sourceTree = "<group>"; };
+		A2C64CABF3F712B11134421E0F613F38 /* libPods-Pass.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Pass.a"; path = "libPods-Pass.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A45F26180586948DBD1C842E928795CB /* VALSynchronizableValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSynchronizableValet.h; path = Valet/VALSynchronizableValet.h; sourceTree = "<group>"; };
+		A8B490F15A93320C213F641E05388AB1 /* NOZ_Project.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZ_Project.m; path = ZipUtilities/NOZ_Project.m; sourceTree = "<group>"; };
+		AE26EDCB1FFF37F3769DF3A6A2876F73 /* NOZZipper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZZipper.m; path = ZipUtilities/NOZZipper.m; sourceTree = "<group>"; };
+		B2EDFB548C401CF6E86E9EECF722DFF4 /* NOZUnzipper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZUnzipper.h; path = ZipUtilities/NOZUnzipper.h; sourceTree = "<group>"; };
+		B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B49BEA26DC93F1CCE7449710598F3A65 /* Pods-AddZip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AddZip-dummy.m"; sourceTree = "<group>"; };
+		B6B0BAF93BF46168891C9CFCFB7DA316 /* ZipUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZipUtilities-dummy.m"; sourceTree = "<group>"; };
+		B90577482FC4980963DFAF187E0168C1 /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
+		BC99BFF72C1BE8AA95DD2F531997E7C8 /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
+		BF3012332916B09ED7DD96B400FFBC6D /* Pods-Pass-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pass-dummy.m"; sourceTree = "<group>"; };
+		C30471C9D28D68893292394F184C2029 /* NOZUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZUtils.h; path = ZipUtilities/NOZUtils.h; sourceTree = "<group>"; };
+		C4EE5B7327A0B1AC18FDCC9CB57F9703 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = WPZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		C56EDEFC9B68B5A4094914245E821CC0 /* ValetDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ValetDefines.h; path = Other/ValetDefines.h; sourceTree = "<group>"; };
+		C6D00BE2209E63DE47A72ABDF9223465 /* WPZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPZipArchive-dummy.m"; sourceTree = "<group>"; };
+		C7AC758EE7C4267CD72C2F14613D732F /* NSData+NOZAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+NOZAdditions.h"; path = "ZipUtilities/NSData+NOZAdditions.h"; sourceTree = "<group>"; };
+		C8BBDAEFEC4DA805B532512B64D1B347 /* NOZ_Project.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZ_Project.h; path = ZipUtilities/NOZ_Project.h; sourceTree = "<group>"; };
+		C8BE67255A96A4E9BFBDF62E9546389F /* libPods-AddZip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AddZip.a"; path = "libPods-AddZip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFD15069DBFFAF7E7CD48183E2D230C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		CC8A81D64CBDB6E422480C2152B613FE /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = WPZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
+		CD136F52DB40E50F5557ED01F3EFD972 /* NOZError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZError.m; path = ZipUtilities/NOZError.m; sourceTree = "<group>"; };
+		E05071CCD28D05BA47D86087C2E5A4DE /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Valet/Valet.h; sourceTree = "<group>"; };
+		E7A5D920481F34B9B8ECED409B32A0A6 /* NOZZipEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZZipEntry.m; path = ZipUtilities/NOZZipEntry.m; sourceTree = "<group>"; };
+		E98FE69AD7C6E8788E80A083A4642EDA /* NOZError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZError.h; path = ZipUtilities/NOZError.h; sourceTree = "<group>"; };
+		EAF368E850233F2F06B8F5F382625E2D /* NOZSyncStepOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZSyncStepOperation.m; path = ZipUtilities/NOZSyncStepOperation.m; sourceTree = "<group>"; };
+		EC663884C8C5F70B2AE4540418281E34 /* ZipUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipUtilities.xcconfig; sourceTree = "<group>"; };
+		EEBAE84E9D483D0B5DCC761EF5E3BA66 /* WPZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPZipArchive.m; path = WPZipArchive/WPZipArchive.m; sourceTree = "<group>"; };
+		EF4E65E36489FBF1F6202A5FFD886ED4 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = WPZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		F26B19BE9730EB27408F20D1C1DA1CFE /* Pods-AddZip-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AddZip-resources.sh"; sourceTree = "<group>"; };
+		F2960BC3113EE918249D2E244D7E8EFC /* WPZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPZipArchive.xcconfig; sourceTree = "<group>"; };
+		F6307408E0B1801B7CDA781918BCA78D /* Pods-AddZip-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AddZip-acknowledgements.plist"; sourceTree = "<group>"; };
+		F70246E5341FA5FE6549F94DC13831C6 /* Pods-Pass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pass.debug.xcconfig"; sourceTree = "<group>"; };
+		F90D2F6209A6C4920E0A13F8A7A2326E /* NOZZipEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NOZZipEntry.h; path = ZipUtilities/NOZZipEntry.h; sourceTree = "<group>"; };
+		FD2EA40A713EE73BB40D83C6995B6D31 /* VALSecureEnclaveValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSecureEnclaveValet.m; path = Valet/VALSecureEnclaveValet.m; sourceTree = "<group>"; };
+		FF4E9300885C6C7E0D7E4B7779EDDFDA /* NOZRawCoders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NOZRawCoders.m; path = ZipUtilities/NOZRawCoders.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		362BE8B25A0E70074F011F7E3A1A1130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E43B0A7A9AAD9079916A7E151044A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77C533949294260B779B6753C876DBC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D9634DE27F5D6FC503A3BBCA4FAA32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A653CC7D9ADD3F303FB9A9A3568DBE7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB6D539E44E390630CA5F0F9ACF127 /* Foundation.framework in Frameworks */,
+				54FC9836296DA54F06728DDCBE5A09C9 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8DD6628D039720877FB56D96574FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CCA99A708B26C1F23BD9127751BA42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32CC8A83DE5936A7BF3DF87102C95BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AA2BBC4FF1229ABF2812B0A9D596CA5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E339049816F198EB76DEA4264EF8374 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */,
+				CAFD15069DBFFAF7E7CD48183E2D230C /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		33F627AED9035BFAA396A96F4780C6F8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				852D3BF6877C56040356B4F02718B627 /* Valet.xcconfig */,
+				B90577482FC4980963DFAF187E0168C1 /* Valet-dummy.m */,
+				BC99BFF72C1BE8AA95DD2F531997E7C8 /* Valet-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Valet";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E339049816F198EB76DEA4264EF8374 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46802D7B2E1D54586D3FD909E926A036 /* Pods-Pass */ = {
+			isa = PBXGroup;
+			children = (
+				916C6A0C628FCCA3B278A3D2449A810C /* Pods-Pass-acknowledgements.markdown */,
+				836BB5EB549F8AD4D1AB7BE305908768 /* Pods-Pass-acknowledgements.plist */,
+				BF3012332916B09ED7DD96B400FFBC6D /* Pods-Pass-dummy.m */,
+				6353B6A236EA66FC6CD8D3119057526D /* Pods-Pass-frameworks.sh */,
+				9C2957142867C274CE9EAB0B2F6C0097 /* Pods-Pass-resources.sh */,
+				F70246E5341FA5FE6549F94DC13831C6 /* Pods-Pass.debug.xcconfig */,
+				2DD23CFB79A83997290DDE84FC56809A /* Pods-Pass.release.xcconfig */,
+			);
+			name = "Pods-Pass";
+			path = "Target Support Files/Pods-Pass";
+			sourceTree = "<group>";
+		};
+		4EFFE1534EC4304A88082C3B771102E9 /* Valet */ = {
+			isa = PBXGroup;
+			children = (
+				E05071CCD28D05BA47D86087C2E5A4DE /* Valet.h */,
+				C56EDEFC9B68B5A4094914245E821CC0 /* ValetDefines.h */,
+				25D2F7F404B365E05A5C37F6FFAC5A1B /* VALSecureEnclaveValet.h */,
+				FD2EA40A713EE73BB40D83C6995B6D31 /* VALSecureEnclaveValet.m */,
+				A45F26180586948DBD1C842E928795CB /* VALSynchronizableValet.h */,
+				0F68D6F18B85F1497369AE544037A5B4 /* VALSynchronizableValet.m */,
+				41C6A0B39806563B1CB20306F1641983 /* VALValet.h */,
+				3488E214B594167953E8EFD93630BCDF /* VALValet.m */,
+				71B01C9268E3496D66A6932B4C7A2BF8 /* VALValet_Protected.h */,
+				33F627AED9035BFAA396A96F4780C6F8 /* Support Files */,
+			);
+			name = Valet;
+			path = Valet;
+			sourceTree = "<group>";
+		};
+		504F5437DBDEDFD43F478B2A376243A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8BE67255A96A4E9BFBDF62E9546389F /* libPods-AddZip.a */,
+				A2C64CABF3F712B11134421E0F613F38 /* libPods-Pass.a */,
+				0D5625AA13A154268AC4A14D28C0C16B /* libValet.a */,
+				56797FFF49F2C27BAF4DD82ED13DE4F1 /* libWPZipArchive.a */,
+				7C0DD6565EE4DCDCA8E9ECEB2A2EA0BC /* libZipUtilities.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BCAB17EA064DDDC7EF96227A03627DF /* Pods-AddZip */ = {
+			isa = PBXGroup;
+			children = (
+				319C5568EDEB90384484249658166977 /* Pods-AddZip-acknowledgements.markdown */,
+				F6307408E0B1801B7CDA781918BCA78D /* Pods-AddZip-acknowledgements.plist */,
+				B49BEA26DC93F1CCE7449710598F3A65 /* Pods-AddZip-dummy.m */,
+				F26B19BE9730EB27408F20D1C1DA1CFE /* Pods-AddZip-resources.sh */,
+				499711C2D13880D0D82CCDDBA7F724AA /* Pods-AddZip.debug.xcconfig */,
+				3D615622F42E75377F439EF01CD40CB5 /* Pods-AddZip.release.xcconfig */,
+			);
+			name = "Pods-AddZip";
+			path = "Target Support Files/Pods-AddZip";
+			sourceTree = "<group>";
+		};
+		668838F31CC07EF4BC6573BA47D5F221 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2960BC3113EE918249D2E244D7E8EFC /* WPZipArchive.xcconfig */,
+				C6D00BE2209E63DE47A72ABDF9223465 /* WPZipArchive-dummy.m */,
+				701E02CC4293FABB036919F1F3B0785C /* WPZipArchive-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WPZipArchive";
+			sourceTree = "<group>";
+		};
+		79607AB04351C5E6301F38546420015B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFE1534EC4304A88082C3B771102E9 /* Valet */,
+				E713CB16C456847D3B1F8574AB6AEE7F /* WPZipArchive */,
+				8E3CF55BF7CD8E4428B733FBB6208CBF /* ZipUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7BAAE0CA2E32396E0A4214F214B1D40F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BCAB17EA064DDDC7EF96227A03627DF /* Pods-AddZip */,
+				46802D7B2E1D54586D3FD909E926A036 /* Pods-Pass */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				79607AB04351C5E6301F38546420015B /* Pods */,
+				504F5437DBDEDFD43F478B2A376243A6 /* Products */,
+				7BAAE0CA2E32396E0A4214F214B1D40F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8E3CF55BF7CD8E4428B733FBB6208CBF /* ZipUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C8BBDAEFEC4DA805B532512B64D1B347 /* NOZ_Project.h */,
+				A8B490F15A93320C213F641E05388AB1 /* NOZ_Project.m */,
+				9F7DBA5E29CF112967D9AB7B607F464C /* NOZCompress.h */,
+				73561CA619AEA02793FA6A39B8BA4B29 /* NOZCompress.m */,
+				92DD37F4FBE3E324C3E74AB8BF1AC8F6 /* NOZCompression.h */,
+				690B498A53748BB2E269E070D076E4E2 /* NOZCompression.m */,
+				671B95E2BFAD6B029D8D6EEF7843AAAC /* NOZDecoder.h */,
+				437907C28D1C34F65F6F63A150F9E952 /* NOZDecompress.h */,
+				3B84E137B62979515A2B0F2BA1852851 /* NOZDecompress.m */,
+				41566ADB4176B7A904A8ED4F4830A4A3 /* NOZDeflateCoders.m */,
+				569F9F74DEDF2169B26062BA7C9D9D35 /* NOZEncoder.h */,
+				E98FE69AD7C6E8788E80A083A4642EDA /* NOZError.h */,
+				CD136F52DB40E50F5557ED01F3EFD972 /* NOZError.m */,
+				FF4E9300885C6C7E0D7E4B7779EDDFDA /* NOZRawCoders.m */,
+				9AC2AADB6594049F8AB805F245F83714 /* NOZSyncStepOperation.h */,
+				EAF368E850233F2F06B8F5F382625E2D /* NOZSyncStepOperation.m */,
+				B2EDFB548C401CF6E86E9EECF722DFF4 /* NOZUnzipper.h */,
+				324C770FF9BF0DFDD3BEDF01378F6622 /* NOZUnzipper.m */,
+				C30471C9D28D68893292394F184C2029 /* NOZUtils.h */,
+				51ECDCA89E5A47E4FA70033832011F4D /* NOZUtils.m */,
+				34BD713606D16658686F8EC315A253DC /* NOZUtils_Project.h */,
+				F90D2F6209A6C4920E0A13F8A7A2326E /* NOZZipEntry.h */,
+				E7A5D920481F34B9B8ECED409B32A0A6 /* NOZZipEntry.m */,
+				83F5736E0072E9044A65813D95C78171 /* NOZZipper.h */,
+				AE26EDCB1FFF37F3769DF3A6A2876F73 /* NOZZipper.m */,
+				C7AC758EE7C4267CD72C2F14613D732F /* NSData+NOZAdditions.h */,
+				86E28F395E4F9F8CE33338B2E4BAD1C9 /* NSData+NOZAdditions.m */,
+				1DE5D4CF9D445E1A6CD89FDB8CF435B5 /* NSStream+NOZAdditions.h */,
+				4978602E91DEB4B2D0933A05362E9CEB /* NSStream+NOZAdditions.m */,
+				F7C5907DD17BB3A4CD65EFAEEA1E0729 /* Support Files */,
+			);
+			name = ZipUtilities;
+			path = ZipUtilities;
+			sourceTree = "<group>";
+		};
+		E713CB16C456847D3B1F8574AB6AEE7F /* WPZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				5AC999044281C5DF0E61EE178FB02095 /* Common.h */,
+				C4EE5B7327A0B1AC18FDCC9CB57F9703 /* crypt.h */,
+				EF4E65E36489FBF1F6202A5FFD886ED4 /* ioapi.c */,
+				85505E8AA26164382B88070A1E80F0F6 /* ioapi.h */,
+				CC8A81D64CBDB6E422480C2152B613FE /* mztools.c */,
+				48ECC4A10E44E5E4D3CA6D8FFDB1AA9B /* mztools.h */,
+				8533F84408E3E1D37402B064045DE0A8 /* unzip.c */,
+				6D08DB03C434E5F9CE760E93835CA860 /* unzip.h */,
+				54C7BBA393D1B857B936B4F7776917CD /* WPZipArchive.h */,
+				EEBAE84E9D483D0B5DCC761EF5E3BA66 /* WPZipArchive.m */,
+				12F21AE10A4355C7D56D9782E015D079 /* zip.c */,
+				4CEE735E1CB37A07CBE0C0C9F6B30826 /* zip.h */,
+				668838F31CC07EF4BC6573BA47D5F221 /* Support Files */,
+			);
+			name = WPZipArchive;
+			path = WPZipArchive;
+			sourceTree = "<group>";
+		};
+		F7C5907DD17BB3A4CD65EFAEEA1E0729 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC663884C8C5F70B2AE4540418281E34 /* ZipUtilities.xcconfig */,
+				B6B0BAF93BF46168891C9CFCFB7DA316 /* ZipUtilities-dummy.m */,
+				365DC9ACDA13A86A0B3516B2B7AB6834 /* ZipUtilities-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZipUtilities";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0E0A50822FCC93110E5AE996AE496B8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EE0EF40781EF95FA25CACBA8E6DF750 /* NOZ_Project.h in Headers */,
+				9CB85E4C6D9A6582F583C4B3493EAECE /* NOZCompress.h in Headers */,
+				040E30C6D1DD43CF3439CF46DFE86B1D /* NOZCompression.h in Headers */,
+				A19634611438511D2EF24C930E0FD09D /* NOZDecoder.h in Headers */,
+				DEA53E3A63DEFA6E25FE6D03E481E0B9 /* NOZDecompress.h in Headers */,
+				9B0EFDACEA2191AADD9BF7525D926BB3 /* NOZEncoder.h in Headers */,
+				136939DB39DF90C44F1407314FEC8D2E /* NOZError.h in Headers */,
+				F14FB4B8C73F2D8BD876528F2F89B81C /* NOZSyncStepOperation.h in Headers */,
+				A3BB779A4DF7CAA522041E252EF41A86 /* NOZUnzipper.h in Headers */,
+				D1B0ABEF3A1EC940CE695B8A0C1F9606 /* NOZUtils.h in Headers */,
+				97756CEEEB76E96B5E414E7E1DB758B9 /* NOZUtils_Project.h in Headers */,
+				1637E76186EE6E3A0DD9B322A31AADBB /* NOZZipEntry.h in Headers */,
+				92FD48E1117752BDE94EA1AB0EF9B5F3 /* NOZZipper.h in Headers */,
+				4648E9F8C6CCC12E25F37A3ED9415F4B /* NSData+NOZAdditions.h in Headers */,
+				BCB06878B91276EB2BCD917D19DAAC1A /* NSStream+NOZAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F7A1D53B5132DF76E2E72DDA7A41B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A4093BD5D4EC91DF9FA35B6645E94A /* Valet.h in Headers */,
+				4E48F992B68EFC2540D4B51B035020A0 /* ValetDefines.h in Headers */,
+				C69752BD04B12339B6D45E7705B71AFF /* VALSecureEnclaveValet.h in Headers */,
+				92D3961C77939636AC241B1B87A35DFE /* VALSynchronizableValet.h in Headers */,
+				26F18528EE4F3AB4B6F1C380F7B2B4B1 /* VALValet.h in Headers */,
+				B167C116611DD8DDF21C13F09CB264D6 /* VALValet_Protected.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBD600AD1A3F8AA074737616325C47B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CF1F43E4FA2E17E3BB966890586CCE /* Common.h in Headers */,
+				D2AF1FD9856FD7E5F4665B64FCDA180D /* crypt.h in Headers */,
+				745DB3154C8F1EB1C0CDCFB24DC17DE2 /* ioapi.h in Headers */,
+				146D78B67D72E0F5C3F9AC8350CC68AB /* mztools.h in Headers */,
+				0163F124001AF710A3674613F415F58B /* unzip.h in Headers */,
+				0DB2106D69F3B23BAC91CD926A62A3F8 /* WPZipArchive.h in Headers */,
+				F3D000AA40F54EB3A0D025D27525723D /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4704FBA22CF89EC537327F43D29CE282 /* Pods-Pass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA52FC1749FD5824094901E3839AD47 /* Build configuration list for PBXNativeTarget "Pods-Pass" */;
+			buildPhases = (
+				F5260119F104D44DBD22E8FD4B3FAEC5 /* Sources */,
+				E32CC8A83DE5936A7BF3DF87102C95BE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D11310C5C864A0302FAC09526C0E3B2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pass";
+			productName = "Pods-Pass";
+			productReference = A2C64CABF3F712B11134421E0F613F38 /* libPods-Pass.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5E96472981D716549B5F4795A39D9047 /* ZipUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD10CEE0F46FE063F235EA3FE4D598FD /* Build configuration list for PBXNativeTarget "ZipUtilities" */;
+			buildPhases = (
+				7200826868B36AB10424F76D21EA926B /* Sources */,
+				BE8DD6628D039720877FB56D96574FAF /* Frameworks */,
+				0E0A50822FCC93110E5AE996AE496B8C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipUtilities;
+			productName = ZipUtilities;
+			productReference = 7C0DD6565EE4DCDCA8E9ECEB2A2EA0BC /* libZipUtilities.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		85230D924C7FE02AC1F493CCC7CE24B0 /* WPZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 959914247F58288A33FEE4776502CABA /* Build configuration list for PBXNativeTarget "WPZipArchive" */;
+			buildPhases = (
+				B4429EDC05F3B9B365D61A9CD425C3A6 /* Sources */,
+				362BE8B25A0E70074F011F7E3A1A1130 /* Frameworks */,
+				4BBD600AD1A3F8AA074737616325C47B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WPZipArchive;
+			productName = WPZipArchive;
+			productReference = 56797FFF49F2C27BAF4DD82ED13DE4F1 /* libWPZipArchive.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D64257E7EADBE0AADD27F540A9116D77 /* Pods-AddZip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B5996A110652949744302E41B1BDBCD /* Build configuration list for PBXNativeTarget "Pods-AddZip" */;
+			buildPhases = (
+				B9E7526CBB50A5B23E2957416E0A0742 /* Sources */,
+				77C533949294260B779B6753C876DBC8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B891028F7758C98CF601DB6CB1392437 /* PBXTargetDependency */,
+				2A5FE3ED64965422E634DACAEE76849E /* PBXTargetDependency */,
+			);
+			name = "Pods-AddZip";
+			productName = "Pods-AddZip";
+			productReference = C8BE67255A96A4E9BFBDF62E9546389F /* libPods-AddZip.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EB72435EE980BBD9D9D6F55C4345BA51 /* Valet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23B0883AC67898E948E563E4D5D6757 /* Build configuration list for PBXNativeTarget "Valet" */;
+			buildPhases = (
+				1FE811214F089C87F22E0C25E46C5A3B /* Sources */,
+				A653CC7D9ADD3F303FB9A9A3568DBE7E /* Frameworks */,
+				21F7A1D53B5132DF76E2E72DDA7A41B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Valet;
+			productName = Valet;
+			productReference = 0D5625AA13A154268AC4A14D28C0C16B /* libValet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 504F5437DBDEDFD43F478B2A376243A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D64257E7EADBE0AADD27F540A9116D77 /* Pods-AddZip */,
+				4704FBA22CF89EC537327F43D29CE282 /* Pods-Pass */,
+				EB72435EE980BBD9D9D6F55C4345BA51 /* Valet */,
+				85230D924C7FE02AC1F493CCC7CE24B0 /* WPZipArchive */,
+				5E96472981D716549B5F4795A39D9047 /* ZipUtilities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FE811214F089C87F22E0C25E46C5A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F3EDCAACB080415B18768327ECD93B /* Valet-dummy.m in Sources */,
+				AFCED44E5B180D49AE9CBE3C0D0D8CBF /* VALSecureEnclaveValet.m in Sources */,
+				436E011F04808280CAA2C6FAB2102263 /* VALSynchronizableValet.m in Sources */,
+				145B1BF61BA63A5171FEC8E987E6CC00 /* VALValet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7200826868B36AB10424F76D21EA926B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CE48654AEADC81ED83682435758BC5 /* NOZ_Project.m in Sources */,
+				6B78B022371D11C66B53D2D718CAA5E4 /* NOZCompress.m in Sources */,
+				A8D7848AF831E2C8CC7BB3F9E3DF9356 /* NOZCompression.m in Sources */,
+				A961CA73197DB0E1DB1D7CE4D1EAF4B1 /* NOZDecompress.m in Sources */,
+				F6FDD77669261631F9AA775643492BB9 /* NOZDeflateCoders.m in Sources */,
+				D37475E975265BAC32FEA5254E80F157 /* NOZError.m in Sources */,
+				1632EBFE53135B59C21F8C25CE353F50 /* NOZRawCoders.m in Sources */,
+				AB8B84725CB2B4DAD9DA6C4BA761C59B /* NOZSyncStepOperation.m in Sources */,
+				F3DEA62244BE583E8BC6E989513C0DEA /* NOZUnzipper.m in Sources */,
+				6454BADF0F6E207F6B756CE4BA4143EF /* NOZUtils.m in Sources */,
+				070B95469C9B95BDCEA96A0749B4F3A8 /* NOZZipEntry.m in Sources */,
+				39EF2670C13C5F9C55CF87DB5F61310B /* NOZZipper.m in Sources */,
+				5D5E361CAC33B65CDE29ABF5D16D1457 /* NSData+NOZAdditions.m in Sources */,
+				2A34F4864CD1C7846EDCF6C25775166A /* NSStream+NOZAdditions.m in Sources */,
+				17B32338C9A53B56B77943CF8585898B /* ZipUtilities-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4429EDC05F3B9B365D61A9CD425C3A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BBCB1CC32FDEB7364D5BF47CD08E473 /* ioapi.c in Sources */,
+				ACB8CE13CD31AB3A8758AF0C971D41CE /* mztools.c in Sources */,
+				487511D66612D391C2E55AAAE19B2A53 /* unzip.c in Sources */,
+				10A20D16FEFECC9211EBD12943A1F0AC /* WPZipArchive-dummy.m in Sources */,
+				905835D0BF3500D0A6200D052FAB3E3A /* WPZipArchive.m in Sources */,
+				FD7E02384D996E961638D0D5D29DECAA /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9E7526CBB50A5B23E2957416E0A0742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2308FE9387D6D54A596B1E7495D53F0F /* Pods-AddZip-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5260119F104D44DBD22E8FD4B3FAEC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD017092AF674F2A746434042BC13683 /* Pods-Pass-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A5FE3ED64965422E634DACAEE76849E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZipUtilities;
+			target = 5E96472981D716549B5F4795A39D9047 /* ZipUtilities */;
+			targetProxy = C88FE1D54E73F2FF38AD409832549B56 /* PBXContainerItemProxy */;
+		};
+		7D11310C5C864A0302FAC09526C0E3B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Valet;
+			target = EB72435EE980BBD9D9D6F55C4345BA51 /* Valet */;
+			targetProxy = 32E47C08A5D99205CA8D8C74982615D1 /* PBXContainerItemProxy */;
+		};
+		B891028F7758C98CF601DB6CB1392437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WPZipArchive;
+			target = 85230D924C7FE02AC1F493CCC7CE24B0 /* WPZipArchive */;
+			targetProxy = 77F4602200B9A12D7C9E2F5D9A107CC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1646804AE104135E52436079B3480BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC663884C8C5F70B2AE4540418281E34 /* ZipUtilities.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipUtilities/ZipUtilities-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		195B2BF6C9EA0716AD63BFAFB52268A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852D3BF6877C56040356B4F02718B627 /* Valet.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Valet/Valet-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1D2B301CC9071032B04A1487C30D88CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499711C2D13880D0D82CCDDBA7F724AA /* Pods-AddZip.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1E2A705C78A627F0F2DB3647A9842418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2960BC3113EE918249D2E244D7E8EFC /* WPZipArchive.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WPZipArchive/WPZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3D7CCBBABEA8C1FA1482E7AA6C9EDAE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2960BC3113EE918249D2E244D7E8EFC /* WPZipArchive.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WPZipArchive/WPZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6676B09958C88B98C6B9B39EF1C4251D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70246E5341FA5FE6549F94DC13831C6 /* Pods-Pass.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8D766C85DD736BE768E230113AB12341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852D3BF6877C56040356B4F02718B627 /* Valet.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Valet/Valet-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9DCB30BF90CB92B5CCC9BB8319CC905A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD23CFB79A83997290DDE84FC56809A /* Pods-Pass.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A66BF710637DA59384AE88CCA43AE155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D615622F42E75377F439EF01CD40CB5 /* Pods-AddZip.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F124316D660EEA9C6CF7F3869EBF3723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC663884C8C5F70B2AE4540418281E34 /* ZipUtilities.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipUtilities/ZipUtilities-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA52FC1749FD5824094901E3839AD47 /* Build configuration list for PBXNativeTarget "Pods-Pass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6676B09958C88B98C6B9B39EF1C4251D /* Debug */,
+				9DCB30BF90CB92B5CCC9BB8319CC905A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		959914247F58288A33FEE4776502CABA /* Build configuration list for PBXNativeTarget "WPZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D7CCBBABEA8C1FA1482E7AA6C9EDAE5 /* Debug */,
+				1E2A705C78A627F0F2DB3647A9842418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B5996A110652949744302E41B1BDBCD /* Build configuration list for PBXNativeTarget "Pods-AddZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D2B301CC9071032B04A1487C30D88CE /* Debug */,
+				A66BF710637DA59384AE88CCA43AE155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD10CEE0F46FE063F235EA3FE4D598FD /* Build configuration list for PBXNativeTarget "ZipUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1646804AE104135E52436079B3480BAD /* Debug */,
+				F124316D660EEA9C6CF7F3869EBF3723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23B0883AC67898E948E563E4D5D6757 /* Build configuration list for PBXNativeTarget "Valet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D766C85DD736BE768E230113AB12341 /* Debug */,
+				195B2BF6C9EA0716AD63BFAFB52268A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-AddZip.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Pass.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Valet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>WPZipArchive.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZipUtilities.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4704FBA22CF89EC537327F43D29CE282</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E96472981D716549B5F4795A39D9047</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85230D924C7FE02AC1F493CCC7CE24B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D64257E7EADBE0AADD27F540A9116D77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB72435EE980BBD9D9D6F55C4345BA51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
