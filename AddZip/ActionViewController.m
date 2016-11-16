@@ -33,26 +33,27 @@
             NSLog(@"EXT: zipURL: %@", [url path]);
 
             [self listDirectoryAtPath:[containerURL path]];
-        }});
+        }
+    });
 }
 
-- (NSArray *)listDirectoryAtPath:(NSString *)directory
+- (void)listDirectoryAtPath:(NSString *)directory
 {
     NSFileManager *fM = [NSFileManager defaultManager];
     NSArray *fileList = [fM contentsOfDirectoryAtPath:directory error:nil];
     NSMutableArray *directoryList = [[NSMutableArray alloc] init];
+    
     for(NSString *file in fileList) {
+        
         NSString *path = [directory stringByAppendingPathComponent:file];
         BOOL isDir = NO;
         [fM fileExistsAtPath:path isDirectory:(&isDir)];
         if(isDir) {
             [directoryList addObject:file];
         }
-        
-        NSLog(@"directoryList: %@", directoryList);
     }
     
-    return directoryList;
+    NSLog(@"directoryList: %@", directoryList);
 }
             
 static void GetZipURLInItems(NSArray *inputItems, void (^completionHandler)(NSURL *URL, NSError *error))
@@ -62,8 +63,6 @@ static void GetZipURLInItems(NSArray *inputItems, void (^completionHandler)(NSUR
         for (NSItemProvider *itemProvider in item.attachments) {
             if ([itemProvider hasItemConformingToTypeIdentifier:(NSString *)kUTTypeZipArchive]) {
                 
-                NSLog(@"itemProvider: %@", itemProvider);
-                
                 [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypeZipArchive options:nil completionHandler:completionHandler];
                 zipFound = YES;
                 break;
@@ -71,8 +70,7 @@ static void GetZipURLInItems(NSArray *inputItems, void (^completionHandler)(NSUR
         }
         
         if (zipFound) {
-            // We only handle one image, so stop looking for more.
-            
+
             break;
         }
     }

@@ -9,9 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface PSEntry : NSObject
-//{
-//    NSString *name;
-//}
 
 @property (nonatomic,retain) NSString *name;
 @property (nonatomic,retain) NSString *path;

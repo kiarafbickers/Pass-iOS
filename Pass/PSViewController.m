@@ -17,7 +17,8 @@
 
 @synthesize entries;
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     if (self.title == nil) {
         self.title = NSLocalizedString(@"Passwords", @"Password title");
@@ -27,7 +28,8 @@
     self.navigationItem.rightBarButtonItem = clearButton;
 }
 
-- (void)clearPassphrase {
+- (void)clearPassphrase
+{
     // TODO Refactor into shared function
     VALSecureEnclaveValet *keychain = [[VALSecureEnclaveValet alloc] initWithIdentifier:@"Pass" accessControl:VALAccessControlUserPresence];
     [keychain removeObjectForKey:@"gpg-passphrase-touchid"];
@@ -43,19 +45,20 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return [self.entries numEntries];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     static NSString *CellIdentifier = @"EntryCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    PSEntry *entry = [self.entries entryAtIndex:indexPath.row];
+    PSEntry *entry = [self.entries entryAtIndex:(unsigned int)indexPath.row];
     
     cell.textLabel.text = entry.name;
     if (entry.is_dir)
@@ -66,7 +69,8 @@
     return cell;
 }
 
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
     // Return unique, capitalised first letters of entries
     NSMutableArray *firstLetters = [[NSMutableArray alloc] init];
     [firstLetters addObject:UITableViewIndexSearch];
@@ -79,7 +83,8 @@
     return firstLetters;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
+{
     for (int i = 0; i < [self.entries numEntries]; i++) {
         NSString *letterString = [[[self.entries entryAtIndex:i].name substringToIndex:1] uppercaseString];
         if ([letterString isEqualToString:title]) {
@@ -90,10 +95,11 @@
     return 1;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    PSEntry *entry = [self.entries entryAtIndex:indexPath.row];
+    PSEntry *entry = [self.entries entryAtIndex:(unsigned int)indexPath.row];
     
     if (entry.is_dir) {
         // push subdir view onto stack

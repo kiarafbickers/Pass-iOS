@@ -23,6 +23,8 @@
 
 - (NSString *)passWithPassphrase:(NSString *)passphrase passwordOnly:(BOOL)passwordOnly
 {
+    NSLog(@"self.path %@", self.path);
+    
     NSTask *task = [[NSTask alloc] init];
     [task setLaunchPath:@"/usr/bin/gpg"];
     [task setArguments:[NSArray arrayWithObjects:

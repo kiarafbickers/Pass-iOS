@@ -14,7 +14,7 @@
 
 @property (nonatomic, copy, readwrite) NSMutableArray *entries;
 
-- (void) readEntries:(NSString *)path;
+- (void)readEntries:(NSString *)path;
 
 @end
 
@@ -22,15 +22,16 @@
 
 @synthesize entries;
 
-- (id)initWithPath:(NSString *)path {
+- (id)initWithPath:(NSString *)path
+{
     if ( (self = [super init]) ) {
         [self readEntries:path];
     }
-    
     return self;
 }
 
-- (void)readEntries:(NSString *)path {
+- (void)readEntries:(NSString *)path
+{
     DIR *d;
     struct dirent *dent;
     PSEntry *entry;
@@ -58,11 +59,13 @@
     self.entries = list;
 }
 
-- (unsigned) numEntries {
-    return [self.entries count];
+- (unsigned) numEntries
+{
+    return (unsigned int)[self.entries count];
 }
 
-- (PSEntry *)entryAtIndex:(unsigned)index {
+- (PSEntry *)entryAtIndex:(unsigned)index
+{
     return [self.entries objectAtIndex:index];
 }
 

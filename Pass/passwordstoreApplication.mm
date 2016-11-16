@@ -46,11 +46,12 @@
     [self showFiles];
 }
 
--(NSArray *)listDirectoryAtPath:(NSString *)directory
+-(void)listDirectoryAtPath:(NSString *)directory
 {
     NSFileManager *fM = [NSFileManager defaultManager];
     NSArray *fileList = [fM contentsOfDirectoryAtPath:directory error:nil];
     NSMutableArray *directoryList = [[NSMutableArray alloc] init];
+    
     for(NSString *file in fileList) {
         NSString *path = [directory stringByAppendingPathComponent:file];
         BOOL isDir = NO;
@@ -61,7 +62,6 @@
     }
     
     NSLog(@"directoryList: %@", directoryList);
-    return directoryList;
 }
 
 + (NSURL*)getSharedContainerURLPath
@@ -107,9 +107,12 @@
     NSArray *myPathList = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     if([myPathList count])
     {
-        NSString *bundleName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
-        path = [[myPathList objectAtIndex:0] stringByAppendingPathComponent:bundleName];
+//        NSString *bundleName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
+//        path = [[myPathList objectAtIndex:0] stringByAppendingPathComponent:bundleName];
+//        
+//        NSLog(@"Path: %@",path);
         
+        path = [myPathList objectAtIndex:0];
         NSLog(@"Path: %@",path);
     }
     return path;
