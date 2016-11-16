@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ObjectivePGP.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AddZip.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,35 +29,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ZipUtilities.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4704FBA22CF89EC537327F43D29CE282</key>
+		<key>4BFDD63E357941F2A7F2E5B8ABA80225</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E96472981D716549B5F4795A39D9047</key>
+		<key>6773637E46AD7B6BCBA35A9F9EDC361C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>85230D924C7FE02AC1F493CCC7CE24B0</key>
+		<key>77EF323AA3E98E36B4E0002EA7009B2D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D64257E7EADBE0AADD27F540A9116D77</key>
+		<key>B1B9B8090A8CDD4E2F9E91C6F9AD9FF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EB72435EE980BBD9D9D6F55C4345BA51</key>
+		<key>C401244E7852897D3255D8B57EE6D070</key>
 		<dict>
 			<key>primary</key>
 			<true/>

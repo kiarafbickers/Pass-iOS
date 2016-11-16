@@ -54,7 +54,6 @@
 		A05A412120A50DEB6AE5FFFB /* libPods-AddZip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AddZip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B186F4E461902141159CCE85 /* Pods-AddZip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddZip.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddZip/Pods-AddZip.release.xcconfig"; sourceTree = "<group>"; };
 		E66F5E2C1E4468AAF732CDC2 /* Pods-Pass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pass.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pass/Pods-Pass.release.xcconfig"; sourceTree = "<group>"; };
-		E90278E21DD5586700D73381 /* NSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
 		E90278E31DD5586700D73381 /* passwordstoreApplication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = passwordstoreApplication.mm; sourceTree = "<group>"; };
 		E90278E41DD5586700D73381 /* PSDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDataController.h; sourceTree = "<group>"; };
 		E90278E51DD5586700D73381 /* PSDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDataController.m; sourceTree = "<group>"; };
@@ -139,7 +138,6 @@
 				E90278F41DD6A2D100D73381 /* Pass.entitlements */,
 				E9F650361DD540B900264433 /* AppDelegate.h */,
 				E9F650371DD540B900264433 /* AppDelegate.m */,
-				E90278E21DD5586700D73381 /* NSTask.h */,
 				E90278E31DD5586700D73381 /* passwordstoreApplication.mm */,
 				E90278E41DD5586700D73381 /* PSDataController.h */,
 				E90278E51DD5586700D73381 /* PSDataController.m */,

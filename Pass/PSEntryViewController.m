@@ -11,6 +11,7 @@
 #import "PSEntry.h"
 
 @interface PSEntryViewController()
+
 @property (nonatomic,retain) VALSecureEnclaveValet *keychain;
 @property (nonatomic,retain) NSString *keychain_key;
 @property (nonatomic) UIBackgroundTaskIdentifier backgroundTaskIdentifier;
@@ -18,15 +19,17 @@
 - (void)showAlertWithMessage:(NSString *)message alertTitle:(NSString *)title;
 - (void)decryptGpgWithPasswordOnly:(BOOL)passwordOnly copyToPasteboard:(BOOL)pasteboard showInAlert:(BOOL)showAlert;
 - (void)requestGpgPassphrase:(BOOL)passwordOnly entryTitle:(NSString *)title copyToPasteboard:(BOOL)pasteboard showInAlert:(BOOL)showAlert;
+
 @end
 
 
 @implementation PSEntryViewController
+
 @synthesize entry;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // self.title = NSLocalizedString(@"Passwords", @"Password title");
+    self.title = NSLocalizedString(@"Passwords", @"Password title");
     self.backgroundTaskIdentifier = 0;
     
     self.keychain = [[VALSecureEnclaveValet alloc] initWithIdentifier:@"Pass" accessControl:VALAccessControlUserPresence];
@@ -47,11 +50,13 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return 5;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     static NSString *CellIdentifier = @"EntryDetailCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -86,7 +91,8 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     switch(indexPath.row) {
@@ -100,7 +106,7 @@
             break;
         case 2:
             // Password, first line only, pasteboard
-            [self decryptGpgWithPasswordOnly:YES copyToPasteboard:YES showInAlert:NO];
+            [self decryptGpgWithPasswordOnly:YES copyToPasteboard:YES showInAlert:YES];
             break;
         case 3:
             // Full text, all lines, alert
@@ -108,18 +114,20 @@
             break;
         case 4:
             // Full text, all lines, passboard
-            [self decryptGpgWithPasswordOnly:NO copyToPasteboard:YES showInAlert:NO];
+            [self decryptGpgWithPasswordOnly:NO copyToPasteboard:YES showInAlert:YES];
             break;
         default:
             break;
     }
 }
 
-- (void)copyToPasteboard:(NSString *)string {
+- (void)copyToPasteboard:(NSString *)string
+{
     self.pasteboard.string = string;
 }
 
-- (void)copyToPasteboard:(NSString *)string clearTimeout:(double)timeout {
+- (void)copyToPasteboard:(NSString *)string clearTimeout:(double)timeout
+{
     // Store the original value for restoration later
     NSString *originalPasteboard = self.pasteboard.string;
     
@@ -141,7 +149,8 @@
     });
 }
 
-- (void)restorePasteboardWithTimer:(NSTimer *)timer {
+- (void)restorePasteboardWithTimer:(NSTimer *)timer
+{
     NSDictionary *dict = [timer userInfo];
     NSString *originalPasteboard = [dict objectForKey:@"originalPasteboard"];
     
@@ -155,27 +164,21 @@
     self.backgroundTaskIdentifier = UIBackgroundTaskInvalid;
 }
 
-- (void)showAlertWithMessage:(NSString *)message alertTitle:(NSString *)title {
+- (void)showAlertWithMessage:(NSString *)message alertTitle:(NSString *)title
+{
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (void)copyName {
+- (void)copyName
+{
     [self copyToPasteboard:self.entry.name];
 }
 
-- (void) performPasswordAction:(NSString *)password entryTitle:(NSString *)title copyToPasteboard:(BOOL)pasteboard showInAlert:(BOOL)showAlert {
-    if (pasteboard) {
-        [self copyToPasteboard:password clearTimeout:45.0];
-    }
-    if (showAlert) {
-        [self showAlertWithMessage:password alertTitle:title];
-    }
-}
-
-- (void)decryptGpgWithPasswordOnly:(BOOL)passwordOnly copyToPasteboard:(BOOL)pasteboard showInAlert:(BOOL)showAlert {
+- (void)decryptGpgWithPasswordOnly:(BOOL)passwordOnly copyToPasteboard:(BOOL)pasteboard showInAlert:(BOOL)showAlert
+{
     BOOL result = NO;
     NSString *password; // Decryped password
     NSString *keychain_passphrase; // iOS keychain passphrase
@@ -201,7 +204,8 @@
     }
 }
 
-- (void)requestGpgPassphrase:(BOOL)passwordOnly entryTitle:(NSString *)title copyToPasteboard:(BOOL)pasteboard showInAlert:(BOOL)showAlert {
+- (void)requestGpgPassphrase:(BOOL)passwordOnly entryTitle:(NSString *)title copyToPasteboard:(BOOL)pasteboard showInAlert:(BOOL)showAlert
+{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Passphrase" message:@"Enter passphrase for your GPG key" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
@@ -232,6 +236,16 @@
     }];
     
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void) performPasswordAction:(NSString *)password entryTitle:(NSString *)title copyToPasteboard:(BOOL)pasteboard showInAlert:(BOOL)showAlert
+{
+    if (pasteboard) {
+        [self copyToPasteboard:password clearTimeout:45.0];
+    }
+    if (showAlert) {
+        [self showAlertWithMessage:password alertTitle:title];
+    }
 }
 
 @end
