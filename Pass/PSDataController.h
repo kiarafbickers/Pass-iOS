@@ -12,8 +12,8 @@
 
 @interface PSDataController : NSObject
 
-- (id)initWithPath:(NSString *)path;
-- (unsigned)numEntries;
-- (PSEntry *)entryAtIndex:(unsigned)index;
+- (instancetype)initWithPath:(NSString *)path;
+- (NSUInteger)numEntries;
+- (PSEntry *)entryAtIndex:(NSUInteger)index;
 
 @end

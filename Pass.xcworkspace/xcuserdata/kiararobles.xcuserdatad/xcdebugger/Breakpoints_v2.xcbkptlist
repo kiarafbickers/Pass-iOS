@@ -9,45 +9,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pass/PSEntry.m"
-            timestampString = "500980753.709547"
+            filePath = "Pass/PSEntryViewController.m"
+            timestampString = "500984416.000457"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-passWithPassphrase:passwordOnly:"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "-decryptGpgWithPasswordOnly:copyToPasteboard:showInAlert:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pass/PSEntry.m"
-            timestampString = "500980753.709547"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "-passWithPassphrase:passwordOnly:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pass/PSEntryViewController.m"
-            timestampString = "500981116.378907"
+            timestampString = "500984416.000457"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "-requestGpgPassphrase:entryTitle:copyToPasteboard:showInAlert:"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "-requestGpgWithPasswordOnly:entryTitle:copyToPasteboard:showInAlert:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

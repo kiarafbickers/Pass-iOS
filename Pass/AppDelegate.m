@@ -44,4 +44,10 @@
 
 }
 
+- (void) resetApp
+{
+   UIViewController *vc = self.window.rootViewController;
+   _window.rootViewController = vc;
+}
+
 @end

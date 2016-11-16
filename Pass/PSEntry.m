@@ -6,14 +6,13 @@
 //  Copyright © 2016 Kiara Robles. All rights reserved.
 //
 
-#import "PSEntry.h"
 #include <ObjectivePGP/ObjectivePGP.h>
+#import "PSEntry.h"
+#import "PSPrefs.h"
 
 @implementation PSEntry
 
 @synthesize name, path, is_dir, pass;
-
-static NSString *GroupIdentifier = @"group.com.blockchainme.Pass";
 
 - (NSString *)name
 {
@@ -25,9 +24,9 @@ static NSString *GroupIdentifier = @"group.com.blockchainme.Pass";
     }
 }
 
-- (NSString *)passWithPassphrase:(NSString *)passphrase passwordOnly:(BOOL)passwordOnly
+- (NSString *)passWithPassword:(NSString *)password passwordOnly:(BOOL)passwordOnly
 {
-    NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:GroupIdentifier] URLByAppendingPathComponent:@"Library/Caches"];
+    NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];
     NSArray *dirFiles = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[containerURL path] error:nil];
     NSArray *gpgKeys = [dirFiles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.asc'"]];
     
@@ -41,18 +40,14 @@ static NSString *GroupIdentifier = @"group.com.blockchainme.Pass";
     
     ObjectivePGP *pgp = [[ObjectivePGP alloc] init];
     BOOL foundKey = [pgp importKey:keyPrefix fromFile:keyExt];
-    NSLog(foundKey ? @"foundKey: Yes" : @"foundKey: No");
+    // TODO: Prompt No Key
     
     NSData *encryptedPassword = [NSData dataWithContentsOfFile:self.path];
-    
-    /* need provide passphrase if required */
     NSError *error = nil;
     NSString *decryptedPasswordString = nil;
-    NSData *decryptedPassword = [pgp decryptData:encryptedPassword passphrase:passphrase error:&error];
+    NSData *decryptedPassword = [pgp decryptData:encryptedPassword passphrase:password error:&error];
     if (decryptedPassword && !error) {
-        NSLog(@"decryption success: %@", decryptedPassword);
         decryptedPasswordString = [[NSString alloc] initWithData:decryptedPassword encoding:NSUTF8StringEncoding];
-        NSLog(@"decryption success: %@", decryptedPasswordString);
     }
     
     return decryptedPasswordString;

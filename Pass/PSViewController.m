@@ -6,16 +6,20 @@
 //  Copyright © 2016 Kiara Robles. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <Valet/Valet.h>
+#import <ObjectivePGP/ObjectivePGP.h>
+#import "AppDelegate.h"
+#import "PSPrefs.h"
+#import "PSEntry.h"
 #import "PSViewController.h"
 #import "PSDataController.h"
-#import "PSEntry.h"
 #import "PSEntryViewController.h"
 
 @implementation PSViewController
 
 @synthesize entries;
+
+# pragma mark - View Lifecycle Methods
 
 - (void)viewDidLoad
 {
@@ -24,21 +28,52 @@
         self.title = NSLocalizedString(@"Passwords", @"Password title");
     }
     
-    UIBarButtonItem *clearButton = [[UIBarButtonItem alloc] initWithTitle:@"Clear Keychain" style:UIBarButtonItemStylePlain target:self action:@selector(clearPassphrase) ];
+    UIBarButtonItem *clearButton = [[UIBarButtonItem alloc]
+                                    initWithTitle:@"Clear Keychain"
+                                    style:UIBarButtonItemStylePlain
+                                    target:self
+                                    action:@selector(clearKeychain)];
     self.navigationItem.rightBarButtonItem = clearButton;
 }
 
-- (void)clearPassphrase
+# pragma mark - Action Methods
+
+- (void)clearKeychain
 {
     // TODO Refactor into shared function
     VALSecureEnclaveValet *keychain = [[VALSecureEnclaveValet alloc] initWithIdentifier:@"Pass" accessControl:VALAccessControlUserPresence];
     [keychain removeObjectForKey:@"gpg-passphrase-touchid"];
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Keychain cleared" message:@"Passphrase has been removed from the keychain" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {}];
-    [alert addAction:defaultAction];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Clear Keychain"
+                                                                   message:@"Proceed to remove all passwords from the keychain" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel"
+                                                         style:UIAlertActionStyleCancel
+                                                       handler:^(UIAlertAction *action) {
+    }];
+    [alert addAction:cancelAction];
+    UIAlertAction *okayAction = [UIAlertAction actionWithTitle:@"Yes"
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction *action) {
+                                                          
+        NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];;
+        NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager] enumeratorAtPath:[containerURL path]];
+        
+        BOOL res;
+        NSString *file;
+        NSError *err = nil;
+        while (file = [enumerator nextObject]) {
+          res = [[NSFileManager defaultManager] removeItemAtPath:[[containerURL path] stringByAppendingPathComponent:file] error:&err];
+          if (!res && err) {
+              NSLog(@"Oops: %@", err);
+          }
+        }
+    //[[[AppDelegate alloc] init] resetApp];
+    }];
+    [alert addAction:okayAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+# pragma mark - Table View Methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

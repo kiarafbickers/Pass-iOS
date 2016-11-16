@@ -6,9 +6,9 @@
 //  Copyright © 2016 Kiara Robles. All rights reserved.
 //
 
-#import "PSDataController.h"
-#import "PSEntry.h"
 #import <dirent.h>
+#import "PSEntry.h"
+#import "PSDataController.h"
 
 @interface PSDataController ()
 
@@ -22,9 +22,9 @@
 
 @synthesize entries;
 
-- (id)initWithPath:(NSString *)path
+- (instancetype)initWithPath:(NSString *)path
 {
-    if ( (self = [super init]) ) {
+    if (self) {
         [self readEntries:path];
     }
     return self;
@@ -32,26 +32,25 @@
 
 - (void)readEntries:(NSString *)path
 {
-    DIR *d;
-    struct dirent *dent;
+    DIR *openDirectory;
+    struct dirent *dirEntry; // Instance of an entry inside of a directory on the filesystem
     PSEntry *entry;
     
     NSMutableArray *list = [[NSMutableArray alloc] init];
     
-    d = opendir([path cStringUsingEncoding:NSUTF8StringEncoding]);
-    if (!d) {
-        // XXX handle error!
+    openDirectory = opendir([path cStringUsingEncoding:NSUTF8StringEncoding]);
+    if (!openDirectory) {
+        // TODO: Handle error
         return;
     }
     
-    while ( (dent = readdir(d)) ) {
-        if (dent->d_name[0] == '.') continue; // skip hidden files
+    while ( (dirEntry = readdir(openDirectory)) ) {
+        if (dirEntry->d_name[0] == '.') continue; // Skip hidden files
         
         entry = [[PSEntry alloc] init];
-        entry.name = [[NSString alloc] initWithCString:dent->d_name
-                                              encoding:NSUTF8StringEncoding];
-        entry.path = [NSString stringWithFormat:@"%@/%s", path, dent->d_name];
-        entry.is_dir = (dent->d_type == DT_DIR ? YES : NO);
+        entry.name = [[NSString alloc] initWithCString:dirEntry->d_name encoding:NSUTF8StringEncoding];
+        entry.path = [NSString stringWithFormat:@"%@/%s", path, dirEntry->d_name];
+        entry.is_dir = (dirEntry->d_type == DT_DIR ? YES : NO);
         
         [list addObject:entry];
     }
@@ -59,12 +58,12 @@
     self.entries = list;
 }
 
-- (unsigned) numEntries
+- (NSUInteger)numEntries
 {
     return (unsigned int)[self.entries count];
 }
 
-- (PSEntry *)entryAtIndex:(unsigned)index
+- (PSEntry *)entryAtIndex:(NSUInteger)index
 {
     return [self.entries objectAtIndex:index];
 }
