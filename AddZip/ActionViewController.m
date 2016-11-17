@@ -9,8 +9,11 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <WPZipArchive/WPZipArchive.h>
 #import "ActionViewController.h"
+#import "NSFileManager+PS.h"
+#import "PSPasswordManager.h"
 
 @interface ActionViewController ()
+
 
 @end
 
@@ -26,11 +29,39 @@ static NSString *directoryLibCach = @"Library/Caches";
 {
     [super viewDidLoad];
 
+    NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];
+    NSArray *localPassDirectory = [[NSFileManager defaultManager] listDirectoryAtPath:[containerURL path]];
+    
+    if ([localPassDirectory count] != 0) {
+        [self showAlertforDeleteDirectory:[containerURL path]];
+    } else {
+        [self checkZipDirectory:[containerURL path]];
+    }
+}
+
+- (void)checkZipDirectory:(NSString *)directory
+{
     GetZipURLInItems(self.extensionContext.inputItems, ^(NSURL *url, NSError *error) {
         if (error == nil) {
+
+            [WPZipArchive unzipFileAtPath:[url path] toDestination:directory];
             
-            NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];
-            [WPZipArchive unzipFileAtPath:[url path] toDestination:[containerURL path]];
+            NSArray *directoryList = [[NSFileManager defaultManager] listDirectoryAtPath:directory];
+            
+            BOOL isEmptyDirectory = [directoryList count] == 0;
+            BOOL isKeyInDirectory = [PSPasswordManager isKeysAtPath:directory];
+            BOOL isPasswordInAllSubDirectories = [PSPasswordManager isPasswordInAllSubDirectories:directory];
+            
+            if (isEmptyDirectory) {
+                [self showAlertWithMessage:@"This zip directory does not contain any encrypted passwords. Please try again after zipping pass generated \"password-store\" directory." alertTitle:@"Error"];
+            } else if (!isKeyInDirectory){
+                [self showAlertWithMessage:@"This zip directory does not contain any gpg keys. Please try again after zipping the \"password-store\" directory with the relevant key inside." alertTitle:@"Error"];
+            } else if (!isPasswordInAllSubDirectories) {
+                [self showAlertWithMessage:@"This zip directory does not contain gpg encrypted passwords. Please try again after zipping the \"password-store\" directory with encrypted passwords." alertTitle:@"Error"];
+            } else {
+                [self showAlertWithMessage:@"Passwords Successfully Imported into Pass" alertTitle:@""];
+            }
+            
         } else {
             [self showAlertWithMessage:error.localizedDescription alertTitle:@"Error"];
         }
@@ -63,12 +94,7 @@ static void GetZipURLInItems(NSArray *inputItems, void (^completionHandler)(NSUR
     }
 }
 
-# pragma mark - Action Methods
-
-- (IBAction)done
-{
-    [self.extensionContext completeRequestReturningItems:self.extensionContext.inputItems completionHandler:nil];
-}
+# pragma mark - Alert Methods
 
 - (void)showAlertWithMessage:(NSString *)message alertTitle:(NSString *)title
 {
@@ -77,29 +103,37 @@ static void GetZipURLInItems(NSArray *inputItems, void (^completionHandler)(NSUR
                                                             preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *okayAction = [UIAlertAction actionWithTitle:@"Okay"
                                                          style:UIAlertActionStyleDefault
-                                                       handler:^(UIAlertAction * action) {}];
+                                                       handler:^(UIAlertAction * action) {
+    [self done];
+    }];
     [alert addAction:okayAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-# pragma mark - Debuging Methods
-
-- (void)listDirectoryAtPath:(NSString *)directory
+- (void)showAlertforDeleteDirectory:(NSString *)directory
 {
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSArray *fileList = [fileManager contentsOfDirectoryAtPath:directory error:nil];
-    NSMutableArray *directoryList = [[NSMutableArray alloc] init];
-    
-    for(NSString *file in fileList) {
-        NSString *path = [directory stringByAppendingPathComponent:file];
-        BOOL isDirectory = NO;
-        [fileManager fileExistsAtPath:path isDirectory:(&isDirectory)];
-        if(isDirectory) {
-            [directoryList addObject:file];
-        }
-    }
-    
-    NSLog(@"directoryList: %@", directoryList);
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Update Passwords"
+                                                                   message:@"Pass currently contains encrypted passwords. Do you want to override the local saved directory?"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *yesAction = [UIAlertAction actionWithTitle:@"Yes"
+                                                         style:UIAlertActionStyleDefault
+                                                       handler:^(UIAlertAction * action) {
+                                                           [[NSFileManager defaultManager] deleteAllFilesinDirectory:directory];
+                                                           [self checkZipDirectory:directory];
+    }];
+    [alert addAction:yesAction];
+    UIAlertAction *noAction = [UIAlertAction actionWithTitle:@"No"
+                                                         style:UIAlertActionStyleCancel
+                                                       handler:^(UIAlertAction * action) {}];
+    [alert addAction:noAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+# pragma mark - Action Methods
+
+- (void)done
+{
+    [self.extensionContext completeRequestReturningItems:self.extensionContext.inputItems completionHandler:nil];
 }
 
 @end

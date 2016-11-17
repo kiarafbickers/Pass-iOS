@@ -14,6 +14,8 @@
 		E90278EE1DD5586700D73381 /* PSEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E90278E71DD5586700D73381 /* PSEntry.m */; };
 		E90278EF1DD5586700D73381 /* PSEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90278E91DD5586700D73381 /* PSEntryViewController.m */; };
 		E90278F01DD5586700D73381 /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90278EB1DD5586700D73381 /* PSViewController.m */; };
+		E9405EEA1DDE6263003A60F0 /* PSPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */; };
+		E9405EED1DDE6313003A60F0 /* NSFileManager+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = E9405EEC1DDE6313003A60F0 /* NSFileManager+PS.m */; };
 		E99B2E431DDC758100B3AE4C /* PSPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = E99B2E421DDC758100B3AE4C /* PSPrefs.m */; };
 		E99B2E441DDC758100B3AE4C /* PSPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = E99B2E421DDC758100B3AE4C /* PSPrefs.m */; };
 		E9F650351DD540B900264433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F650341DD540B900264433 /* main.m */; };
@@ -67,6 +69,10 @@
 		E90278EB1DD5586700D73381 /* PSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
 		E90278F41DD6A2D100D73381 /* Pass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pass.entitlements; sourceTree = "<group>"; };
 		E935BDBF1DDAAEB5003B0096 /* AddZip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AddZip.entitlements; sourceTree = "<group>"; };
+		E9405EE81DDE6262003A60F0 /* PSPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPasswordManager.h; sourceTree = "<group>"; };
+		E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPasswordManager.m; sourceTree = "<group>"; };
+		E9405EEB1DDE6313003A60F0 /* NSFileManager+PS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+PS.h"; sourceTree = "<group>"; };
+		E9405EEC1DDE6313003A60F0 /* NSFileManager+PS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+PS.m"; sourceTree = "<group>"; };
 		E99B2E421DDC758100B3AE4C /* PSPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPrefs.m; sourceTree = "<group>"; };
 		E99B2E451DDC759E00B3AE4C /* PSPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPrefs.h; sourceTree = "<group>"; };
 		E9F650301DD540B900264433 /* Pass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +180,10 @@
 			isa = PBXGroup;
 			children = (
 				E935BDBF1DDAAEB5003B0096 /* AddZip.entitlements */,
+				E9405EE81DDE6262003A60F0 /* PSPasswordManager.h */,
+				E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */,
+				E9405EEB1DDE6313003A60F0 /* NSFileManager+PS.h */,
+				E9405EEC1DDE6313003A60F0 /* NSFileManager+PS.m */,
 				E9F650501DD540E000264433 /* ActionViewController.h */,
 				E9F650511DD540E000264433 /* ActionViewController.m */,
 				E9F650531DD540E000264433 /* MainInterface.storyboard */,
@@ -404,8 +414,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9405EEA1DDE6263003A60F0 /* PSPasswordManager.m in Sources */,
 				E9F650521DD540E000264433 /* ActionViewController.m in Sources */,
 				E99B2E441DDC758100B3AE4C /* PSPrefs.m in Sources */,
+				E9405EED1DDE6313003A60F0 /* NSFileManager+PS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
