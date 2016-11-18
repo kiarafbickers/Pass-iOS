@@ -53,22 +53,4 @@ static NSString *directoryLibCach = @"Library/Caches";
     return [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier];
 }
 
-# pragma mark - Debuging Methods
-
-- (void)listDirectoryAtPath:(NSString *)directory
-{
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSArray *fileList = [fileManager contentsOfDirectoryAtPath:directory error:nil];
-    NSMutableArray *directoryList = [[NSMutableArray alloc] init];
-    
-    for(NSString *file in fileList) {
-        NSString *path = [directory stringByAppendingPathComponent:file];
-        BOOL isDirectory = NO;
-        [fileManager fileExistsAtPath:path isDirectory:(&isDirectory)];
-        if(isDirectory) {
-            [directoryList addObject:file];
-        }
-    }
-}
-
 @end

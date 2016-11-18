@@ -29,8 +29,7 @@
     }
     
     UIBarButtonItem *clearButton = [[UIBarButtonItem alloc]
-                                    initWithTitle:@"Clear Keychain"
-                                    style:UIBarButtonItemStylePlain
+                                    initWithBarButtonSystemItem:UIBarButtonSystemItemStop
                                     target:self
                                     action:@selector(clearKeychain)];
     self.navigationItem.rightBarButtonItem = clearButton;
@@ -55,22 +54,27 @@
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction *action) {
                                                           
-        NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];;
-        NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager] enumeratorAtPath:[containerURL path]];
-        
-        BOOL res;
-        NSString *file;
-        NSError *err = nil;
-        while (file = [enumerator nextObject]) {
-          res = [[NSFileManager defaultManager] removeItemAtPath:[[containerURL path] stringByAppendingPathComponent:file] error:&err];
-          if (!res && err) {
-              NSLog(@"Oops: %@", err);
-          }
-        }
-    //[[[AppDelegate alloc] init] resetApp];
+        NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];
+        [self deleteAllFilesinDirectory:[containerURL path]];
+        [self reloadDataViewController];
+                                                          
     }];
     [alert addAction:okayAction];
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)reloadDataViewController
+{
+    NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];
+    
+    PSDataController *clearedEntries = [[PSDataController alloc] initWithPath:[containerURL path]];
+    PSViewController *viewController = [[PSViewController alloc] init];
+    viewController.entries = clearedEntries;
+    
+    NSMutableArray *stackViewControllers = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
+    [stackViewControllers removeLastObject];
+    [stackViewControllers addObject:viewController];
+    [self.navigationController setViewControllers:stackViewControllers animated:NO];
 }
 
 # pragma mark - Table View Methods
@@ -151,6 +155,25 @@
         PSEntryViewController *detailController = [[PSEntryViewController alloc] init];
         detailController.entry = entry;
         [[self navigationController] pushViewController:detailController animated:YES];
+    }
+}
+
+# pragma mark - FileManager Methods
+
+// TODO: Get NSFileManager+PS.h to work in this target
+
+- (void)deleteAllFilesinDirectory:(NSString *)directory
+{
+    NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager] enumeratorAtPath:directory];
+    NSError* err = nil;
+    BOOL res;
+    
+    NSString *file;
+    while (file = [enumerator nextObject]) {
+        res = [[NSFileManager defaultManager] removeItemAtPath:[directory stringByAppendingPathComponent:file] error:&err];
+        if (!res && err) {
+            NSLog(@"Oops: %@", err);
+        }
     }
 }
 
