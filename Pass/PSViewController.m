@@ -12,14 +12,25 @@
 #import "PSPrefs.h"
 #import "PSEntry.h"
 #import "PSViewController.h"
-#import "PSDataController.h"
+#import "PSEntryManager.h"
 #import "PSEntryViewController.h"
+#import "PSPasswordManager.h"
+#import "NSFileManager+PS.h"
+
+@interface PSViewController ()
+
+@property NSURL *documentsDirectory;
+@property NSURL *documentsURL;
+
+@end
 
 @implementation PSViewController
+
 
 @synthesize entries;
 
 # pragma mark - View Lifecycle Methods
+
 
 - (void)viewDidLoad
 {
@@ -27,6 +38,9 @@
     if (self.title == nil) {
         self.title = NSLocalizedString(@"Passwords", @"Password title");
     }
+
+    NSArray *paths = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+    self.documentsDirectory = [paths lastObject];
     
     UIBarButtonItem *clearButton = [[UIBarButtonItem alloc]
                                     initWithBarButtonSystemItem:UIBarButtonSystemItemStop
@@ -54,8 +68,7 @@
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction *action) {
                                                           
-        NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];
-        [self deleteAllFilesinDirectory:[containerURL path]];
+        [[NSFileManager defaultManager] deleteAllFilesinDirectory:[self.documentsDirectory path]];
         [self reloadDataViewController];
                                                           
     }];
@@ -65,9 +78,7 @@
 
 - (void)reloadDataViewController
 {
-    NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];
-    
-    PSDataController *clearedEntries = [[PSDataController alloc] initWithPath:[containerURL path]];
+    PSEntryManager *clearedEntries = [[PSEntryManager alloc] initWithPath:[self.documentsDirectory path]];
     PSViewController *viewController = [[PSViewController alloc] init];
     viewController.entries = clearedEntries;
     
@@ -86,6 +97,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    for (NSUInteger i = 0; i < [self.entries numEntries]; i++) {
+        PSEntry *entry = [self.entries entryAtIndex:i];
+        
+        BOOL isKey = !entry.is_dir && ([entry.name hasSuffix:@".asc"] || [entry.name hasSuffix:@".gpg"]);
+        BOOL isDirectoryWithKey = entry.is_dir && [PSPasswordManager isPasswordInAllSubDirectories:entry.path];
+        
+        if (!isKey && !isDirectoryWithKey) {
+            [self.entries removeEntryAtIndex:i];
+        }
+    }
+    
     return [self.entries numEntries];
 }
 
@@ -97,9 +119,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    // Filter out keys from selectible directories
     PSEntry *entry = [self.entries entryAtIndex:(unsigned int)indexPath.row];
-    if ([entry.name hasSuffix:@".asc"]) {
+
+    BOOL isKey = !entry.is_dir && ([entry.name hasSuffix:@".asc"]);
+    if (isKey) {
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.userInteractionEnabled = false;
     }
@@ -115,7 +138,6 @@
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
 {
-    // Return unique, capitalised first letters of entries
     NSMutableArray *firstLetters = [[NSMutableArray alloc] init];
     [firstLetters addObject:UITableViewIndexSearch];
     for (int i = 0; i < [self.entries numEntries]; i++) {
@@ -148,32 +170,13 @@
     if (entry.is_dir) {
         // push subdir view onto stack
         PSViewController *subviewController = [[PSViewController alloc] init];
-        subviewController.entries = [[PSDataController alloc] initWithPath:entry.path];
+        subviewController.entries = [[PSEntryManager alloc] initWithPath:entry.path];
         subviewController.title = entry.name;
         [[self navigationController] pushViewController:subviewController animated:YES];
     } else {
         PSEntryViewController *detailController = [[PSEntryViewController alloc] init];
         detailController.entry = entry;
         [[self navigationController] pushViewController:detailController animated:YES];
-    }
-}
-
-# pragma mark - FileManager Methods
-
-// TODO: Get NSFileManager+PS.h to work in this target
-
-- (void)deleteAllFilesinDirectory:(NSString *)directory
-{
-    NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager] enumeratorAtPath:directory];
-    NSError* err = nil;
-    BOOL res;
-    
-    NSString *file;
-    while (file = [enumerator nextObject]) {
-        res = [[NSFileManager defaultManager] removeItemAtPath:[directory stringByAppendingPathComponent:file] error:&err];
-        if (!res && err) {
-            NSLog(@"Oops: %@", err);
-        }
     }
 }
 

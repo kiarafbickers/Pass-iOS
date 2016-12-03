@@ -10,7 +10,7 @@
 #import <WPZipArchive/WPZipArchive.h>
 #import "ActionViewController.h"
 #import "NSFileManager+PS.h"
-#import "PSPasswordManager.h"
+//#import "PSPasswordManager.h"
 
 @interface ActionViewController ()
 
@@ -46,24 +46,24 @@ static NSString *directoryLibCach = @"Library/Caches";
 
             [WPZipArchive unzipFileAtPath:[url path] toDestination:directory];
             
-            NSArray *directoryList = [[NSFileManager defaultManager] listDirectoryAtPath:directory];
-            
-            BOOL isEmptyDirectory = [directoryList count] == 0;
-            BOOL isKeyInDirectory = [PSPasswordManager isKeysAtPath:directory];
-            BOOL isPasswordInAllSubDirectories = [PSPasswordManager isPasswordInAllSubDirectories:directory];
-            
-            if (isEmptyDirectory) {
-                [self showAlertWithMessage:@"This zip directory does not contain any encrypted passwords. Please try again after zipping pass generated \"password-store\" directory." alertTitle:@"Error"];
-            } else if (!isKeyInDirectory){
-                [self showAlertWithMessage:@"This zip directory does not contain any gpg keys. Please try again after zipping the \"password-store\" directory with the relevant key inside." alertTitle:@"Error"];
-            } else if (!isPasswordInAllSubDirectories) {
-                [self showAlertWithMessage:@"This zip directory does not contain gpg encrypted passwords. Please try again after zipping the \"password-store\" directory with encrypted passwords." alertTitle:@"Error"];
-            } else {
-                [self showAlertWithMessage:@"Passwords Successfully Imported into Pass" alertTitle:@""];
-            }
-            
-        } else {
-            [self showAlertWithMessage:error.localizedDescription alertTitle:@"Error"];
+//            NSArray *directoryList = [[NSFileManager defaultManager] listDirectoryAtPath:directory];
+//            
+//            BOOL isEmptyDirectory = [directoryList count] == 0;
+//            BOOL isKeyInDirectory = [PSPasswordManager isKeysAtPath:directory];
+//            BOOL isPasswordInAllSubDirectories = [PSPasswordManager isPasswordInAllSubDirectories:directory];
+//            
+//            if (isEmptyDirectory) {
+//                [self showAlertWithMessage:@"This zip directory does not contain any encrypted passwords. Please try again after zipping pass generated \"password-store\" directory." alertTitle:@"Error"];
+//            } else if (!isKeyInDirectory){
+//                [self showAlertWithMessage:@"This zip directory does not contain any gpg keys. Please try again after zipping the \"password-store\" directory with the relevant key inside." alertTitle:@"Error"];
+//            } else if (!isPasswordInAllSubDirectories) {
+//                [self showAlertWithMessage:@"This zip directory does not contain gpg encrypted passwords. Please try again after zipping the \"password-store\" directory with encrypted passwords." alertTitle:@"Error"];
+//            } else {
+//                [self showAlertWithMessage:@"Passwords Successfully Imported into Pass" alertTitle:@""];
+//            }
+//            
+//        } else {
+//            [self showAlertWithMessage:error.localizedDescription alertTitle:@"Error"];
         }
     });
 }

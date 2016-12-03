@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class PSDataController;
+@class PSEntryManager;
 
 @interface PSViewController : UITableViewController
 
-@property (nonatomic, retain) PSDataController *entries;
+@property (nonatomic, retain) PSEntryManager *entries;
 
 @end

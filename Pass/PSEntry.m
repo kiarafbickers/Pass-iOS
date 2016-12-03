@@ -16,18 +16,15 @@
 
 - (NSString *)name
 {
-    if ([name hasSuffix:@".gpg"]) {
-        return [name substringToIndex:[name length] - 4];
-    }
-    else {
-        return name;
-    }
+    return name;
 }
 
 - (NSString *)passWithPassword:(NSString *)password passwordOnly:(BOOL)passwordOnly
 {
-    NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];
-    NSArray *dirFiles = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[containerURL path] error:nil];
+    NSArray *paths = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+    NSURL *documentsDirectory = [paths lastObject];
+    
+    NSArray *dirFiles = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[documentsDirectory path] error:nil];
     NSArray *gpgKeys = [dirFiles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.asc'"]];
     
 
@@ -35,7 +32,7 @@
     NSString *keyExt;
     for (NSString *key in gpgKeys) {
         keyPrefix = [key stringByReplacingOccurrencesOfString:@".asc" withString:@""];
-        keyExt = [NSString stringWithFormat:@"%@/%@", [containerURL path], key];
+        keyExt = [NSString stringWithFormat:@"%@/%@", [documentsDirectory path], key];
     }
     
     ObjectivePGP *pgp = [[ObjectivePGP alloc] init];

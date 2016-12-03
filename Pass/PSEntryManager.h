@@ -1,5 +1,5 @@
 //
-//  PSDataController.h
+//  PSEntryManager.h
 //  pass-ios
 //
 //  Created by Kiara Robles on 11/3/16.
@@ -10,10 +10,11 @@
 
 @class PSEntry;
 
-@interface PSDataController : NSObject
+@interface PSEntryManager : NSObject
 
 - (instancetype)initWithPath:(NSString *)path;
 - (NSUInteger)numEntries;
 - (PSEntry *)entryAtIndex:(NSUInteger)index;
+- (void)removeEntryAtIndex:(NSUInteger)index;
 
 @end

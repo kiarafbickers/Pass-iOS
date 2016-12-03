@@ -18,7 +18,7 @@
     NSMutableArray *keyList = [[NSMutableArray alloc] init];
     
     for(NSString *file in fileList) {
-        if([file hasSuffix:@".asc"]) {
+        if([file hasSuffix:@".asc"] || [file hasSuffix:@".gpg"]) {
             [keyList addObject:file];
             return YES;
         }

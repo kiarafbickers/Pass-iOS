@@ -1,5 +1,5 @@
 //
-//  PSDataController.m
+//  PSEntryManager.m
 //  pass-ios
 //
 //  Created by Kiara Robles on 11/3/16.
@@ -8,17 +8,17 @@
 
 #import <dirent.h>
 #import "PSEntry.h"
-#import "PSDataController.h"
+#import "PSEntryManager.h"
 
-@interface PSDataController ()
+@interface PSEntryManager ()
 
-@property (nonatomic, copy, readwrite) NSMutableArray *entries;
+@property (nonatomic, strong) NSMutableArray *entries;
 
 - (void)readEntries:(NSString *)path;
 
 @end
 
-@implementation PSDataController
+@implementation PSEntryManager
 
 @synthesize entries;
 
@@ -66,6 +66,11 @@
 - (PSEntry *)entryAtIndex:(NSUInteger)index
 {
     return [self.entries objectAtIndex:index];
+}
+
+- (void)removeEntryAtIndex:(NSUInteger)index
+{
+    [self.entries removeObjectAtIndex:index];
 }
 
 @end

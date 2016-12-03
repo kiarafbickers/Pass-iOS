@@ -6,13 +6,13 @@
  * Please see COPYING for more information
  */
 #import "PSViewController.h"
-#import "PSDataController.h"
+#import "PSEntryManager.h"
 
 @interface passwordstoreApplication: UIApplication <UIApplicationDelegate>
 {
     UIWindow *_window;
     PSViewController *_viewController;
-    PSDataController *_entries;
+    PSEntryManager *_entries;
 }
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, strong) NSString *passDir;
@@ -29,11 +29,11 @@ static NSString *directoryLibCach = @"Library/Caches";
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
-    NSURL *containerURL = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier] URLByAppendingPathComponent:directoryLibCach];
-    // [self listDirectoryAtPath:[containerURL path]];
+    NSArray *paths = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+    NSURL *documentsDirectory = [paths lastObject];
     
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    _entries = [[PSDataController alloc] initWithPath:[containerURL path]];
+    _entries = [[PSEntryManager alloc] initWithPath:[documentsDirectory path]];
     _viewController = [[PSViewController alloc] init];
     _viewController.entries = _entries;
 
