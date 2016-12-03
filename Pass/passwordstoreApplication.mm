@@ -12,7 +12,7 @@
 {
     UIWindow *_window;
     PSViewController *_viewController;
-    PSEntryManager *_entries;
+    PSEntryManager *_entryManager;
 }
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, strong) NSString *passDir;
@@ -33,9 +33,9 @@ static NSString *directoryLibCach = @"Library/Caches";
     NSURL *documentsDirectory = [paths lastObject];
     
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    _entries = [[PSEntryManager alloc] initWithPath:[documentsDirectory path]];
+    _entryManager = [[PSEntryManager alloc] initWithPath:[documentsDirectory path]];
     _viewController = [[PSViewController alloc] init];
-    _viewController.entries = _entries;
+    _viewController.entryManager = _entryManager;
 
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:_viewController];
     // Ensures app is able to change orientation; subviews don't work

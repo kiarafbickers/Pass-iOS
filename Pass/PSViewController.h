@@ -12,6 +12,6 @@
 
 @interface PSViewController : UITableViewController
 
-@property (nonatomic, retain) PSEntryManager *entries;
+@property (nonatomic, retain) PSEntryManager *entryManager;
 
 @end

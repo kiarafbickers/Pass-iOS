@@ -12,19 +12,16 @@
 
 @interface PSEntryManager ()
 
-@property (nonatomic, strong) NSMutableArray *entries;
-
 - (void)readEntries:(NSString *)path;
 
 @end
 
 @implementation PSEntryManager
 
-@synthesize entries;
-
 - (instancetype)initWithPath:(NSString *)path
 {
     if (self) {
+        _path = path;
         [self readEntries:path];
     }
     return self;
@@ -50,27 +47,12 @@
         entry = [[PSEntry alloc] init];
         entry.name = [[NSString alloc] initWithCString:dirEntry->d_name encoding:NSUTF8StringEncoding];
         entry.path = [NSString stringWithFormat:@"%@/%s", path, dirEntry->d_name];
-        entry.is_dir = (dirEntry->d_type == DT_DIR ? YES : NO);
+        entry.isDirectory = (dirEntry->d_type == DT_DIR ? YES : NO);
         
         [list addObject:entry];
     }
     
-    self.entries = list;
-}
-
-- (NSUInteger)numEntries
-{
-    return (unsigned int)[self.entries count];
-}
-
-- (PSEntry *)entryAtIndex:(NSUInteger)index
-{
-    return [self.entries objectAtIndex:index];
-}
-
-- (void)removeEntryAtIndex:(NSUInteger)index
-{
-    [self.entries removeObjectAtIndex:index];
+    self.entries = [NSMutableArray arrayWithArray:list];
 }
 
 @end

@@ -12,9 +12,8 @@
 
 @property (nonatomic,retain) NSString *name;
 @property (nonatomic,retain) NSString *path;
-@property (nonatomic,assign) BOOL is_dir;
 @property (nonatomic,readonly) NSString *pass;
-@property (nonatomic, strong) NSMutableArray *store;
+@property (nonatomic,assign) BOOL isDirectory;
 
 - (NSString *)passWithPassword:(NSString *)passphrase passwordOnly:(BOOL)passwordOnly;
 

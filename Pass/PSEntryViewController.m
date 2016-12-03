@@ -82,14 +82,6 @@
             cell.textLabel.text = @"Password";
             cell.detailTextLabel.text = @"Tap to copy";
             break;
-        case 3:
-            cell.textLabel.text = @"Full text";
-            cell.detailTextLabel.text = @"Tap to show";
-            break;
-        case 4:
-            cell.textLabel.text = @"Full text";
-            cell.detailTextLabel.text = @"Tap to copy";
-            break;
         default:
             break;
     }
@@ -112,15 +104,7 @@
             break;
         case 2:
             // Password, first line only, pasteboard
-            [self decryptGpgWithPasswordOnly:YES copyToPasteboard:YES showInAlert:YES];
-            break;
-        case 3:
-            // Full text, all lines, alert
-            [self decryptGpgWithPasswordOnly:NO copyToPasteboard:NO showInAlert:YES];
-            break;
-        case 4:
-            // Full text, all lines, passboard
-            [self decryptGpgWithPasswordOnly:NO copyToPasteboard:YES showInAlert:YES];
+            [self decryptGpgWithPasswordOnly:YES copyToPasteboard:YES showInAlert:NO];
             break;
         default:
             break;

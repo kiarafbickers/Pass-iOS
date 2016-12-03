@@ -12,9 +12,9 @@
 
 @interface PSEntryManager : NSObject
 
+@property (nonatomic, strong) NSString *path;
+@property (nonatomic, strong) NSMutableArray *entries;
+
 - (instancetype)initWithPath:(NSString *)path;
-- (NSUInteger)numEntries;
-- (PSEntry *)entryAtIndex:(NSUInteger)index;
-- (void)removeEntryAtIndex:(NSUInteger)index;
 
 @end

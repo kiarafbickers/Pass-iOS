@@ -13,12 +13,11 @@
 		E90278EE1DD5586700D73381 /* PSEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E90278E71DD5586700D73381 /* PSEntry.m */; };
 		E90278EF1DD5586700D73381 /* PSEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90278E91DD5586700D73381 /* PSEntryViewController.m */; };
 		E90278F01DD5586700D73381 /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90278EB1DD5586700D73381 /* PSViewController.m */; };
-		E99B2E431DDC758100B3AE4C /* PSPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = E99B2E421DDC758100B3AE4C /* PSPrefs.m */; };
-		E9E05EA21DF24E97002ED733 /* NSFileManager+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = E9405EEC1DDE6313003A60F0 /* NSFileManager+PS.m */; };
-		E9E05EA31DF24E9F002ED733 /* PSPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */; };
+		E9E05EA81DF2896C002ED733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E05EA61DF2896C002ED733 /* Main.storyboard */; };
+		E9E05EAD1DF289A8002ED733 /* NSFileManager+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E05EAA1DF289A8002ED733 /* NSFileManager+PS.m */; };
+		E9E05EAE1DF289A8002ED733 /* PSPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E05EAC1DF289A8002ED733 /* PSPasswordManager.m */; };
 		E9F650351DD540B900264433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F650341DD540B900264433 /* main.m */; };
 		E9F650381DD540B900264433 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F650371DD540B900264433 /* AppDelegate.m */; };
-		E9F6503E1DD540B900264433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F6503C1DD540B900264433 /* Main.storyboard */; };
 		E9F650401DD540B900264433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F6503F1DD540B900264433 /* Assets.xcassets */; };
 		E9F650431DD540B900264433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F650411DD540B900264433 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -52,17 +51,15 @@
 		E90278EA1DD5586700D73381 /* PSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
 		E90278EB1DD5586700D73381 /* PSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
 		E90278F41DD6A2D100D73381 /* Pass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pass.entitlements; sourceTree = "<group>"; };
-		E9405EE81DDE6262003A60F0 /* PSPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPasswordManager.h; path = ../AddZip/PSPasswordManager.h; sourceTree = "<group>"; };
-		E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSPasswordManager.m; path = ../AddZip/PSPasswordManager.m; sourceTree = "<group>"; };
-		E9405EEB1DDE6313003A60F0 /* NSFileManager+PS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+PS.h"; path = "../AddZip/NSFileManager+PS.h"; sourceTree = "<group>"; };
-		E9405EEC1DDE6313003A60F0 /* NSFileManager+PS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+PS.m"; path = "../AddZip/NSFileManager+PS.m"; sourceTree = "<group>"; };
-		E99B2E421DDC758100B3AE4C /* PSPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPrefs.m; sourceTree = "<group>"; };
-		E99B2E451DDC759E00B3AE4C /* PSPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPrefs.h; sourceTree = "<group>"; };
+		E9E05EA71DF2896C002ED733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9E05EA91DF289A8002ED733 /* NSFileManager+PS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+PS.h"; sourceTree = "<group>"; };
+		E9E05EAA1DF289A8002ED733 /* NSFileManager+PS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+PS.m"; sourceTree = "<group>"; };
+		E9E05EAB1DF289A8002ED733 /* PSPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPasswordManager.h; sourceTree = "<group>"; };
+		E9E05EAC1DF289A8002ED733 /* PSPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPasswordManager.m; sourceTree = "<group>"; };
 		E9F650301DD540B900264433 /* Pass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F650341DD540B900264433 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9F650361DD540B900264433 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9F650371DD540B900264433 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E9F6503D1DD540B900264433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9F6503F1DD540B900264433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9F650421DD540B900264433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9F650441DD540B900264433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,10 +96,10 @@
 				E90278E71DD5586700D73381 /* PSEntry.m */,
 				E90278E41DD5586700D73381 /* PSEntryManager.h */,
 				E90278E51DD5586700D73381 /* PSEntryManager.m */,
-				E9405EE81DDE6262003A60F0 /* PSPasswordManager.h */,
-				E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */,
-				E9405EEB1DDE6313003A60F0 /* NSFileManager+PS.h */,
-				E9405EEC1DDE6313003A60F0 /* NSFileManager+PS.m */,
+				E9E05EA91DF289A8002ED733 /* NSFileManager+PS.h */,
+				E9E05EAA1DF289A8002ED733 /* NSFileManager+PS.m */,
+				E9E05EAB1DF289A8002ED733 /* PSPasswordManager.h */,
+				E9E05EAC1DF289A8002ED733 /* PSPasswordManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -140,16 +137,14 @@
 			isa = PBXGroup;
 			children = (
 				E90278F41DD6A2D100D73381 /* Pass.entitlements */,
-				E99B2E451DDC759E00B3AE4C /* PSPrefs.h */,
-				E99B2E421DDC758100B3AE4C /* PSPrefs.m */,
 				E9F650361DD540B900264433 /* AppDelegate.h */,
 				E9F650371DD540B900264433 /* AppDelegate.m */,
 				E90278E31DD5586700D73381 /* passwordstoreApplication.mm */,
 				E9E05EA41DF27606002ED733 /* Model */,
 				E9E05EA51DF27616002ED733 /* ViewController */,
-				E9F6503C1DD540B900264433 /* Main.storyboard */,
 				E9F6503F1DD540B900264433 /* Assets.xcassets */,
 				E9F650411DD540B900264433 /* LaunchScreen.storyboard */,
+				E9E05EA61DF2896C002ED733 /* Main.storyboard */,
 				E9F650441DD540B900264433 /* Info.plist */,
 				E9F650331DD540B900264433 /* Supporting Files */,
 			);
@@ -241,9 +236,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E05EA81DF2896C002ED733 /* Main.storyboard in Resources */,
 				E9F650431DD540B900264433 /* LaunchScreen.storyboard in Resources */,
 				E9F650401DD540B900264433 /* Assets.xcassets in Resources */,
-				E9F6503E1DD540B900264433 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,26 +297,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E05EA31DF24E9F002ED733 /* PSPasswordManager.m in Sources */,
-				E9E05EA21DF24E97002ED733 /* NSFileManager+PS.m in Sources */,
 				E90278EE1DD5586700D73381 /* PSEntry.m in Sources */,
+				E9E05EAE1DF289A8002ED733 /* PSPasswordManager.m in Sources */,
 				E9F650381DD540B900264433 /* AppDelegate.m in Sources */,
 				E9F650351DD540B900264433 /* main.m in Sources */,
 				E90278EF1DD5586700D73381 /* PSEntryViewController.m in Sources */,
 				E90278EC1DD5586700D73381 /* passwordstoreApplication.mm in Sources */,
 				E90278ED1DD5586700D73381 /* PSEntryManager.m in Sources */,
+				E9E05EAD1DF289A8002ED733 /* NSFileManager+PS.m in Sources */,
 				E90278F01DD5586700D73381 /* PSViewController.m in Sources */,
-				E99B2E431DDC758100B3AE4C /* PSPrefs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E9F6503C1DD540B900264433 /* Main.storyboard */ = {
+		E9E05EA61DF2896C002ED733 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9F6503D1DD540B900264433 /* Base */,
+				E9E05EA71DF2896C002ED733 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

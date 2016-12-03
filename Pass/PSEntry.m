@@ -8,16 +8,8 @@
 
 #include <ObjectivePGP/ObjectivePGP.h>
 #import "PSEntry.h"
-#import "PSPrefs.h"
 
 @implementation PSEntry
-
-@synthesize name, path, is_dir, pass;
-
-- (NSString *)name
-{
-    return name;
-}
 
 - (NSString *)passWithPassword:(NSString *)password passwordOnly:(BOOL)passwordOnly
 {
@@ -45,6 +37,7 @@
     NSData *decryptedPassword = [pgp decryptData:encryptedPassword passphrase:password error:&error];
     if (decryptedPassword && !error) {
         decryptedPasswordString = [[NSString alloc] initWithData:decryptedPassword encoding:NSUTF8StringEncoding];
+        decryptedPasswordString = [decryptedPasswordString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     }
     
     return decryptedPasswordString;

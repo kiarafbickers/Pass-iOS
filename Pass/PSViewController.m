@@ -9,7 +9,6 @@
 #import <Valet/Valet.h>
 #import <ObjectivePGP/ObjectivePGP.h>
 #import "AppDelegate.h"
-#import "PSPrefs.h"
 #import "PSEntry.h"
 #import "PSViewController.h"
 #import "PSEntryManager.h"
@@ -26,8 +25,6 @@
 
 @implementation PSViewController
 
-
-@synthesize entries;
 
 # pragma mark - View Lifecycle Methods
 
@@ -80,7 +77,7 @@
 {
     PSEntryManager *clearedEntries = [[PSEntryManager alloc] initWithPath:[self.documentsDirectory path]];
     PSViewController *viewController = [[PSViewController alloc] init];
-    viewController.entries = clearedEntries;
+    viewController.entryManager = clearedEntries;
     
     NSMutableArray *stackViewControllers = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
     [stackViewControllers removeLastObject];
@@ -97,18 +94,24 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    for (NSUInteger i = 0; i < [self.entries numEntries]; i++) {
-        PSEntry *entry = [self.entries entryAtIndex:i];
+    BOOL isKeyInDocuments = [PSPasswordManager isKeysAtPath:self.entryManager.path];
+    if (!isKeyInDocuments) {
+        [self.entryManager.entries removeAllObjects];
+        [self showAlertWithMessage:@"Add an asc key with fileshare" alertTitle:@"No keys"];
+    }
+    
+    for (NSUInteger i = 0; i < self.entryManager.entries.count; i++) {
+        PSEntry *entry = [self.entryManager.entries objectAtIndex:i];
         
-        BOOL isKey = !entry.is_dir && ([entry.name hasSuffix:@".asc"] || [entry.name hasSuffix:@".gpg"]);
-        BOOL isDirectoryWithKey = entry.is_dir && [PSPasswordManager isPasswordInAllSubDirectories:entry.path];
+        BOOL isEntryKey = !entry.isDirectory && ([entry.name hasSuffix:@".asc"] || [entry.name hasSuffix:@".gpg"]);
+        BOOL isEntryDirectoryWithKey = entry.isDirectory && [PSPasswordManager isPasswordInAllSubDirectories:entry.path];
         
-        if (!isKey && !isDirectoryWithKey) {
-            [self.entries removeEntryAtIndex:i];
+        if (!isEntryKey && !isEntryDirectoryWithKey) {
+            [self.entryManager.entries removeObjectAtIndex:i];
         }
     }
     
-    return [self.entries numEntries];
+    return self.entryManager.entries.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -119,16 +122,16 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    PSEntry *entry = [self.entries entryAtIndex:(unsigned int)indexPath.row];
+    PSEntry *entry = [self.entryManager.entries objectAtIndex:indexPath.row];
 
-    BOOL isKey = !entry.is_dir && ([entry.name hasSuffix:@".asc"]);
+    BOOL isKey = !entry.isDirectory && ([entry.name hasSuffix:@".asc"]);
     if (isKey) {
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.userInteractionEnabled = false;
     }
     
     cell.textLabel.text = entry.name;
-    if (entry.is_dir)
+    if (entry.isDirectory)
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     else
         cell.accessoryType = UITableViewCellAccessoryNone;
@@ -136,23 +139,25 @@
     return cell;
 }
 
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
-{
-    NSMutableArray *firstLetters = [[NSMutableArray alloc] init];
-    [firstLetters addObject:UITableViewIndexSearch];
-    for (int i = 0; i < [self.entries numEntries]; i++) {
-        NSString *letterString = [[[self.entries entryAtIndex:i].name substringToIndex:1] uppercaseString];
-        if (![firstLetters containsObject:letterString]) {
-            [firstLetters addObject:letterString];
-        }
-    }
-    return firstLetters;
-}
+//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+//{
+//    NSMutableArray *firstLetters = [[NSMutableArray alloc] init];
+//    [firstLetters addObject:UITableViewIndexSearch];
+//    for (int i = 0; i < self.entryManager.entries.count; i++) {
+//        PSEntry *entry = [self.entryManager.entries objectAtIndex:i];
+//        NSString *letterString = [[entry.name substringToIndex:1] uppercaseString];
+//        if (![firstLetters containsObject:letterString]) {
+//            [firstLetters addObject:letterString];
+//        }
+//    }
+//    return firstLetters;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
 {
-    for (int i = 0; i < [self.entries numEntries]; i++) {
-        NSString *letterString = [[[self.entries entryAtIndex:i].name substringToIndex:1] uppercaseString];
+    for (int i = 0; i < self.entryManager.entries.count; i++) {
+        PSEntry *entry = [self.entryManager.entries objectAtIndex:i];
+        NSString *letterString = [[entry.name substringToIndex:1] uppercaseString];
         if ([letterString isEqualToString:title]) {
             [tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
             break;
@@ -165,12 +170,12 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    PSEntry *entry = [self.entries entryAtIndex:(unsigned int)indexPath.row];
+    PSEntry *entry = [self.entryManager.entries objectAtIndex:indexPath.row];
     
-    if (entry.is_dir) {
+    if (entry.isDirectory) {
         // push subdir view onto stack
         PSViewController *subviewController = [[PSViewController alloc] init];
-        subviewController.entries = [[PSEntryManager alloc] initWithPath:entry.path];
+        subviewController.entryManager = [[PSEntryManager alloc] initWithPath:entry.path];
         subviewController.title = entry.name;
         [[self navigationController] pushViewController:subviewController animated:YES];
     } else {
