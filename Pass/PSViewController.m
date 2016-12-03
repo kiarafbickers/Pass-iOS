@@ -180,5 +180,21 @@
     }
 }
 
+#pragma - Alert Methods
+
+- (void)showAlertWithMessage:(NSString *)message alertTitle:(NSString *)title
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okayAction = [UIAlertAction actionWithTitle:@"Okay"
+                                                         style:UIAlertActionStyleDefault
+                                                       handler:^(UIAlertAction * action) {
+                                                           
+                                                       }];
+    [alert addAction:okayAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
 @end
 

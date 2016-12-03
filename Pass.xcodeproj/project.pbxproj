@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9ED8D05F57B6F1EA69566B61 /* libPods-AddZip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05A412120A50DEB6AE5FFFB /* libPods-AddZip.a */; };
 		A08304959EE6644791641AB9 /* libPods-Pass.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EF09DCD882E6ABE1FB3A0B /* libPods-Pass.a */; };
 		E90278EC1DD5586700D73381 /* passwordstoreApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = E90278E31DD5586700D73381 /* passwordstoreApplication.mm */; };
 		E90278ED1DD5586700D73381 /* PSEntryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E90278E51DD5586700D73381 /* PSEntryManager.m */; };
 		E90278EE1DD5586700D73381 /* PSEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E90278E71DD5586700D73381 /* PSEntry.m */; };
 		E90278EF1DD5586700D73381 /* PSEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90278E91DD5586700D73381 /* PSEntryViewController.m */; };
 		E90278F01DD5586700D73381 /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90278EB1DD5586700D73381 /* PSViewController.m */; };
-		E9405EEA1DDE6263003A60F0 /* PSPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */; };
-		E9405EED1DDE6313003A60F0 /* NSFileManager+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = E9405EEC1DDE6313003A60F0 /* NSFileManager+PS.m */; };
 		E99B2E431DDC758100B3AE4C /* PSPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = E99B2E421DDC758100B3AE4C /* PSPrefs.m */; };
-		E99B2E441DDC758100B3AE4C /* PSPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = E99B2E421DDC758100B3AE4C /* PSPrefs.m */; };
 		E9E05EA21DF24E97002ED733 /* NSFileManager+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = E9405EEC1DDE6313003A60F0 /* NSFileManager+PS.m */; };
 		E9E05EA31DF24E9F002ED733 /* PSPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */; };
 		E9F650351DD540B900264433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F650341DD540B900264433 /* main.m */; };
@@ -25,20 +21,7 @@
 		E9F6503E1DD540B900264433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F6503C1DD540B900264433 /* Main.storyboard */; };
 		E9F650401DD540B900264433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F6503F1DD540B900264433 /* Assets.xcassets */; };
 		E9F650431DD540B900264433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F650411DD540B900264433 /* LaunchScreen.storyboard */; };
-		E9F650521DD540E000264433 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F650511DD540E000264433 /* ActionViewController.m */; };
-		E9F650551DD540E000264433 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F650531DD540E000264433 /* MainInterface.storyboard */; };
-		E9F650591DD540E000264433 /* AddZip.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E9F6504E1DD540E000264433 /* AddZip.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E9F650571DD540E000264433 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9F650281DD540B900264433 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9F6504D1DD540E000264433;
-			remoteInfo = AddZip;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E9F6505D1DD540E000264433 /* Embed App Extensions */ = {
@@ -47,7 +30,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E9F650591DD540E000264433 /* AddZip.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,7 +52,6 @@
 		E90278EA1DD5586700D73381 /* PSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
 		E90278EB1DD5586700D73381 /* PSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
 		E90278F41DD6A2D100D73381 /* Pass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pass.entitlements; sourceTree = "<group>"; };
-		E935BDBF1DDAAEB5003B0096 /* AddZip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AddZip.entitlements; sourceTree = "<group>"; };
 		E9405EE81DDE6262003A60F0 /* PSPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSPasswordManager.h; path = ../AddZip/PSPasswordManager.h; sourceTree = "<group>"; };
 		E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSPasswordManager.m; path = ../AddZip/PSPasswordManager.m; sourceTree = "<group>"; };
 		E9405EEB1DDE6313003A60F0 /* NSFileManager+PS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+PS.h"; path = "../AddZip/NSFileManager+PS.h"; sourceTree = "<group>"; };
@@ -85,11 +66,6 @@
 		E9F6503F1DD540B900264433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9F650421DD540B900264433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9F650441DD540B900264433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9F6504E1DD540E000264433 /* AddZip.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AddZip.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9F650501DD540E000264433 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
-		E9F650511DD540E000264433 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
-		E9F650541DD540E000264433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		E9F650561DD540E000264433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47B3F17B1D432B31B06DEFF /* Pods-AddZip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddZip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddZip/Pods-AddZip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,14 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A08304959EE6644791641AB9 /* libPods-Pass.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9F6504B1DD540E000264433 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9ED8D05F57B6F1EA69566B61 /* libPods-AddZip.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,11 +92,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E9E05EA41DF27606002ED733 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E90278E61DD5586700D73381 /* PSEntry.h */,
+				E90278E71DD5586700D73381 /* PSEntry.m */,
+				E90278E41DD5586700D73381 /* PSEntryManager.h */,
+				E90278E51DD5586700D73381 /* PSEntryManager.m */,
+				E9405EE81DDE6262003A60F0 /* PSPasswordManager.h */,
+				E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */,
+				E9405EEB1DDE6313003A60F0 /* NSFileManager+PS.h */,
+				E9405EEC1DDE6313003A60F0 /* NSFileManager+PS.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E9E05EA51DF27616002ED733 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E90278EA1DD5586700D73381 /* PSViewController.h */,
+				E90278EB1DD5586700D73381 /* PSViewController.m */,
+				E90278E81DD5586700D73381 /* PSEntryViewController.h */,
+				E90278E91DD5586700D73381 /* PSEntryViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		E9F650271DD540B900264433 = {
 			isa = PBXGroup;
 			children = (
 				E9F650321DD540B900264433 /* Pass */,
-				E9F6504F1DD540E000264433 /* AddZip */,
 				E9F650311DD540B900264433 /* Products */,
 				BC68415B2C2D982C781070F6 /* Pods */,
 				FCD39E6F3762CEF29D33CEA7 /* Frameworks */,
@@ -139,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				E9F650301DD540B900264433 /* Pass.app */,
-				E9F6504E1DD540E000264433 /* AddZip.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,18 +145,8 @@
 				E9F650361DD540B900264433 /* AppDelegate.h */,
 				E9F650371DD540B900264433 /* AppDelegate.m */,
 				E90278E31DD5586700D73381 /* passwordstoreApplication.mm */,
-				E90278E61DD5586700D73381 /* PSEntry.h */,
-				E90278E71DD5586700D73381 /* PSEntry.m */,
-				E90278EA1DD5586700D73381 /* PSViewController.h */,
-				E90278EB1DD5586700D73381 /* PSViewController.m */,
-				E90278E41DD5586700D73381 /* PSEntryManager.h */,
-				E90278E51DD5586700D73381 /* PSEntryManager.m */,
-				E90278E81DD5586700D73381 /* PSEntryViewController.h */,
-				E90278E91DD5586700D73381 /* PSEntryViewController.m */,
-				E9405EE81DDE6262003A60F0 /* PSPasswordManager.h */,
-				E9405EE91DDE6262003A60F0 /* PSPasswordManager.m */,
-				E9405EEB1DDE6313003A60F0 /* NSFileManager+PS.h */,
-				E9405EEC1DDE6313003A60F0 /* NSFileManager+PS.m */,
+				E9E05EA41DF27606002ED733 /* Model */,
+				E9E05EA51DF27616002ED733 /* ViewController */,
 				E9F6503C1DD540B900264433 /* Main.storyboard */,
 				E9F6503F1DD540B900264433 /* Assets.xcassets */,
 				E9F650411DD540B900264433 /* LaunchScreen.storyboard */,
@@ -180,18 +162,6 @@
 				E9F650341DD540B900264433 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E9F6504F1DD540E000264433 /* AddZip */ = {
-			isa = PBXGroup;
-			children = (
-				E935BDBF1DDAAEB5003B0096 /* AddZip.entitlements */,
-				E9F650501DD540E000264433 /* ActionViewController.h */,
-				E9F650511DD540E000264433 /* ActionViewController.m */,
-				E9F650531DD540E000264433 /* MainInterface.storyboard */,
-				E9F650561DD540E000264433 /* Info.plist */,
-			);
-			path = AddZip;
 			sourceTree = "<group>";
 		};
 		FCD39E6F3762CEF29D33CEA7 /* Frameworks */ = {
@@ -221,31 +191,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				E9F650581DD540E000264433 /* PBXTargetDependency */,
 			);
 			name = Pass;
 			productName = Pass;
 			productReference = E9F650301DD540B900264433 /* Pass.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E9F6504D1DD540E000264433 /* AddZip */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9F6505C1DD540E000264433 /* Build configuration list for PBXNativeTarget "AddZip" */;
-			buildPhases = (
-				7337F45DF2E7B4B83DA4D47D /* [CP] Check Pods Manifest.lock */,
-				E9F6504A1DD540E000264433 /* Sources */,
-				E9F6504B1DD540E000264433 /* Frameworks */,
-				E9F6504C1DD540E000264433 /* Resources */,
-				F27F0F6FCA5E50D184097745 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AddZip;
-			productName = AddZip;
-			productReference = E9F6504E1DD540E000264433 /* AddZip.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -257,16 +207,6 @@
 				ORGANIZATIONNAME = "Kiara Robles";
 				TargetAttributes = {
 					E9F6502F1DD540B900264433 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = K5325KADLR;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					E9F6504D1DD540E000264433 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = K5325KADLR;
 						ProvisioningStyle = Automatic;
@@ -292,7 +232,6 @@
 			projectRoot = "";
 			targets = (
 				E9F6502F1DD540B900264433 /* Pass */,
-				E9F6504D1DD540E000264433 /* AddZip */,
 			);
 		};
 /* End PBXProject section */
@@ -305,14 +244,6 @@
 				E9F650431DD540B900264433 /* LaunchScreen.storyboard in Resources */,
 				E9F650401DD540B900264433 /* Assets.xcassets in Resources */,
 				E9F6503E1DD540B900264433 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9F6504C1DD540E000264433 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9F650551DD540E000264433 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,21 +280,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7337F45DF2E7B4B83DA4D47D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		E08C0AD6F8996492366B0FE7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,21 +293,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pass/Pods-Pass-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F27F0F6FCA5E50D184097745 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AddZip/Pods-AddZip-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -414,26 +315,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9F6504A1DD540E000264433 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9405EEA1DDE6263003A60F0 /* PSPasswordManager.m in Sources */,
-				E9F650521DD540E000264433 /* ActionViewController.m in Sources */,
-				E99B2E441DDC758100B3AE4C /* PSPrefs.m in Sources */,
-				E9405EED1DDE6313003A60F0 /* NSFileManager+PS.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E9F650581DD540E000264433 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E9F6504D1DD540E000264433 /* AddZip */;
-			targetProxy = E9F650571DD540E000264433 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E9F6503C1DD540B900264433 /* Main.storyboard */ = {
@@ -450,14 +332,6 @@
 				E9F650421DD540B900264433 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		E9F650531DD540E000264433 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E9F650541DD540E000264433 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -581,34 +455,6 @@
 			};
 			name = Release;
 		};
-		E9F6505A1DD540E000264433 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F47B3F17B1D432B31B06DEFF /* Pods-AddZip.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = AddZip/AddZip.entitlements;
-				DEVELOPMENT_TEAM = K5325KADLR;
-				INFOPLIST_FILE = AddZip/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.blockchainme.Pass.AddZip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E9F6505B1DD540E000264433 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B186F4E461902141159CCE85 /* Pods-AddZip.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = AddZip/AddZip.entitlements;
-				DEVELOPMENT_TEAM = K5325KADLR;
-				INFOPLIST_FILE = AddZip/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.blockchainme.Pass.AddZip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -626,15 +472,6 @@
 			buildConfigurations = (
 				E9F650481DD540B900264433 /* Debug */,
 				E9F650491DD540B900264433 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E9F6505C1DD540E000264433 /* Build configuration list for PBXNativeTarget "AddZip" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9F6505A1DD540E000264433 /* Debug */,
-				E9F6505B1DD540E000264433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
