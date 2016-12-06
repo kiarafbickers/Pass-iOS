@@ -16,5 +16,6 @@
 @property (nonatomic, strong) NSMutableArray *entries;
 
 - (instancetype)initWithPath:(NSString *)path;
++ (NSString *)passWithPassword:(NSString *)passphrase passwordOnly:(BOOL)passwordOnly;
 
 @end

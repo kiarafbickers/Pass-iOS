@@ -9,6 +9,7 @@
 #import <Valet/Valet.h>
 #import "PSEntry.h"
 #import "PSEntryViewController.h"
+#import "PSEntryManager.h"
 
 @interface PSEntryViewController()
 
@@ -124,7 +125,9 @@
     }
     
     if (keychain_password) {
-        password = [self.entry passWithPassword:keychain_password passwordOnly:passwordOnly];
+        password = [PSEntryManager passWithPassword:keychain_password passwordOnly:passwordOnly];
+        NSLog(@"password: %@", password);
+        NSLog(@"password: %@", password);
         if (password) {
             [self performPasswordAction:password entryTitle:self.entry.name copyToPasteboard:pasteboard showInAlert:showAlert];
             result = YES;

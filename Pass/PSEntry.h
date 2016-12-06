@@ -15,6 +15,4 @@
 @property (nonatomic,readonly) NSString *pass;
 @property (nonatomic,assign) BOOL isDirectory;
 
-- (NSString *)passWithPassword:(NSString *)passphrase passwordOnly:(BOOL)passwordOnly;
-
 @end

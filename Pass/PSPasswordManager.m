@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kiara Robles. All rights reserved.
 //
 
+#import <Valet/Valet.h>
 #import "PSPasswordManager.h"
 #import "NSFileManager+PS.h"
 
@@ -44,5 +45,42 @@
     return YES;
 }
 
++ (NSMutableArray *)keysAtPath:(NSString *)directory
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *fileList = [fileManager contentsOfDirectoryAtPath:directory error:nil];
+    NSMutableArray *keyList = [[NSMutableArray alloc] init];
+    
+    for(NSString *file in fileList) {
+        if([file hasSuffix:@".asc"] || [file hasSuffix:@".gpg"]) {
+            [keyList addObject:file];
+        }
+    }
+    
+    return keyList;
+}
+
++ (void)deleteKeysAtPath:(NSString *)directory
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSMutableArray *fileList = [[fileManager contentsOfDirectoryAtPath:directory error:nil] mutableCopy];
+    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+
+    for(NSString *filename in fileList) {
+        if([filename hasSuffix:@".asc"]) {
+            
+            NSString *filePath = [documentsPath stringByAppendingPathComponent:filename];
+            
+            NSError *error;
+            BOOL success = [fileManager removeItemAtPath:filePath error:&error];
+            if (success) {
+                NSLog(@"deleted file -:%@ ", filePath);
+            }
+            else {
+                NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
+            }
+        }
+    }
+}
 
 @end

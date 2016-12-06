@@ -12,5 +12,7 @@
 
 + (BOOL)isKeysAtPath:(NSString *)directory;
 + (BOOL)isPasswordInAllSubDirectories:(NSString *)directory;
++ (NSMutableArray *)keysAtPath:(NSString *)directory;
++ (void)deleteKeysAtPath:(NSString *)directory;
 
 @end

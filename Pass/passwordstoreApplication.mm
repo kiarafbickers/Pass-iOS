@@ -19,13 +19,9 @@
 
 @end
 
-
 @implementation passwordstoreApplication
 
 @synthesize window = _window;
-
-static NSString *groupIdentifier = @"group.com.blockchainme.Pass";
-static NSString *directoryLibCach = @"Library/Caches";
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
@@ -46,11 +42,6 @@ static NSString *directoryLibCach = @"Library/Caches";
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // TODO: Remove passphrase on app exit for now
-}
-
-+ (NSURL*)getSharedContainerURLPath
-{
-    return [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:groupIdentifier];
 }
 
 @end

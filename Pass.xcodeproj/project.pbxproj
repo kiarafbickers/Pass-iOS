@@ -16,6 +16,8 @@
 		E9E05EA81DF2896C002ED733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E05EA61DF2896C002ED733 /* Main.storyboard */; };
 		E9E05EAD1DF289A8002ED733 /* NSFileManager+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E05EAA1DF289A8002ED733 /* NSFileManager+PS.m */; };
 		E9E05EAE1DF289A8002ED733 /* PSPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E05EAC1DF289A8002ED733 /* PSPasswordManager.m */; };
+		E9E05EB41DF294BE002ED733 /* FDKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E05EB31DF294BE002ED733 /* FDKeychain.m */; };
+		E9E05EB71DF60016002ED733 /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E05EB61DF60016002ED733 /* FXKeychain.m */; };
 		E9F650351DD540B900264433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F650341DD540B900264433 /* main.m */; };
 		E9F650381DD540B900264433 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F650371DD540B900264433 /* AppDelegate.m */; };
 		E9F650401DD540B900264433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F6503F1DD540B900264433 /* Assets.xcassets */; };
@@ -56,6 +58,10 @@
 		E9E05EAA1DF289A8002ED733 /* NSFileManager+PS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+PS.m"; sourceTree = "<group>"; };
 		E9E05EAB1DF289A8002ED733 /* PSPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPasswordManager.h; sourceTree = "<group>"; };
 		E9E05EAC1DF289A8002ED733 /* PSPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPasswordManager.m; sourceTree = "<group>"; };
+		E9E05EB21DF294BE002ED733 /* FDKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FDKeychain.h; path = FDKeychain/FDKeychain.h; sourceTree = "<group>"; };
+		E9E05EB31DF294BE002ED733 /* FDKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FDKeychain.m; path = FDKeychain/FDKeychain.m; sourceTree = "<group>"; };
+		E9E05EB51DF60016002ED733 /* FXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXKeychain.h; path = FXKeychain/FXKeychain.h; sourceTree = "<group>"; };
+		E9E05EB61DF60016002ED733 /* FXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXKeychain.m; path = FXKeychain/FXKeychain.m; sourceTree = "<group>"; };
 		E9F650301DD540B900264433 /* Pass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F650341DD540B900264433 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9F650361DD540B900264433 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +148,10 @@
 				E90278E31DD5586700D73381 /* passwordstoreApplication.mm */,
 				E9E05EA41DF27606002ED733 /* Model */,
 				E9E05EA51DF27616002ED733 /* ViewController */,
+				E9E05EB21DF294BE002ED733 /* FDKeychain.h */,
+				E9E05EB31DF294BE002ED733 /* FDKeychain.m */,
+				E9E05EB51DF60016002ED733 /* FXKeychain.h */,
+				E9E05EB61DF60016002ED733 /* FXKeychain.m */,
 				E9F6503F1DD540B900264433 /* Assets.xcassets */,
 				E9F650411DD540B900264433 /* LaunchScreen.storyboard */,
 				E9E05EA61DF2896C002ED733 /* Main.storyboard */,
@@ -304,7 +314,9 @@
 				E90278EF1DD5586700D73381 /* PSEntryViewController.m in Sources */,
 				E90278EC1DD5586700D73381 /* passwordstoreApplication.mm in Sources */,
 				E90278ED1DD5586700D73381 /* PSEntryManager.m in Sources */,
+				E9E05EB41DF294BE002ED733 /* FDKeychain.m in Sources */,
 				E9E05EAD1DF289A8002ED733 /* NSFileManager+PS.m in Sources */,
+				E9E05EB71DF60016002ED733 /* FXKeychain.m in Sources */,
 				E90278F01DD5586700D73381 /* PSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

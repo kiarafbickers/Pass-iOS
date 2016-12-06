@@ -15,11 +15,13 @@
 #import "PSEntryViewController.h"
 #import "PSPasswordManager.h"
 #import "NSFileManager+PS.h"
+#import "FXKeychain.h"
 
 @interface PSViewController ()
 
 @property NSURL *documentsDirectory;
 @property NSURL *documentsURL;
+@property (nonatomic, retain) VALSecureEnclaveValet *keychain;
 
 @end
 
@@ -33,7 +35,7 @@
 {
     [super viewDidLoad];
     if (self.title == nil) {
-        self.title = NSLocalizedString(@"Passwords", @"Password title");
+        self.title = NSLocalizedString(@"Pass Passwords", @"Password title");
     }
 
     NSArray *paths = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
@@ -44,6 +46,49 @@
                                     target:self
                                     action:@selector(clearKeychain)];
     self.navigationItem.rightBarButtonItem = clearButton;
+    
+    self.keychain = [[VALSecureEnclaveValet alloc] initWithIdentifier:@"Pass" accessControl:VALAccessControlUserPresence];
+    
+    if ([self.title isEqualToString:@"Pass Passwords"]){
+        [self checkKeyLocally];
+    }
+}
+
+# pragma mark - Helper Methods
+
+- (void)checkKeyLocally
+{
+    BOOL isKeyInDocuments = [PSPasswordManager isKeysAtPath:self.entryManager.path];
+    PSEntry *keyInKeychain = [[FXKeychain defaultKeychain] objectForKey:@"Pass"];
+    
+    if (isKeyInDocuments) {
+        NSMutableArray *keys = [PSPasswordManager keysAtPath:self.entryManager.path];
+
+        if (keys.count >= 2) {
+            NSLog(@"Too many keys in file system. Please select one to use, and move or delete the others.");
+        }
+    }
+
+    if (keyInKeychain != nil && isKeyInDocuments) {
+        [self showAlertForKeyOverride];
+    } else if (keyInKeychain == nil && isKeyInDocuments) {
+        [self saveKey];
+    }
+}
+
+- (void)saveKey {
+    
+    NSMutableArray *keys = [PSPasswordManager keysAtPath:self.entryManager.path];
+    PSEntry *entry = [keys objectAtIndex:0];
+    BOOL isKeySaved = [[FXKeychain defaultKeychain] setObject:entry forKey:@"Pass"];
+    
+    if (isKeySaved) {
+        PSEntry *savedKey = [[FXKeychain defaultKeychain] objectForKey:@"Pass"];
+        NSLog(@"savedKey: %@", savedKey);
+        
+        [PSPasswordManager deleteKeysAtPath:self.entryManager.path];
+        [self reloadDataViewController];
+    }
 }
 
 # pragma mark - Action Methods
@@ -51,8 +96,7 @@
 - (void)clearKeychain
 {
     // TODO Refactor into shared function
-    VALSecureEnclaveValet *keychain = [[VALSecureEnclaveValet alloc] initWithIdentifier:@"Pass" accessControl:VALAccessControlUserPresence];
-    [keychain removeObjectForKey:@"gpg-passphrase-touchid"];
+    [self.keychain removeObjectForKey:@"gpg-passphrase-touchid"];
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Clear Keychain"
                                                                    message:@"Proceed to remove all passwords from the keychain" preferredStyle:UIAlertControllerStyleAlert];
@@ -94,8 +138,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    BOOL isKeyInDocuments = [PSPasswordManager isKeysAtPath:self.entryManager.path];
-    if (!isKeyInDocuments) {
+    PSEntry *savedKey = [[FXKeychain defaultKeychain] objectForKey:@"Pass"];
+
+    if (savedKey == nil) {
         [self.entryManager.entries removeAllObjects];
         [self showAlertWithMessage:@"Add an asc key with fileshare" alertTitle:@"No keys"];
     }
@@ -199,6 +244,27 @@
                                                        }];
     [alert addAction:okayAction];
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)showAlertForKeyOverride
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"New Keys"
+                                                                   message:@"You currently have a .asc key saved to your keychain, and new keys were detected in filesystem. Do you want to override them?"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *yesAction = [UIAlertAction actionWithTitle:@"Yes"
+                                                         style:UIAlertActionStyleDefault
+                                                       handler:^(UIAlertAction * action) {
+                                                           [self saveKey];
+                                                       }];
+    UIAlertAction *noAction = [UIAlertAction actionWithTitle:@"No"
+                                                         style:UIAlertActionStyleCancel
+                                                       handler:^(UIAlertAction * action) {
+                                                           
+                                                       }];
+    [alert addAction:yesAction];
+    [alert addAction:noAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
 }
 
 @end
