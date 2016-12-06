@@ -170,9 +170,6 @@
     BOOL isKeySaved = [[FXKeychain defaultKeychain] setObject:entry forKey:@"Pass"];
     
     if (isKeySaved) {
-        PSEntry *savedKey = [[FXKeychain defaultKeychain] objectForKey:@"Pass"];
-        NSLog(@"savedKey: %@", savedKey);
-        
         [self reloadDataViewController];
     }
 }

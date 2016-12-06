@@ -37,7 +37,7 @@
     while (file = [enumerator nextObject]) {
         res = [[NSFileManager defaultManager] removeItemAtPath:[directory stringByAppendingPathComponent:file] error:&err];
         if (!res && err) {
-            NSLog(@"Oops: %@", err);
+            // NSLog(@"Oops: %@", err);
         }
     }
 }

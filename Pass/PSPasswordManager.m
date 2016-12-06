@@ -74,10 +74,10 @@
             NSError *error;
             BOOL success = [fileManager removeItemAtPath:filePath error:&error];
             if (success) {
-                NSLog(@"deleted file -:%@ ", filePath);
+                // NSLog(@"deleted file -:%@ ", filePath);
             }
             else {
-                NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
+                // NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
             }
         }
     }
