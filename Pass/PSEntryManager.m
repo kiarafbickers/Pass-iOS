@@ -10,14 +10,13 @@
 #import <dirent.h>
 #import "PSEntry.h"
 #import "PSEntryManager.h"
-#import "PSPasswordManager.h"
-#import "FXKeychain.h"
 
 @interface PSEntryManager ()
 
 - (void)readEntries:(NSString *)path;
 
 @end
+
 
 @implementation PSEntryManager
 
@@ -54,8 +53,6 @@
         
         [list addObject:entry];
     }
-    
-    //BOOL isKeyInDocuments = [PSPasswordManager isKeysAtPath:path];
     
     self.entries = [NSMutableArray arrayWithArray:list];
 }

@@ -25,11 +25,10 @@
 
 @end
 
+
 @implementation PSViewController
 
-
 # pragma mark - View Lifecycle Methods
-
 
 - (void)viewDidLoad
 {
@@ -54,79 +53,6 @@
     }
 }
 
-# pragma mark - Helper Methods
-
-- (void)checkKeyLocally
-{
-    BOOL isKeyInDocuments = [PSPasswordManager isKeysAtPath:self.entryManager.path];
-    PSEntry *keyInKeychain = [[FXKeychain defaultKeychain] objectForKey:@"Pass"];
-    
-    if (isKeyInDocuments) {
-        NSMutableArray *keys = [PSPasswordManager keysAtPath:self.entryManager.path];
-
-        if (keys.count >= 2) {
-            NSLog(@"Too many keys in file system. Please select one to use, and move or delete the others.");
-        }
-    }
-
-    if (keyInKeychain == nil && isKeyInDocuments) {
-        [self saveKey];
-    }
-}
-
-- (void)saveKey {
-    
-    NSMutableArray *keys = [PSPasswordManager keysAtPath:self.entryManager.path];
-    PSEntry *entry = [keys objectAtIndex:0];
-    BOOL isKeySaved = [[FXKeychain defaultKeychain] setObject:entry forKey:@"Pass"];
-    
-    if (isKeySaved) {
-        PSEntry *savedKey = [[FXKeychain defaultKeychain] objectForKey:@"Pass"];
-        NSLog(@"savedKey: %@", savedKey);
-        
-        [self reloadDataViewController];
-    }
-}
-
-# pragma mark - Action Methods
-
-- (void)clearKeychain
-{
-    // TODO Refactor into shared function
-    [PSPasswordManager deleteKeysAtPath:self.entryManager.path];
-    [self.keychain removeObjectForKey:@"gpg-passphrase-touchid"];
-    
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Clear Keychain"
-                                                                   message:@"Proceed to remove all passwords from the keychain" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel"
-                                                         style:UIAlertActionStyleCancel
-                                                       handler:^(UIAlertAction *action) {
-    }];
-    [alert addAction:cancelAction];
-    UIAlertAction *okayAction = [UIAlertAction actionWithTitle:@"Yes"
-                                                        style:UIAlertActionStyleDefault
-                                                      handler:^(UIAlertAction *action) {
-                                                          
-        [[NSFileManager defaultManager] deleteAllFilesinDirectory:[self.documentsDirectory path]];
-        [self reloadDataViewController];
-                                                          
-    }];
-    [alert addAction:okayAction];
-    [self presentViewController:alert animated:YES completion:nil];
-}
-
-- (void)reloadDataViewController
-{
-    PSEntryManager *clearedEntries = [[PSEntryManager alloc] initWithPath:[self.documentsDirectory path]];
-    PSViewController *viewController = [[PSViewController alloc] init];
-    viewController.entryManager = clearedEntries;
-    
-    NSMutableArray *stackViewControllers = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
-    [stackViewControllers removeLastObject];
-    [stackViewControllers addObject:viewController];
-    [self.navigationController setViewControllers:stackViewControllers animated:NO];
-}
-
 # pragma mark - Table View Methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -140,7 +66,17 @@
 
     if (savedKey == nil) {
         [self.entryManager.entries removeAllObjects];
-        [self showAlertWithMessage:@"Add an asc key with fileshare" alertTitle:@"No keys"];
+        [self showAlertWithMessage:@"Add an asc key with fileshare." alertTitle:@"No keys"];
+    }
+    
+    BOOL isKeyInDocuments = [PSPasswordManager isKeysAtPath:self.entryManager.path];
+    if (isKeyInDocuments) {
+        
+        NSMutableArray *keys = [PSPasswordManager keysAtPath:self.entryManager.path];
+        if (keys.count >= 2) {
+            [self.entryManager.entries removeAllObjects];
+            [self showAlertWithMessage:@"Too many keys in file system. Please select one to use, and move or delete the others." alertTitle:@"Multiple keys"];
+        }
     }
     
     for (NSUInteger i = 0; i < self.entryManager.entries.count; i++) {
@@ -198,7 +134,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
+
     PSEntry *entry = [self.entryManager.entries objectAtIndex:indexPath.row];
     
     if (entry.isDirectory) {
@@ -211,6 +147,33 @@
         PSEntryViewController *detailController = [[PSEntryViewController alloc] init];
         detailController.entry = entry;
         [[self navigationController] pushViewController:detailController animated:YES];
+    }
+}
+
+
+# pragma mark - Helper Methods
+
+- (void)checkKeyLocally
+{
+    BOOL isKeyInDocuments = [PSPasswordManager isKeysAtPath:self.entryManager.path];
+    PSEntry *keyInKeychain = [[FXKeychain defaultKeychain] objectForKey:@"Pass"];
+    
+    if (keyInKeychain == nil && isKeyInDocuments) {
+        [self saveKey];
+    }
+}
+
+- (void)saveKey
+{
+    NSMutableArray *keys = [PSPasswordManager keysAtPath:self.entryManager.path];
+    PSEntry *entry = [keys objectAtIndex:0];
+    BOOL isKeySaved = [[FXKeychain defaultKeychain] setObject:entry forKey:@"Pass"];
+    
+    if (isKeySaved) {
+        PSEntry *savedKey = [[FXKeychain defaultKeychain] objectForKey:@"Pass"];
+        NSLog(@"savedKey: %@", savedKey);
+        
+        [self reloadDataViewController];
     }
 }
 
@@ -230,26 +193,43 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (void)showAlertForKeyOverride
+# pragma mark - Action Methods
+
+- (void)clearKeychain
 {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"New Keys"
-                                                                   message:@"You currently have a .asc key saved to your keychain, and new keys were detected in filesystem. Do you want to override them?"
-                                                            preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *yesAction = [UIAlertAction actionWithTitle:@"Yes"
+    // TODO Refactor into shared function
+    [PSPasswordManager deleteKeysAtPath:self.entryManager.path];
+    [self.keychain removeObjectForKey:@"gpg-passphrase-touchid"];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Clear Keychain"
+                                                                   message:@"Proceed to remove all passwords from the keychain" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel"
+                                                           style:UIAlertActionStyleCancel
+                                                         handler:^(UIAlertAction *action) {
+                                                         }];
+    [alert addAction:cancelAction];
+    UIAlertAction *okayAction = [UIAlertAction actionWithTitle:@"Yes"
                                                          style:UIAlertActionStyleDefault
-                                                       handler:^(UIAlertAction * action) {
-                                                           [self saveKey];
-                                                       }];
-    UIAlertAction *noAction = [UIAlertAction actionWithTitle:@"No"
-                                                         style:UIAlertActionStyleCancel
-                                                       handler:^(UIAlertAction * action) {
+                                                       handler:^(UIAlertAction *action) {
+                                                           
+                                                           [[NSFileManager defaultManager] deleteAllFilesinDirectory:[self.documentsDirectory path]];
+                                                           [self reloadDataViewController];
                                                            
                                                        }];
-    [alert addAction:yesAction];
-    [alert addAction:noAction];
+    [alert addAction:okayAction];
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)reloadDataViewController
+{
+    PSEntryManager *clearedEntries = [[PSEntryManager alloc] initWithPath:[self.documentsDirectory path]];
+    PSViewController *viewController = [[PSViewController alloc] init];
+    viewController.entryManager = clearedEntries;
     
+    NSMutableArray *stackViewControllers = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
+    [stackViewControllers removeLastObject];
+    [stackViewControllers addObject:viewController];
+    [self.navigationController setViewControllers:stackViewControllers animated:NO];
 }
 
 @end
-
