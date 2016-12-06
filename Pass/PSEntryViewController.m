@@ -125,9 +125,7 @@
     }
     
     if (keychain_password) {
-        password = [PSEntryManager passWithPassword:keychain_password passwordOnly:passwordOnly];
-        NSLog(@"password: %@", password);
-        NSLog(@"password: %@", password);
+        password = [self.entry passWithPassword:keychain_password passwordOnly:passwordOnly];
         if (password) {
             [self performPasswordAction:password entryTitle:self.entry.name copyToPasteboard:pasteboard showInAlert:showAlert];
             result = YES;

@@ -69,9 +69,11 @@
         }
     }
 
-    if (keyInKeychain != nil && isKeyInDocuments) {
-        [self showAlertForKeyOverride];
-    } else if (keyInKeychain == nil && isKeyInDocuments) {
+//    if (keyInKeychain != nil && isKeyInDocuments) {
+//        [self showAlertForKeyOverride];
+//    } else
+    
+    if (keyInKeychain == nil && isKeyInDocuments) {
         [self saveKey];
     }
 }
@@ -86,7 +88,7 @@
         PSEntry *savedKey = [[FXKeychain defaultKeychain] objectForKey:@"Pass"];
         NSLog(@"savedKey: %@", savedKey);
         
-        [PSPasswordManager deleteKeysAtPath:self.entryManager.path];
+//        [PSPasswordManager deleteKeysAtPath:self.entryManager.path];
         [self reloadDataViewController];
     }
 }
@@ -96,6 +98,7 @@
 - (void)clearKeychain
 {
     // TODO Refactor into shared function
+    [PSPasswordManager deleteKeysAtPath:self.entryManager.path];
     [self.keychain removeObjectForKey:@"gpg-passphrase-touchid"];
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Clear Keychain"
@@ -148,7 +151,7 @@
     for (NSUInteger i = 0; i < self.entryManager.entries.count; i++) {
         PSEntry *entry = [self.entryManager.entries objectAtIndex:i];
         
-        BOOL isEntryKey = !entry.isDirectory && ([entry.name hasSuffix:@".asc"] || [entry.name hasSuffix:@".gpg"]);
+        BOOL isEntryKey = !entry.isDirectory && [entry.name hasSuffix:@".gpg"];
         BOOL isEntryDirectoryWithKey = entry.isDirectory && [PSPasswordManager isPasswordInAllSubDirectories:entry.path];
         
         if (!isEntryKey && !isEntryDirectoryWithKey) {
@@ -183,20 +186,6 @@
     
     return cell;
 }
-
-//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
-//{
-//    NSMutableArray *firstLetters = [[NSMutableArray alloc] init];
-//    [firstLetters addObject:UITableViewIndexSearch];
-//    for (int i = 0; i < self.entryManager.entries.count; i++) {
-//        PSEntry *entry = [self.entryManager.entries objectAtIndex:i];
-//        NSString *letterString = [[entry.name substringToIndex:1] uppercaseString];
-//        if (![firstLetters containsObject:letterString]) {
-//            [firstLetters addObject:letterString];
-//        }
-//    }
-//    return firstLetters;
-//}
 
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
 {
