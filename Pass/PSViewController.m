@@ -69,10 +69,6 @@
         }
     }
 
-//    if (keyInKeychain != nil && isKeyInDocuments) {
-//        [self showAlertForKeyOverride];
-//    } else
-    
     if (keyInKeychain == nil && isKeyInDocuments) {
         [self saveKey];
     }
@@ -88,7 +84,6 @@
         PSEntry *savedKey = [[FXKeychain defaultKeychain] objectForKey:@"Pass"];
         NSLog(@"savedKey: %@", savedKey);
         
-//        [PSPasswordManager deleteKeysAtPath:self.entryManager.path];
         [self reloadDataViewController];
     }
 }

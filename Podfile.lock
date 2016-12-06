@@ -3,19 +3,16 @@ PODS:
     - OpenSSL-Universal
   - OpenSSL-Universal (1.0.1.20)
   - Valet (2.2.3)
-  - WPZipArchive (0.0.1)
 
 DEPENDENCIES:
   - ObjectivePGP
   - Valet
-  - WPZipArchive
 
 SPEC CHECKSUMS:
   ObjectivePGP: d80f77471221fc543461fb329b769fac7bc7ca84
   OpenSSL-Universal: 71f2c4b2ae758e2218090f905e95ca0ac5c01be7
   Valet: c78c7d2e4b2d104d29b9bc62c8f9aa38fbc901eb
-  WPZipArchive: 3a31c553e4c0d6225ae6661b20d189366d19c79f
 
-PODFILE CHECKSUM: fbb10ef32fd24641af47e198696685c688ce75e0
+PODFILE CHECKSUM: bc4de80dcc66f422586a78d13cec2c0f15e8f061
 
 COCOAPODS: 1.1.1

@@ -7,110 +7,94 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0046A787740A58937BFF4C9C77EFC50D /* PGPPublicKeyRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CA0EF6CC3E00A9544A47032FA9BEE9 /* PGPPublicKeyRSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		005C746C2113E46DD006C65BF0D52F59 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D2D5FBC10502D72807BF7457926A4D /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		03101112916EE6CD499EFF511A737C42 /* PGPUserIDPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3552A5050DD1B351E61466086B9A3 /* PGPUserIDPacket.m */; };
-		03E55769390BF8FA09243287C6C6477F /* PGPKey.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7E6D94022E2659EE4EED2BE75C89D5 /* PGPKey.m */; };
-		04AC1D3DDC61277546E01D57C49E8BB0 /* PGPPublicSubKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = B06A17C81EA1DF41A62B9AB4FB1C2F85 /* PGPPublicSubKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0592480F2A9B175B970757B5F940168B /* PGPKeyID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BC7262618B71106619580A65BB6107A /* PGPKeyID.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A60920F2AB015673FF464D66642C3C6 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3A1A09889F3EFB3AA68D796C45B521 /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		132DBF5F890A754CD1DA0CE01F426E37 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BA9E790E16B4647E8CBB186096D4A4 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		153238C36A9024BB856DE6F198503A8F /* PGPMPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B04D6FD17D35DAF203BC8BA7C0655 /* PGPMPI.m */; };
-		173C7D4F4AA380B8D757A2E587A7650B /* VALSynchronizableValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC559EC27DC5161AB9F76FB9EDEBE /* VALSynchronizableValet.m */; };
-		181E9D4449F18C31655804B7E129E877 /* PGPTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 879C55A4D04B264D3799200144CD8212 /* PGPTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		197A692ED436ED102A7839B17D01FBBA /* PGPSignaturePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CFD48D4E3EE5364F157E0DAF75D6C5D /* PGPSignaturePacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C500D357B03CCD0B1C89DAB2B50FA71 /* PGPS2K.m in Sources */ = {isa = PBXBuildFile; fileRef = 1075189A5FC82B48EBFC27F31F9F9A21 /* PGPS2K.m */; };
-		1DACFEBD683D8D8D456F6D9E880479F0 /* NSData+compression.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA8FF350FDDB3A9DC9A178741A5287F /* NSData+compression.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E4DB8E91A4C195871A4D3CC6ACC0F9F /* VALValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E1FC82770339FC6C12B1EF5CF7FB36 /* VALValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		208283ECE5B4A10BC2916AA5FE4263DE /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = B5EB2599296E57889271AB8186CF0992 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		234005C3633F16172F32A4A2A7927F44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
-		25B17C4F50CD12B638F123E201D3DDAC /* PGPPacketFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF4EEB4D78A8DFA240FAB9B8FA32550 /* PGPPacketFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27EF89B93F90E0F001FA731F3C1C8B48 /* PGPOnePassSignaturePacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4828A6B8592C29499EBF6EAB0B9CFF /* PGPOnePassSignaturePacket.m */; };
-		28BCD2EDA915C2DAC0FF73A7EE493887 /* VALSynchronizableValet.h in Headers */ = {isa = PBXBuildFile; fileRef = D2793C8F6B5092D1192555433936A848 /* VALSynchronizableValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E097DE82CFC2A885C385A5003E4666B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
-		2E58D0F1B3A48217193173A49ACD21BF /* PGPPublicKeyRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBBBAD1E21932F8B3F98FF800F50819 /* PGPPublicKeyRSA.m */; };
-		30220FD06BA954632834425E700C07BD /* Pods-Pass-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3012332916B09ED7DD96B400FFBC6D /* Pods-Pass-dummy.m */; };
-		30AB35351A0CC40E0AE0E41BDCE8E7D1 /* PGPPKCSEmsa.m in Sources */ = {isa = PBXBuildFile; fileRef = 15885E4C42F04CF1945AD2A06E7E8467 /* PGPPKCSEmsa.m */; };
-		36647E2DF0F3833250915CE089F28582 /* PGPModificationDetectionCodePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E3AC4B28A1BCB739B5994F5B312742 /* PGPModificationDetectionCodePacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		379A8AC09796CDE918325ECB5A8B758C /* PGPUserIDPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B5D2CEAC8A4E15D49BE4824B46250D /* PGPUserIDPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		382A07AFF172234557E53D6FFB843B0B /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C15F91BBB392C0EE2EDACC3D7E23A4 /* Valet-dummy.m */; };
-		389B3F7E30689FB45082767DD4615656 /* WPZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D93BCBA86A6C8E2E9F518E833090939 /* WPZipArchive-dummy.m */; };
-		389C1ADAC1517808793975BEB2D9C39D /* PGPPublicKeyEncryptedSessionKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = F8529DCD059D9C561A23669BAB5A78A7 /* PGPPublicKeyEncryptedSessionKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		389E992CD796DD61D2CA1EFFB198A59D /* PGPSecretSubKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B63E941D4C7D7581EAFD48A3E1F45 /* PGPSecretSubKeyPacket.m */; };
-		51B2599466CD94008244B2846D9B07B8 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D6ABAE93389BE17670FF19CF839CA555 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		54678920268699664492BB64D52F6068 /* PGPArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = BC01944EDDF6EE0445AAD8098B8C047A /* PGPArmor.m */; };
-		546B7D0253B1B7685A23CCA0437996C0 /* NSValue+PGPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E232D2910DA2EEDCB118B1F492231FC9 /* NSValue+PGPUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54794BDC82F5DADB09215E1C3DC79C63 /* PGPCryptoCFB.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DEDF7BD087D3AFA1E533837C8AAC62 /* PGPCryptoCFB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54F4BA79965C20A33348F7A67AD8704B /* PGPFingerprint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4AF4D7202EE8885D32025EB28A7E76 /* PGPFingerprint.m */; };
-		560EB7B0C50B478941E8A3F961FC09F8 /* PGPSubKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 44750CBE856FE6484AA56AF63D708F64 /* PGPSubKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58D2DC4F3D9FB313C28F79CE9574A2C0 /* PGPPublicKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = E5521F93E50CC2FD1CFB69D769E54326 /* PGPPublicKeyPacket.m */; };
-		58DBDB41D7C908E6B786C7DC4CD0B14E /* PGPSignatureSubpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 28402D2812FA8BA304DAA725914D1FF6 /* PGPSignatureSubpacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59CBFAD7090467DE23B43C589F3A4A36 /* PGPUserAttributeSubpacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66EF7FECAE5CD2068757C027443C6 /* PGPUserAttributeSubpacket.m */; };
-		5A821EA7A2DD4CB157CBB25C25BF4FFA /* PGPPKCSEmsa.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B3FD61E3570747E97B874C007D5604 /* PGPPKCSEmsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B367D640AC154968E30D6978D11E241 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = E7631C0D87D2FD10DEDD5432AA378A69 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5ECE2B99570FBA1A41E73E11FFB63BFF /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C77DDC20E0E334754B5A58FC0C20D4 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FFB8E62C6DC358E8036D4DD496C4E3E /* WPZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F3AD4A162D3E50FC706118FB5D6D7A /* WPZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0046A787740A58937BFF4C9C77EFC50D /* PGPPublicKeyRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A2D207702FBB4B581E435EA77F46F1C /* PGPPublicKeyRSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03101112916EE6CD499EFF511A737C42 /* PGPUserIDPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D6E23FC2007894F6262402C2D88AD /* PGPUserIDPacket.m */; };
+		03E55769390BF8FA09243287C6C6477F /* PGPKey.m in Sources */ = {isa = PBXBuildFile; fileRef = F016DC1366930310161AB5CE5CB2B131 /* PGPKey.m */; };
+		04AC1D3DDC61277546E01D57C49E8BB0 /* PGPPublicSubKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF46290D588E1FFC3DC50B0FA0E7F96 /* PGPPublicSubKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0592480F2A9B175B970757B5F940168B /* PGPKeyID.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2B277B9F47B47A291042DBB26D54D6 /* PGPKeyID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A60920F2AB015673FF464D66642C3C6 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A84C620C5E120CC7244A9897D226B4D /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		153238C36A9024BB856DE6F198503A8F /* PGPMPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D5AE46ACE09CBC8AB6EB2B5B510F59 /* PGPMPI.m */; };
+		173C7D4F4AA380B8D757A2E587A7650B /* VALSynchronizableValet.m in Sources */ = {isa = PBXBuildFile; fileRef = F56BDC711E7009413AA5463432C8E041 /* VALSynchronizableValet.m */; };
+		181E9D4449F18C31655804B7E129E877 /* PGPTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF869049A5DE8C25198F2B530D9B175 /* PGPTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		197A692ED436ED102A7839B17D01FBBA /* PGPSignaturePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD6A2EC67CF845F61327D042336DAEE /* PGPSignaturePacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C500D357B03CCD0B1C89DAB2B50FA71 /* PGPS2K.m in Sources */ = {isa = PBXBuildFile; fileRef = 929C0FF9AF5FBB7ACA2A3D1C4CD19B3A /* PGPS2K.m */; };
+		1DACFEBD683D8D8D456F6D9E880479F0 /* NSData+compression.h in Headers */ = {isa = PBXBuildFile; fileRef = 2499D03CE02FAB11253DEDE2D36F8CCB /* NSData+compression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E4DB8E91A4C195871A4D3CC6ACC0F9F /* VALValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D67766610926B8969FFC3A543D17A01 /* VALValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25B17C4F50CD12B638F123E201D3DDAC /* PGPPacketFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A1023A4A2AD39AEA099C6217E41B4D7E /* PGPPacketFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27EF89B93F90E0F001FA731F3C1C8B48 /* PGPOnePassSignaturePacket.m in Sources */ = {isa = PBXBuildFile; fileRef = AB109C5BCFCE75EEA8A73E37B61E07F4 /* PGPOnePassSignaturePacket.m */; };
+		28BCD2EDA915C2DAC0FF73A7EE493887 /* VALSynchronizableValet.h in Headers */ = {isa = PBXBuildFile; fileRef = BF648BD734C0B205DE23809F81C2CA96 /* VALSynchronizableValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E58D0F1B3A48217193173A49ACD21BF /* PGPPublicKeyRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9421D99DD9BF5F148D1F0BA8EE092B8E /* PGPPublicKeyRSA.m */; };
+		30220FD06BA954632834425E700C07BD /* Pods-Pass-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F08E6D45846C3FFF7A83D009084545 /* Pods-Pass-dummy.m */; };
+		30AB35351A0CC40E0AE0E41BDCE8E7D1 /* PGPPKCSEmsa.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D3E96805C4B3F4CF7854F8D5B262D3 /* PGPPKCSEmsa.m */; };
+		36647E2DF0F3833250915CE089F28582 /* PGPModificationDetectionCodePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = BACE1A91C2553A02971DC6C42EABEA58 /* PGPModificationDetectionCodePacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		379A8AC09796CDE918325ECB5A8B758C /* PGPUserIDPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = E64A635125C1BBF827EF97F57B5FE78C /* PGPUserIDPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382A07AFF172234557E53D6FFB843B0B /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A808A5B3E48CE10A85632D7F3A396A5 /* Valet-dummy.m */; };
+		389C1ADAC1517808793975BEB2D9C39D /* PGPPublicKeyEncryptedSessionKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C1901B09ABA394A4248CFECA79E747 /* PGPPublicKeyEncryptedSessionKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		389E992CD796DD61D2CA1EFFB198A59D /* PGPSecretSubKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D4BE419D7F57D73FD44E8B23427F67 /* PGPSecretSubKeyPacket.m */; };
+		54678920268699664492BB64D52F6068 /* PGPArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B230897A4A46CC7842440A2D7268258 /* PGPArmor.m */; };
+		546B7D0253B1B7685A23CCA0437996C0 /* NSValue+PGPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F1173165C03D65C094A77E4FD6A7D582 /* NSValue+PGPUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54794BDC82F5DADB09215E1C3DC79C63 /* PGPCryptoCFB.h in Headers */ = {isa = PBXBuildFile; fileRef = 81728BD5ABBFAA941FE900BE0DF45A36 /* PGPCryptoCFB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54F4BA79965C20A33348F7A67AD8704B /* PGPFingerprint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C5F8B40CA744736CFEAD8334545C5 /* PGPFingerprint.m */; };
+		560EB7B0C50B478941E8A3F961FC09F8 /* PGPSubKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 39FEB5E3CAE6FD0A636D585963C5F232 /* PGPSubKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58D2DC4F3D9FB313C28F79CE9574A2C0 /* PGPPublicKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9E8CC325BFB4E555ECE780E72DC84B /* PGPPublicKeyPacket.m */; };
+		58DBDB41D7C908E6B786C7DC4CD0B14E /* PGPSignatureSubpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C7FC6104FA5AC67933496AC0FA6E08 /* PGPSignatureSubpacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59CBFAD7090467DE23B43C589F3A4A36 /* PGPUserAttributeSubpacket.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5931EC4440C4BF53CD93A9D3401498 /* PGPUserAttributeSubpacket.m */; };
+		5A821EA7A2DD4CB157CBB25C25BF4FFA /* PGPPKCSEmsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD562C3FE3150CD0DD8223E50EFED70 /* PGPPKCSEmsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6019B30D92F44E1AE351D988FB367CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
-		6077FC2061F3DC42E420FE4BCD51BC11 /* ObjectivePGP.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F1D8327EB7B6F7B7F93B619B53B8E /* ObjectivePGP.m */; };
-		6175655344FC569FF1A530B5CED4C3B6 /* PGPKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC4F2099B5603A33DD3B65C914ECC63 /* PGPKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62240CE950D5564DF7A54B33AD890857 /* PGPPKCSEme.m in Sources */ = {isa = PBXBuildFile; fileRef = C33E09C06A95D04EA13D2C00B1A7AD3B /* PGPPKCSEme.m */; };
-		62AF40ED36BDC47A7D5CB023B72854DD /* PGPArmor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C270F10ED50DF091746F21207DCBCC4 /* PGPArmor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6313F5B17672921BD0F30996CF3A6214 /* PGPPKCSEme.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F467815F6398F2FE7E50546DAC0194 /* PGPPKCSEme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6077FC2061F3DC42E420FE4BCD51BC11 /* ObjectivePGP.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E0B113FA7E47BA3B0F0ADACF2F4E58 /* ObjectivePGP.m */; };
+		6175655344FC569FF1A530B5CED4C3B6 /* PGPKey.h in Headers */ = {isa = PBXBuildFile; fileRef = E938B632EAA9CBF2FE344A245BDB8E53 /* PGPKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62240CE950D5564DF7A54B33AD890857 /* PGPPKCSEme.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E4360C3B4B70174656CE86F6E1BFF /* PGPPKCSEme.m */; };
+		62AF40ED36BDC47A7D5CB023B72854DD /* PGPArmor.h in Headers */ = {isa = PBXBuildFile; fileRef = 15300428671D12C6018A7329C3503F99 /* PGPArmor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6313F5B17672921BD0F30996CF3A6214 /* PGPPKCSEme.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E94E4585EEEBA36CBDD6B721442328 /* PGPPKCSEme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		637D5CC26C36356A4C22476D4846839A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
-		64B14C9FE8B2658B572E5663F8BCAB56 /* WPZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7214494247A14004DFDF2ACB69F31 /* WPZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6A096D77DC161E86325914A9FDF47E97 /* PGPSecretSubKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4471CF80F9C8361B67F4D89873397FCD /* PGPSecretSubKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FE7FD23205955FB6BAF0D4A5373EE6E /* PGPPublicKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 2549E780689EDD5DDED3AB436715932F /* PGPPublicKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79ADCE4B12203E87F2AF9DCA71D53F95 /* PGPUserAttributePacket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94036922A316CA91016F1AD8E6A1EE /* PGPUserAttributePacket.m */; };
-		7CE71E262D6FC1CFE15A64FBA33D2301 /* PGPPublicSubKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CAAD92F44F0944533E8E0F70E97558 /* PGPPublicSubKeyPacket.m */; };
-		7D36271D72ED3DD4A337DDEE4B7BA98B /* NSValue+PGPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E39EEE9EADF12BBAB33AEFED32A5F288 /* NSValue+PGPUtils.m */; };
-		7DBAC6594E3F1643ADA51212D691758B /* PGPMPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C28EFFF2ACB99690ADCD08F6C287AEED /* PGPMPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		825AC6E5A65E65A09FA00CCDF7ED125B /* PGPUserAttributePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = E26495D68172898CDFC6F2A8D8DEF61E /* PGPUserAttributePacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83ACE28C50083530AA441E33274C8D6B /* PGPSignaturePacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A3BAAC9FCC1A4277E2DEEE654CA792 /* PGPSignaturePacket.m */; };
-		8587B0C1F68362E03979EF692866EE48 /* PGPPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB045BD437D2713CF90CDA5D2AB7E68 /* PGPPacket.m */; };
-		872BFA8D011CE89A673888B7C11D9CF0 /* PGPUserAttributeSubpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 85794C5A259646ACB08324D3842C8C0B /* PGPUserAttributeSubpacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A096D77DC161E86325914A9FDF47E97 /* PGPSecretSubKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E6CD178450BD749060A35745F5CE87 /* PGPSecretSubKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FE7FD23205955FB6BAF0D4A5373EE6E /* PGPPublicKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = D37C40CBC91156956EA7D2F98BCE4D6E /* PGPPublicKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79ADCE4B12203E87F2AF9DCA71D53F95 /* PGPUserAttributePacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2769AF551E4BCBB94EEF47E8AF621AB2 /* PGPUserAttributePacket.m */; };
+		7CE71E262D6FC1CFE15A64FBA33D2301 /* PGPPublicSubKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D48E2EBD300B794FED4852B3B5089 /* PGPPublicSubKeyPacket.m */; };
+		7D36271D72ED3DD4A337DDEE4B7BA98B /* NSValue+PGPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 081C573027D427BF76A71A59F951415F /* NSValue+PGPUtils.m */; };
+		7DBAC6594E3F1643ADA51212D691758B /* PGPMPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A8127B92BBD9ECD8B0E21D8ABC3C9739 /* PGPMPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		825AC6E5A65E65A09FA00CCDF7ED125B /* PGPUserAttributePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 472CEE551691FFFD51C9D5D463388F3F /* PGPUserAttributePacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83ACE28C50083530AA441E33274C8D6B /* PGPSignaturePacket.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6B1EFC37A9B68B82F24E0552B4C9CB /* PGPSignaturePacket.m */; };
+		8587B0C1F68362E03979EF692866EE48 /* PGPPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 40191C8EFB96847450C39202120F532B /* PGPPacket.m */; };
+		872BFA8D011CE89A673888B7C11D9CF0 /* PGPUserAttributeSubpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8055ED12EEEA14EBE34DFCADBF42BC /* PGPUserAttributeSubpacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8750F75C309DE5B25363C64C0C212D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */; };
-		8ECA571189DB277628A45704D19A6403 /* PGPOnePassSignaturePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = F84277C5511F9E761D92B706D540760C /* PGPOnePassSignaturePacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90496067046E5C08767041F0F35C175D /* PGPUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5058BF465073AD3321C125CC2C2131 /* PGPUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91FB3112AE8A624F1B5CF738E28E8638 /* NSData+PGPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E75A2759716D36967B63D84766E3357 /* NSData+PGPUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		961E3306E9C1A5A3E53C92A6A8D74381 /* PGPCompressedPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = FBDED6539BEB1DF241A41DB5044250EB /* PGPCompressedPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C43F33E4BB1770862F6F790F075AE81 /* PGPKeyID.m in Sources */ = {isa = PBXBuildFile; fileRef = 91889CDD2644306D5DE66AD17B73EA84 /* PGPKeyID.m */; };
-		A6B9D2A7666542C046D812611114DA44 /* Pods-AddZip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B49BEA26DC93F1CCE7449710598F3A65 /* Pods-AddZip-dummy.m */; };
-		A9277BA04AB354A1592D501A415EA4F1 /* PGPCryptoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 81081E37988E13DA1A545E169174BA84 /* PGPCryptoUtils.m */; };
-		AC4D5744DCD122F1844FAE5DEC07F70C /* PGPCompressedPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = F47C925CD34F6A85215FFA84C356DEC5 /* PGPCompressedPacket.m */; };
-		AC97F2DAB0B5EC6DA582BE28B4F5A05A /* PGPCryptoCFB.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9F0F1EF83A677A592F4F64D0ABEA57 /* PGPCryptoCFB.m */; };
-		B1AEAF2F380AD4679D928A50918A7F09 /* PGPTrustPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F61D2E5D461057B4EC61FEF92249171 /* PGPTrustPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2A2F47DE2B6CB5C5C9274CCCE789856 /* PGPSignatureSubpacket.m in Sources */ = {isa = PBXBuildFile; fileRef = A93069A87FDD3A9C6167CFD6440B17DD /* PGPSignatureSubpacket.m */; };
-		B501B0BCA9704291A95DA148A107FA38 /* NSData+compression.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91AAF3F883D19FACDBD0324E10A6C7 /* NSData+compression.m */; };
-		B6BABD1C2B091585D813D0A0E1F075B9 /* PGPSecretKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 618344A5F9252B5CD9F15136007512F0 /* PGPSecretKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B786CAF53046B23D1BEA9B703AD25DCC /* PGPSecretKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E37431960B5B846BF6E5C8065E6A2C /* PGPSecretKeyPacket.m */; };
-		BBF98533D4893E35DD6689DE13C11E6B /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B108887283C86ECEF0CF28F619785B3 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BC0FE9B91A2332E27333EEFA265476E1 /* VALSecureEnclaveValet.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9CB05CA0BECAEA4FF4490A8FB4EF74 /* VALSecureEnclaveValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEDD3898A6261F1B33E4A0298E98AA7D /* PGPPacketFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 202E4C5A83865DC92BC86D42BCAC307E /* PGPPacketFactory.m */; };
-		C32D30419F9AB538E655E5741D43DC71 /* PGPPublicKeyEncryptedSessionKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C01547A144E0D902ECEB96A6885701 /* PGPPublicKeyEncryptedSessionKeyPacket.m */; };
-		C351A76C99DE6FAAE985B65245D21BA9 /* ObjectivePGP.h in Headers */ = {isa = PBXBuildFile; fileRef = 53044F2148E5DB5CAC5BB097D8048CCE /* ObjectivePGP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C35F761EB2D06F42711D5507ABCD2DD0 /* PGPSymmetricallyEncryptedDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5852C4003A9D1A70A52ED323A8F87248 /* PGPSymmetricallyEncryptedDataPacket.m */; };
-		C3A4CFE478734CF507CA0ADA418FCCEF /* PGPSubKey.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FBA98E87AAAABB5D5236FBAFDDC031 /* PGPSubKey.m */; };
-		C71E32421A736F49184778D35A52E852 /* PGPS2K.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EEFEEB041EBB95C831235F875F69044 /* PGPS2K.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7ECEE420D236D4FB467B13691D6BA29 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = C75F507E37965C91F8B1FC62A734E28C /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m */; };
-		CC1DB1CC571C3C9C641FF46D68AC7304 /* PGPLiteralPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F98F7FE1D9B278233CE6BB8DB0463B /* PGPLiteralPacket.m */; };
-		D2A6B18386D97B4B1BB3582B734DE2E7 /* VALValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A92C034DDEA2B3E055ACF2E1878ED9 /* VALValet.m */; };
-		D984727D5CF90D54BCF63A373CDCFA71 /* NSData+PGPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E63498FF05A77C8DEAAA5E8CBE647F67 /* NSData+PGPUtils.m */; };
-		DAE8E70F68FFA65714A748F5FDA1E33E /* PGPLiteralPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1059D85426EB4C595FB81621D8D0551B /* PGPLiteralPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEC3BEAFFB67FABB82E315A678C7960B /* VALSecureEnclaveValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 31417EB8AA4133047810FA5E998790E7 /* VALSecureEnclaveValet.m */; };
-		E0D0BEEA2E92C0708335F5CAFB317626 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 186D70BF690EC29931188313547A9207 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E6AF1E77A3E1C16C1461051739D11B86 /* PGPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B77B6C0EEC7CF260E1A25E09F3D63EC /* PGPUser.m */; };
-		E7AE09CC74C3FAF9D6C7175CA4182B6F /* PGPCryptoUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D584ABB4DBC8604CA20A3565F2841591 /* PGPCryptoUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7F87FFF640B43659834035D9B01EDD3 /* PGPTrustPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = D96CA09D59800B3238659EE97FC5DB68 /* PGPTrustPacket.m */; };
-		E8CBFA8DE00EBF2E2CD2D9DD27682616 /* PGPModificationDetectionCodePacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AC599BDEDA8E001C1F8347EC760438 /* PGPModificationDetectionCodePacket.m */; };
-		EB56A5D81B0E76D881977C1B9541502E /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B561AC9F275884EE9EA5610971D2F26 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE4D146820B17F42FEF4C1E67F30BBEB /* VALValet_Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 82588D3C533344A9280348A30D4E98D2 /* VALValet_Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F0AE79853798CE9B6FEF6C5037B8A0B4 /* PGPFingerprint.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B9C3E74AD250C89BD91357BA16B8E6 /* PGPFingerprint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F111A42A8F5CCCF7F285BF2DA1531F54 /* PGPPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = B04447253BF380149EDADC21724AEEA2 /* PGPPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1ED8AA3FAA12CA08EBC173B224ED8C2 /* ValetDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5337DA5B0FECE3272A33B343F2783FCD /* ValetDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F29C10DEE7B8C2F1F23A7CE0477E5230 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C62E5DBDC9BD128041DDFA23EA7DD4 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F51013D7D92FCF3DF2B56A62022A9F06 /* PGPSymmetricallyEncryptedDataPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 964EAA66E0A13970469AC8D8DFCE699B /* PGPSymmetricallyEncryptedDataPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F590C7D4C6732B2F4F26A36FF2CE9282 /* ObjectivePGP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3958259AB678C46643272CE97F3F8041 /* ObjectivePGP-dummy.m */; };
-		FD5E7E0F48C4605CC14BC2E2A3C4F9DC /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = A93108DD15A60EE8C8E3991E5334BF15 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8ECA571189DB277628A45704D19A6403 /* PGPOnePassSignaturePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = ACB4B0225907AAEB05701C5C6F284F89 /* PGPOnePassSignaturePacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90496067046E5C08767041F0F35C175D /* PGPUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7D2DB30FCB892BFC0A44DC0917085A /* PGPUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91FB3112AE8A624F1B5CF738E28E8638 /* NSData+PGPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6246984028C2808381094B633EF6C820 /* NSData+PGPUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		961E3306E9C1A5A3E53C92A6A8D74381 /* PGPCompressedPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2D17B91E15E961E07B2416023E2F7F /* PGPCompressedPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C43F33E4BB1770862F6F790F075AE81 /* PGPKeyID.m in Sources */ = {isa = PBXBuildFile; fileRef = D40C4C1CE0E3DA82640F32080E046292 /* PGPKeyID.m */; };
+		A9277BA04AB354A1592D501A415EA4F1 /* PGPCryptoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC89E8D9ADE9FF3012E78AB74023E9F /* PGPCryptoUtils.m */; };
+		AC4D5744DCD122F1844FAE5DEC07F70C /* PGPCompressedPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E33170C1467B563E3127D6284394D2 /* PGPCompressedPacket.m */; };
+		AC97F2DAB0B5EC6DA582BE28B4F5A05A /* PGPCryptoCFB.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C1F4117105F0F8FFB5287E09F05AF /* PGPCryptoCFB.m */; };
+		B1AEAF2F380AD4679D928A50918A7F09 /* PGPTrustPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF50347CF9C947B8D8727870A44B087 /* PGPTrustPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2A2F47DE2B6CB5C5C9274CCCE789856 /* PGPSignatureSubpacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2EE2AF7FC4DBE9AB5EEFA40767AC8 /* PGPSignatureSubpacket.m */; };
+		B501B0BCA9704291A95DA148A107FA38 /* NSData+compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 7367D9E6AC60DDF6E20222A6B2A32D0C /* NSData+compression.m */; };
+		B6BABD1C2B091585D813D0A0E1F075B9 /* PGPSecretKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ABAA99CDABB09487F912B266306714D /* PGPSecretKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B786CAF53046B23D1BEA9B703AD25DCC /* PGPSecretKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BEDB47E0B365C551948FA3FB9ACF20 /* PGPSecretKeyPacket.m */; };
+		BC0FE9B91A2332E27333EEFA265476E1 /* VALSecureEnclaveValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 740E393B7B1BCFAC13521FD99020AC31 /* VALSecureEnclaveValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEDD3898A6261F1B33E4A0298E98AA7D /* PGPPacketFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 280C13D487277346A573EDDBA044079C /* PGPPacketFactory.m */; };
+		C32D30419F9AB538E655E5741D43DC71 /* PGPPublicKeyEncryptedSessionKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F240B6919BBAAA78109D9BC037C5D0 /* PGPPublicKeyEncryptedSessionKeyPacket.m */; };
+		C351A76C99DE6FAAE985B65245D21BA9 /* ObjectivePGP.h in Headers */ = {isa = PBXBuildFile; fileRef = A61FAD1437E055CCFBC2E5E6CBFA91D6 /* ObjectivePGP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C35F761EB2D06F42711D5507ABCD2DD0 /* PGPSymmetricallyEncryptedDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 700B92BDB6F55D1EAF52A4E18CE87F72 /* PGPSymmetricallyEncryptedDataPacket.m */; };
+		C3A4CFE478734CF507CA0ADA418FCCEF /* PGPSubKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6828F675655513C998330CE5EA79E2 /* PGPSubKey.m */; };
+		C71E32421A736F49184778D35A52E852 /* PGPS2K.h in Headers */ = {isa = PBXBuildFile; fileRef = 25238765BA55EB294FC2CD8031B0C54C /* PGPS2K.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7ECEE420D236D4FB467B13691D6BA29 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1087FC8F0A5C82A8B612E48244E746 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m */; };
+		CC1DB1CC571C3C9C641FF46D68AC7304 /* PGPLiteralPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D891E6EB25FFAD01DF0D53F5EFE90F3 /* PGPLiteralPacket.m */; };
+		D2A6B18386D97B4B1BB3582B734DE2E7 /* VALValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A63C2C2218D9CD167C54A346D47A4DD /* VALValet.m */; };
+		D984727D5CF90D54BCF63A373CDCFA71 /* NSData+PGPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE5C694E3B9F033A860D400B4432C97 /* NSData+PGPUtils.m */; };
+		DAE8E70F68FFA65714A748F5FDA1E33E /* PGPLiteralPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB83027EC28FFED6F7AA9E8F8A18340 /* PGPLiteralPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEC3BEAFFB67FABB82E315A678C7960B /* VALSecureEnclaveValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2645296CD58DC9CA5CC9C54F395A57DC /* VALSecureEnclaveValet.m */; };
+		E6AF1E77A3E1C16C1461051739D11B86 /* PGPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD87F757F84033A81E2650F48284040 /* PGPUser.m */; };
+		E7AE09CC74C3FAF9D6C7175CA4182B6F /* PGPCryptoUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 86532894E1FB24CA71EC3C5126AE12B2 /* PGPCryptoUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7F87FFF640B43659834035D9B01EDD3 /* PGPTrustPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8597F6B08680AC10530B814F849410A6 /* PGPTrustPacket.m */; };
+		E8CBFA8DE00EBF2E2CD2D9DD27682616 /* PGPModificationDetectionCodePacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B7BD471FDC48B335A9CD29EF59A60 /* PGPModificationDetectionCodePacket.m */; };
+		EB56A5D81B0E76D881977C1B9541502E /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = F17E8DD3492C93735C851B55FE4A610B /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE4D146820B17F42FEF4C1E67F30BBEB /* VALValet_Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 204C5E29E9F0071058DE0ADF41959999 /* VALValet_Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F0AE79853798CE9B6FEF6C5037B8A0B4 /* PGPFingerprint.h in Headers */ = {isa = PBXBuildFile; fileRef = 64EAC0B6CB45301383D33391AC34B660 /* PGPFingerprint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F111A42A8F5CCCF7F285BF2DA1531F54 /* PGPPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = BBDE9464C309BE0EF9A550EBA8158240 /* PGPPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1ED8AA3FAA12CA08EBC173B224ED8C2 /* ValetDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A3E826575D9087B1C61418596EFECE /* ValetDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F51013D7D92FCF3DF2B56A62022A9F06 /* PGPSymmetricallyEncryptedDataPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6916221B50F52EC9B40D6F550FD64600 /* PGPSymmetricallyEncryptedDataPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F590C7D4C6732B2F4F26A36FF2CE9282 /* ObjectivePGP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6400ECD2C77A51EABF4A89337DC4242 /* ObjectivePGP-dummy.m */; };
 		FDDED1997E22DAA384A56E6FBE2C6C30 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFD15069DBFFAF7E7CD48183E2D230C /* Security.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,13 +106,6 @@
 			remoteGlobalIDString = 6773637E46AD7B6BCBA35A9F9EDC361C;
 			remoteInfo = Valet;
 		};
-		6AD9F7F8AE5B2F6B85E9A1CF52458EF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BFDD63E357941F2A7F2E5B8ABA80225;
-			remoteInfo = WPZipArchive;
-		};
 		AE85B10BF7BB66EB5A4E94C7115A6CD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -139,207 +116,184 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		080B3136040A6204463EC3563CC162B2 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-ios/openssl/des_old.h"; sourceTree = "<group>"; };
-		09E3AC4B28A1BCB739B5994F5B312742 /* PGPModificationDetectionCodePacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPModificationDetectionCodePacket.h; path = ObjectivePGP/PGPModificationDetectionCodePacket.h; sourceTree = "<group>"; };
-		0AF4EEB4D78A8DFA240FAB9B8FA32550 /* PGPPacketFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPacketFactory.h; path = ObjectivePGP/PGPPacketFactory.h; sourceTree = "<group>"; };
-		0B2E3B53E0466F006D769591F2FD4631 /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-ios/openssl/txt_db.h"; sourceTree = "<group>"; };
-		0BB3552A5050DD1B351E61466086B9A3 /* PGPUserIDPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPUserIDPacket.m; path = ObjectivePGP/PGPUserIDPacket.m; sourceTree = "<group>"; };
-		0CD7FFC4A3F8E8FEA14870C541C521B1 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
-		0E4828A6B8592C29499EBF6EAB0B9CFF /* PGPOnePassSignaturePacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPOnePassSignaturePacket.m; path = ObjectivePGP/PGPOnePassSignaturePacket.m; sourceTree = "<group>"; };
-		0EEFEEB041EBB95C831235F875F69044 /* PGPS2K.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPS2K.h; path = ObjectivePGP/PGPS2K.h; sourceTree = "<group>"; };
-		0F2A29D9E1BA953227869493DA410539 /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
-		0FE250247E7074F43962F2898FD1C972 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
-		1059D85426EB4C595FB81621D8D0551B /* PGPLiteralPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPLiteralPacket.h; path = ObjectivePGP/PGPLiteralPacket.h; sourceTree = "<group>"; };
-		1075189A5FC82B48EBFC27F31F9F9A21 /* PGPS2K.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPS2K.m; path = ObjectivePGP/PGPS2K.m; sourceTree = "<group>"; };
-		10CA0EF6CC3E00A9544A47032FA9BEE9 /* PGPPublicKeyRSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPublicKeyRSA.h; path = ObjectivePGP/PGPPublicKeyRSA.h; sourceTree = "<group>"; };
-		1337B50583E2C098D5DA78DB7D1A4222 /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
-		13E1FC82770339FC6C12B1EF5CF7FB36 /* VALValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet.h; path = Valet/VALValet.h; sourceTree = "<group>"; };
-		15885E4C42F04CF1945AD2A06E7E8467 /* PGPPKCSEmsa.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPKCSEmsa.m; path = ObjectivePGP/PGPPKCSEmsa.m; sourceTree = "<group>"; };
-		159F765EA3666BEDAAAAFEFE0CB6C454 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-ios/openssl/ecdsa.h"; sourceTree = "<group>"; };
-		186D70BF690EC29931188313547A9207 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = WPZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
-		18D2D5FBC10502D72807BF7457926A4D /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = WPZipArchive/minizip/zip.h; sourceTree = "<group>"; };
-		1AC4F2099B5603A33DD3B65C914ECC63 /* PGPKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPKey.h; path = ObjectivePGP/PGPKey.h; sourceTree = "<group>"; };
-		1B561AC9F275884EE9EA5610971D2F26 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h; path = ObjectivePGP/PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h; sourceTree = "<group>"; };
-		1D93BCBA86A6C8E2E9F518E833090939 /* WPZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPZipArchive-dummy.m"; sourceTree = "<group>"; };
-		202E4C5A83865DC92BC86D42BCAC307E /* PGPPacketFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPacketFactory.m; path = ObjectivePGP/PGPPacketFactory.m; sourceTree = "<group>"; };
-		2549E780689EDD5DDED3AB436715932F /* PGPPublicKeyPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPublicKeyPacket.h; path = ObjectivePGP/PGPPublicKeyPacket.h; sourceTree = "<group>"; };
-		27262FAC16154A303431BA309F039A23 /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-ios/openssl/x509_vfy.h"; sourceTree = "<group>"; };
-		27BE13EB51D90B89C993A8A20DC0A94C /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
-		28402D2812FA8BA304DAA725914D1FF6 /* PGPSignatureSubpacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSignatureSubpacket.h; path = ObjectivePGP/PGPSignatureSubpacket.h; sourceTree = "<group>"; };
-		28694ECA02D1228839AEA24662E6031A /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
-		2AF414E7E77E24E413034A8836EEE5A0 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
-		2CFD48D4E3EE5364F157E0DAF75D6C5D /* PGPSignaturePacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSignaturePacket.h; path = ObjectivePGP/PGPSignaturePacket.h; sourceTree = "<group>"; };
-		2DD23CFB79A83997290DDE84FC56809A /* Pods-Pass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pass.release.xcconfig"; sourceTree = "<group>"; };
-		2EDEC559EC27DC5161AB9F76FB9EDEBE /* VALSynchronizableValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSynchronizableValet.m; path = Valet/VALSynchronizableValet.m; sourceTree = "<group>"; };
-		31417EB8AA4133047810FA5E998790E7 /* VALSecureEnclaveValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSecureEnclaveValet.m; path = Valet/VALSecureEnclaveValet.m; sourceTree = "<group>"; };
-		318DB26BE8313A194CBD9C96066C770E /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
-		319C5568EDEB90384484249658166977 /* Pods-AddZip-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AddZip-acknowledgements.markdown"; sourceTree = "<group>"; };
-		372D68F43E330311E1490A64A0807B23 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
-		3753D602BA59196DCC6F9418F1E89947 /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
-		3958259AB678C46643272CE97F3F8041 /* ObjectivePGP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectivePGP-dummy.m"; sourceTree = "<group>"; };
-		3A7FA7C8F72969C485D786B4C9DD7B52 /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-ios/openssl/opensslv.h"; sourceTree = "<group>"; };
-		3B54E4BB7E9C1EFF76467105B57E0B81 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-ios/openssl/err.h"; sourceTree = "<group>"; };
-		3BC7262618B71106619580A65BB6107A /* PGPKeyID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPKeyID.h; path = ObjectivePGP/PGPKeyID.h; sourceTree = "<group>"; };
-		3C6BB3EC377DFDEFD3185F782B9298DA /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
-		3D615622F42E75377F439EF01CD40CB5 /* Pods-AddZip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AddZip.release.xcconfig"; sourceTree = "<group>"; };
-		3E345F727DBE571431BA1E77887FAC73 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-ios/openssl/dtls1.h"; sourceTree = "<group>"; };
-		3ECAC95FC7AAFDA3B3EA433FA9F97994 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
-		44065C55A0ADF43E58564EB8A465CFD6 /* ObjectivePGP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectivePGP-prefix.pch"; sourceTree = "<group>"; };
-		4471CF80F9C8361B67F4D89873397FCD /* PGPSecretSubKeyPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSecretSubKeyPacket.h; path = ObjectivePGP/PGPSecretSubKeyPacket.h; sourceTree = "<group>"; };
-		44750CBE856FE6484AA56AF63D708F64 /* PGPSubKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSubKey.h; path = ObjectivePGP/PGPSubKey.h; sourceTree = "<group>"; };
-		44A3BAAC9FCC1A4277E2DEEE654CA792 /* PGPSignaturePacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSignaturePacket.m; path = ObjectivePGP/PGPSignaturePacket.m; sourceTree = "<group>"; };
-		44A92C034DDEA2B3E055ACF2E1878ED9 /* VALValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALValet.m; path = Valet/VALValet.m; sourceTree = "<group>"; };
-		46DEDF7BD087D3AFA1E533837C8AAC62 /* PGPCryptoCFB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPCryptoCFB.h; path = ObjectivePGP/PGPCryptoCFB.h; sourceTree = "<group>"; };
-		46F467815F6398F2FE7E50546DAC0194 /* PGPPKCSEme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPKCSEme.h; path = ObjectivePGP/PGPPKCSEme.h; sourceTree = "<group>"; };
-		499711C2D13880D0D82CCDDBA7F724AA /* Pods-AddZip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AddZip.debug.xcconfig"; sourceTree = "<group>"; };
-		4B80502D8C3DC89EF3EBEF7514D70275 /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
-		4C4AF4D7202EE8885D32025EB28A7E76 /* PGPFingerprint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPFingerprint.m; path = ObjectivePGP/PGPFingerprint.m; sourceTree = "<group>"; };
-		4D7B961E7FACAD4B9F8D77DDD0497BB2 /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
-		4E75A2759716D36967B63D84766E3357 /* NSData+PGPUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+PGPUtils.h"; path = "ObjectivePGP/NSData+PGPUtils.h"; sourceTree = "<group>"; };
-		53044F2148E5DB5CAC5BB097D8048CCE /* ObjectivePGP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectivePGP.h; path = ObjectivePGP/ObjectivePGP.h; sourceTree = "<group>"; };
-		5337DA5B0FECE3272A33B343F2783FCD /* ValetDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ValetDefines.h; path = Other/ValetDefines.h; sourceTree = "<group>"; };
-		53FCB4A1E0FBA49F14E7FD93D88CD9C6 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-ios/openssl/modes.h"; sourceTree = "<group>"; };
-		55591B682EF4CCB2B9EB739475383F17 /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-ios/openssl/cast.h"; sourceTree = "<group>"; };
-		55FE0A2595CA3B037BA7F3220A8DA47E /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-ios/openssl/pkcs12.h"; sourceTree = "<group>"; };
-		5852C4003A9D1A70A52ED323A8F87248 /* PGPSymmetricallyEncryptedDataPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSymmetricallyEncryptedDataPacket.m; path = ObjectivePGP/PGPSymmetricallyEncryptedDataPacket.m; sourceTree = "<group>"; };
-		59A7214494247A14004DFDF2ACB69F31 /* WPZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPZipArchive.m; path = WPZipArchive/WPZipArchive.m; sourceTree = "<group>"; };
-		5C5058BF465073AD3321C125CC2C2131 /* PGPUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPUser.h; path = ObjectivePGP/PGPUser.h; sourceTree = "<group>"; };
-		5D6ABFEE1BC1BA4E64E624CCA9039F6E /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-ios/openssl/x509.h"; sourceTree = "<group>"; };
-		5DBBBAD1E21932F8B3F98FF800F50819 /* PGPPublicKeyRSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPublicKeyRSA.m; path = ObjectivePGP/PGPPublicKeyRSA.m; sourceTree = "<group>"; };
-		5FB5120747516E24245A6B7CDE255FD1 /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
-		601CC363679D1A1B27B587056949EA7B /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
-		618344A5F9252B5CD9F15136007512F0 /* PGPSecretKeyPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSecretKeyPacket.h; path = ObjectivePGP/PGPSecretKeyPacket.h; sourceTree = "<group>"; };
-		6353B6A236EA66FC6CD8D3119057526D /* Pods-Pass-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pass-frameworks.sh"; sourceTree = "<group>"; };
-		63CAAD92F44F0944533E8E0F70E97558 /* PGPPublicSubKeyPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPublicSubKeyPacket.m; path = ObjectivePGP/PGPPublicSubKeyPacket.m; sourceTree = "<group>"; };
-		66F620D3F1376DD97D1C5FDA653332E9 /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
-		6B3B66D9320672E1C9B03E2F3E293702 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-ios/libcrypto.a"; sourceTree = "<group>"; };
-		705B63E941D4C7D7581EAFD48A3E1F45 /* PGPSecretSubKeyPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSecretSubKeyPacket.m; path = ObjectivePGP/PGPSecretSubKeyPacket.m; sourceTree = "<group>"; };
-		7170B96FE22C26CF3FCF1CEA10C03D91 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-ios/openssl/aes.h"; sourceTree = "<group>"; };
-		72759B41FDFDA71072A768CA5B508445 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-ios/openssl/safestack.h"; sourceTree = "<group>"; };
-		787302DDACCBD9DB28E189B29EBEE7CC /* libValet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libValet.a; path = libValet.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		791D09DFD96B7FBA505E2AFC4009D20C /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
-		7BB9BE2F3E54CFB73BE75C83550F275F /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-ios/openssl/md4.h"; sourceTree = "<group>"; };
-		7CB84294739A46DF3D5A52701412ED70 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-ios/openssl/buffer.h"; sourceTree = "<group>"; };
-		801391BDEEBE2D5F2C17C29A5015F8DA /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
-		80F98F7FE1D9B278233CE6BB8DB0463B /* PGPLiteralPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPLiteralPacket.m; path = ObjectivePGP/PGPLiteralPacket.m; sourceTree = "<group>"; };
-		81081E37988E13DA1A545E169174BA84 /* PGPCryptoUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPCryptoUtils.m; path = ObjectivePGP/PGPCryptoUtils.m; sourceTree = "<group>"; };
-		81E21BBDDBEE7EBE48C5E8DC1918A687 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
-		81E515B04EAAB11A54E6F0F005C477F2 /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-ios/openssl/obj_mac.h"; sourceTree = "<group>"; };
-		82588D3C533344A9280348A30D4E98D2 /* VALValet_Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet_Protected.h; path = Valet/VALValet_Protected.h; sourceTree = "<group>"; };
-		836BB5EB549F8AD4D1AB7BE305908768 /* Pods-Pass-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pass-acknowledgements.plist"; sourceTree = "<group>"; };
-		83C831CAE729619F20BC64AA1263CFEA /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-ios/openssl/bn.h"; sourceTree = "<group>"; };
-		84B5D2CEAC8A4E15D49BE4824B46250D /* PGPUserIDPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPUserIDPacket.h; path = ObjectivePGP/PGPUserIDPacket.h; sourceTree = "<group>"; };
-		85719B5D7FB7A949D20A6D4F6E8F48ED /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
-		85794C5A259646ACB08324D3842C8C0B /* PGPUserAttributeSubpacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPUserAttributeSubpacket.h; path = ObjectivePGP/PGPUserAttributeSubpacket.h; sourceTree = "<group>"; };
-		858280DC8D2A854538CCF8A59E8D4401 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-ios/openssl/ecdh.h"; sourceTree = "<group>"; };
-		875C2708439E26E75BD2F03178CD9DCA /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
-		879C55A4D04B264D3799200144CD8212 /* PGPTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPTypes.h; path = ObjectivePGP/PGPTypes.h; sourceTree = "<group>"; };
-		89C66EF7FECAE5CD2068757C027443C6 /* PGPUserAttributeSubpacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPUserAttributeSubpacket.m; path = ObjectivePGP/PGPUserAttributeSubpacket.m; sourceTree = "<group>"; };
-		8A428D1784C4C33B08F8A0B1AF55978E /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
-		8B108887283C86ECEF0CF28F619785B3 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = WPZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
-		8DA8FF350FDDB3A9DC9A178741A5287F /* NSData+compression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+compression.h"; path = "ObjectivePGP/NSData+compression.h"; sourceTree = "<group>"; };
-		8E4310DD095D3CC1433062AABFEFDFE8 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
-		8F845BF6A2F6BCAFE639F04660B981D3 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-ios/openssl/stack.h"; sourceTree = "<group>"; };
-		916C6A0C628FCCA3B278A3D2449A810C /* Pods-Pass-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pass-acknowledgements.markdown"; sourceTree = "<group>"; };
-		91889CDD2644306D5DE66AD17B73EA84 /* PGPKeyID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPKeyID.m; path = ObjectivePGP/PGPKeyID.m; sourceTree = "<group>"; };
-		91AC599BDEDA8E001C1F8347EC760438 /* PGPModificationDetectionCodePacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPModificationDetectionCodePacket.m; path = ObjectivePGP/PGPModificationDetectionCodePacket.m; sourceTree = "<group>"; };
-		9301A42CA62894C0F14AA817E574CBC2 /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
+		000982739E18A7A37272804F1E1292D0 /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
+		00EF46668A2131521E465858FB33F994 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-ios/openssl/pkcs12.h"; sourceTree = "<group>"; };
+		02C7FC6104FA5AC67933496AC0FA6E08 /* PGPSignatureSubpacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSignatureSubpacket.h; path = ObjectivePGP/PGPSignatureSubpacket.h; sourceTree = "<group>"; };
+		0667CC0CA23A3DAD32C1071018BDF6C7 /* Pods-Pass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pass.release.xcconfig"; sourceTree = "<group>"; };
+		06F3FCA52844C6B0B8001CA9DC38DAA5 /* Pods-Pass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pass.debug.xcconfig"; sourceTree = "<group>"; };
+		074BFFC34EBF2DCF253E128B9006E46B /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
+		081C573027D427BF76A71A59F951415F /* NSValue+PGPUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+PGPUtils.m"; path = "ObjectivePGP/NSValue+PGPUtils.m"; sourceTree = "<group>"; };
+		092E138A2B7F32405E5EEF5BAADA8777 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
+		0CD562C3FE3150CD0DD8223E50EFED70 /* PGPPKCSEmsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPKCSEmsa.h; path = ObjectivePGP/PGPPKCSEmsa.h; sourceTree = "<group>"; };
+		0D9E4E31712B487172FE28FE6FB14B37 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
+		0F5CAA1C4493875D53FCFCCBBE97C59E /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
+		0F6828F675655513C998330CE5EA79E2 /* PGPSubKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSubKey.m; path = ObjectivePGP/PGPSubKey.m; sourceTree = "<group>"; };
+		13BEDB47E0B365C551948FA3FB9ACF20 /* PGPSecretKeyPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSecretKeyPacket.m; path = ObjectivePGP/PGPSecretKeyPacket.m; sourceTree = "<group>"; };
+		14A4B134E0321357BF488D3F50CD9C96 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-ios/openssl/stack.h"; sourceTree = "<group>"; };
+		15300428671D12C6018A7329C3503F99 /* PGPArmor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPArmor.h; path = ObjectivePGP/PGPArmor.h; sourceTree = "<group>"; };
+		158D6E23FC2007894F6262402C2D88AD /* PGPUserIDPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPUserIDPacket.m; path = ObjectivePGP/PGPUserIDPacket.m; sourceTree = "<group>"; };
+		1960F33FBB2A34A3FFE5659A22BF9825 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
+		1BCBF7B5CA72249D29579CC55C2CC7D8 /* libObjectivePGP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libObjectivePGP.a; path = libObjectivePGP.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D67766610926B8969FFC3A543D17A01 /* VALValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet.h; path = Valet/VALValet.h; sourceTree = "<group>"; };
+		1DB736A62998D420E607E6D1C8B5FCFC /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-ios/openssl/bio.h"; sourceTree = "<group>"; };
+		1DB741D1443B1ACF9FA92A3FC935C86C /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
+		1DC89E8D9ADE9FF3012E78AB74023E9F /* PGPCryptoUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPCryptoUtils.m; path = ObjectivePGP/PGPCryptoUtils.m; sourceTree = "<group>"; };
+		1ED10374F96978D3DE2ED5DD1FA7841E /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
+		1F1B7BD471FDC48B335A9CD29EF59A60 /* PGPModificationDetectionCodePacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPModificationDetectionCodePacket.m; path = ObjectivePGP/PGPModificationDetectionCodePacket.m; sourceTree = "<group>"; };
+		1FA6894207261B0A43AAEB184129949F /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
+		1FAA48DD1A1592A1BD16760FFB190943 /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
+		204C5E29E9F0071058DE0ADF41959999 /* VALValet_Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet_Protected.h; path = Valet/VALValet_Protected.h; sourceTree = "<group>"; };
+		2054A3B4B933239575616AF1CD964943 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
+		217DC980DACD802B8B6B17AF75F395C0 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-ios/openssl/safestack.h"; sourceTree = "<group>"; };
+		22E33170C1467B563E3127D6284394D2 /* PGPCompressedPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPCompressedPacket.m; path = ObjectivePGP/PGPCompressedPacket.m; sourceTree = "<group>"; };
+		240F0EC0B86317440B2C10075F489F45 /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
+		2499D03CE02FAB11253DEDE2D36F8CCB /* NSData+compression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+compression.h"; path = "ObjectivePGP/NSData+compression.h"; sourceTree = "<group>"; };
+		24D536A0F1A7B749E530F347FA423DF8 /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
+		25238765BA55EB294FC2CD8031B0C54C /* PGPS2K.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPS2K.h; path = ObjectivePGP/PGPS2K.h; sourceTree = "<group>"; };
+		2645296CD58DC9CA5CC9C54F395A57DC /* VALSecureEnclaveValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSecureEnclaveValet.m; path = Valet/VALSecureEnclaveValet.m; sourceTree = "<group>"; };
+		2769AF551E4BCBB94EEF47E8AF621AB2 /* PGPUserAttributePacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPUserAttributePacket.m; path = ObjectivePGP/PGPUserAttributePacket.m; sourceTree = "<group>"; };
+		280C13D487277346A573EDDBA044079C /* PGPPacketFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPacketFactory.m; path = ObjectivePGP/PGPPacketFactory.m; sourceTree = "<group>"; };
+		2A7D2DB30FCB892BFC0A44DC0917085A /* PGPUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPUser.h; path = ObjectivePGP/PGPUser.h; sourceTree = "<group>"; };
+		2D89B79E26C50278586B21C7DD4ACF6F /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
+		2DF228192153965653F0D905B4B8B787 /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
+		3381EEC6DD4BF86C06B3365BC4E7A38E /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-ios/openssl/dsa.h"; sourceTree = "<group>"; };
+		33A3E826575D9087B1C61418596EFECE /* ValetDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ValetDefines.h; path = Other/ValetDefines.h; sourceTree = "<group>"; };
+		34207E3BDD3034A8C2E557AFE4206E12 /* libPods-Pass.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Pass.a"; path = "libPods-Pass.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39FEB5E3CAE6FD0A636D585963C5F232 /* PGPSubKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSubKey.h; path = ObjectivePGP/PGPSubKey.h; sourceTree = "<group>"; };
+		3A63C2C2218D9CD167C54A346D47A4DD /* VALValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALValet.m; path = Valet/VALValet.m; sourceTree = "<group>"; };
+		3A84C620C5E120CC7244A9897D226B4D /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Valet/Valet.h; sourceTree = "<group>"; };
+		3ABAA99CDABB09487F912B266306714D /* PGPSecretKeyPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSecretKeyPacket.h; path = ObjectivePGP/PGPSecretKeyPacket.h; sourceTree = "<group>"; };
+		3C8C650B43DBDC8388ED2E7415C8E7CD /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-ios/openssl/opensslconf.h"; sourceTree = "<group>"; };
+		40191C8EFB96847450C39202120F532B /* PGPPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPacket.m; path = ObjectivePGP/PGPPacket.m; sourceTree = "<group>"; };
+		46E0B113FA7E47BA3B0F0ADACF2F4E58 /* ObjectivePGP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjectivePGP.m; path = ObjectivePGP/ObjectivePGP.m; sourceTree = "<group>"; };
+		472CEE551691FFFD51C9D5D463388F3F /* PGPUserAttributePacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPUserAttributePacket.h; path = ObjectivePGP/PGPUserAttributePacket.h; sourceTree = "<group>"; };
+		481EDCA65DD097D02FF132784710BFBB /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
+		4B8055ED12EEEA14EBE34DFCADBF42BC /* PGPUserAttributeSubpacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPUserAttributeSubpacket.h; path = ObjectivePGP/PGPUserAttributeSubpacket.h; sourceTree = "<group>"; };
+		4FBB5407887B84228DB8F574298FF921 /* Pods-Pass-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pass-acknowledgements.markdown"; sourceTree = "<group>"; };
+		500EBC523ECB274E2B0CB358BD946040 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
+		5127CB050C0C9E88E5F131AD2DF14403 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
+		534808024CDED3C251C786609F0A355C /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-ios/openssl/dtls1.h"; sourceTree = "<group>"; };
+		54D4BE419D7F57D73FD44E8B23427F67 /* PGPSecretSubKeyPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSecretSubKeyPacket.m; path = ObjectivePGP/PGPSecretSubKeyPacket.m; sourceTree = "<group>"; };
+		555A41A92A92C4ABB33584680997691A /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
+		56F052CEF634EEAE45FD7BF2A1D071DB /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-ios/openssl/obj_mac.h"; sourceTree = "<group>"; };
+		5A4FB98C38EF3C8751A956BCEA15ECBE /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-ios/openssl/hmac.h"; sourceTree = "<group>"; };
+		5A676E0C17173A351E25EFD12525212F /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-ios/openssl/opensslv.h"; sourceTree = "<group>"; };
+		5AEF77C45D71941FE530DF19688489FA /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
+		5B230897A4A46CC7842440A2D7268258 /* PGPArmor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPArmor.m; path = ObjectivePGP/PGPArmor.m; sourceTree = "<group>"; };
+		5CD9F2F33D942A716563999502F4BCEE /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
+		5D3C6D57DCD74E391C23F79108411404 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
+		5D891E6EB25FFAD01DF0D53F5EFE90F3 /* PGPLiteralPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPLiteralPacket.m; path = ObjectivePGP/PGPLiteralPacket.m; sourceTree = "<group>"; };
+		5DD87F757F84033A81E2650F48284040 /* PGPUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPUser.m; path = ObjectivePGP/PGPUser.m; sourceTree = "<group>"; };
+		6083C1D33B601914F6CE5D30CF941A55 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
+		619DED952206886116F6B6D0831A1019 /* ObjectivePGP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectivePGP-prefix.pch"; sourceTree = "<group>"; };
+		61B7431352D7F4114C453BF4C0E1ED4F /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
+		6246984028C2808381094B633EF6C820 /* NSData+PGPUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+PGPUtils.h"; path = "ObjectivePGP/NSData+PGPUtils.h"; sourceTree = "<group>"; };
+		62D3E96805C4B3F4CF7854F8D5B262D3 /* PGPPKCSEmsa.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPKCSEmsa.m; path = ObjectivePGP/PGPPKCSEmsa.m; sourceTree = "<group>"; };
+		64EAC0B6CB45301383D33391AC34B660 /* PGPFingerprint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPFingerprint.h; path = ObjectivePGP/PGPFingerprint.h; sourceTree = "<group>"; };
+		66F2BA6C41F051EC374C8B3CCC93C564 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-ios/openssl/buffer.h"; sourceTree = "<group>"; };
+		671F48C6342CFAE6A306021AA0A8BDCD /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
+		6916221B50F52EC9B40D6F550FD64600 /* PGPSymmetricallyEncryptedDataPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSymmetricallyEncryptedDataPacket.h; path = ObjectivePGP/PGPSymmetricallyEncryptedDataPacket.h; sourceTree = "<group>"; };
+		6AC756816DAC648F3B9094FF2CA35048 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-ios/openssl/err.h"; sourceTree = "<group>"; };
+		6B2A4B387F7FA5E668A6C4CAE66BF479 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-ios/openssl/md4.h"; sourceTree = "<group>"; };
+		6BF50347CF9C947B8D8727870A44B087 /* PGPTrustPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPTrustPacket.h; path = ObjectivePGP/PGPTrustPacket.h; sourceTree = "<group>"; };
+		700B92BDB6F55D1EAF52A4E18CE87F72 /* PGPSymmetricallyEncryptedDataPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSymmetricallyEncryptedDataPacket.m; path = ObjectivePGP/PGPSymmetricallyEncryptedDataPacket.m; sourceTree = "<group>"; };
+		70664F385A23862AFCAFE3E09C0C6140 /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-ios/openssl/rc4.h"; sourceTree = "<group>"; };
+		70E6CD178450BD749060A35745F5CE87 /* PGPSecretSubKeyPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSecretSubKeyPacket.h; path = ObjectivePGP/PGPSecretSubKeyPacket.h; sourceTree = "<group>"; };
+		70EDD2C00EA1DC310DE135D76FAAAB90 /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
+		72D76DCA65D33517F66634E0929720F2 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
+		7311CA748FF0DDA4666CA01A0FE947E2 /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-ios/openssl/cast.h"; sourceTree = "<group>"; };
+		7367D9E6AC60DDF6E20222A6B2A32D0C /* NSData+compression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+compression.m"; path = "ObjectivePGP/NSData+compression.m"; sourceTree = "<group>"; };
+		740E393B7B1BCFAC13521FD99020AC31 /* VALSecureEnclaveValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSecureEnclaveValet.h; path = Valet/VALSecureEnclaveValet.h; sourceTree = "<group>"; };
+		755642BE84D55FC3F7D06CBE95D26F2A /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-ios/openssl/x509.h"; sourceTree = "<group>"; };
+		78F56E1F584D8D987583423C69237EC1 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
+		7A2D207702FBB4B581E435EA77F46F1C /* PGPPublicKeyRSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPublicKeyRSA.h; path = ObjectivePGP/PGPPublicKeyRSA.h; sourceTree = "<group>"; };
+		7A808A5B3E48CE10A85632D7F3A396A5 /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
+		7CE2EE2AF7FC4DBE9AB5EEFA40767AC8 /* PGPSignatureSubpacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSignatureSubpacket.m; path = ObjectivePGP/PGPSignatureSubpacket.m; sourceTree = "<group>"; };
+		7ED5E8EA0A386FB4F04BB26685F658E3 /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-ios/openssl/ui_compat.h"; sourceTree = "<group>"; };
+		81728BD5ABBFAA941FE900BE0DF45A36 /* PGPCryptoCFB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPCryptoCFB.h; path = ObjectivePGP/PGPCryptoCFB.h; sourceTree = "<group>"; };
+		8597F6B08680AC10530B814F849410A6 /* PGPTrustPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPTrustPacket.m; path = ObjectivePGP/PGPTrustPacket.m; sourceTree = "<group>"; };
+		86532894E1FB24CA71EC3C5126AE12B2 /* PGPCryptoUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPCryptoUtils.h; path = ObjectivePGP/PGPCryptoUtils.h; sourceTree = "<group>"; };
+		87A2AEE1B948FAA13D79079D0474E660 /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
+		89F240B6919BBAAA78109D9BC037C5D0 /* PGPPublicKeyEncryptedSessionKeyPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPublicKeyEncryptedSessionKeyPacket.m; path = ObjectivePGP/PGPPublicKeyEncryptedSessionKeyPacket.m; sourceTree = "<group>"; };
+		8ACA5BA34E4A49816BFD4DC7F0C1E42D /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
+		8C548E3FEDA2A648E08376873B1C8A3B /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-ios/openssl/aes.h"; sourceTree = "<group>"; };
+		8C5C5F8B40CA744736CFEAD8334545C5 /* PGPFingerprint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPFingerprint.m; path = ObjectivePGP/PGPFingerprint.m; sourceTree = "<group>"; };
+		8CD638B586F672F66713F0372155E113 /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-ios/openssl/evp.h"; sourceTree = "<group>"; };
+		8D0D3264F69BA11EDFF7531DA0F7E3DD /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-ios/openssl/x509_vfy.h"; sourceTree = "<group>"; };
+		8D1272A2D0287EDC3D0526ED68586E35 /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-ios/openssl/cms.h"; sourceTree = "<group>"; };
+		8D3D48E2EBD300B794FED4852B3B5089 /* PGPPublicSubKeyPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPublicSubKeyPacket.m; path = ObjectivePGP/PGPPublicSubKeyPacket.m; sourceTree = "<group>"; };
+		923B1ABBC152E474FFFB346E3DE9D871 /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
+		929C0FF9AF5FBB7ACA2A3D1C4CD19B3A /* PGPS2K.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPS2K.m; path = ObjectivePGP/PGPS2K.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94CE063DF6CBB16CD1809AEFD9D844AB /* libObjectivePGP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libObjectivePGP.a; path = libObjectivePGP.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		95DF232BF0F6BB9195617593FD4B8CAE /* libPods-Pass.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Pass.a"; path = "libPods-Pass.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		964EAA66E0A13970469AC8D8DFCE699B /* PGPSymmetricallyEncryptedDataPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSymmetricallyEncryptedDataPacket.h; path = ObjectivePGP/PGPSymmetricallyEncryptedDataPacket.h; sourceTree = "<group>"; };
-		9B77B6C0EEC7CF260E1A25E09F3D63EC /* PGPUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPUser.m; path = ObjectivePGP/PGPUser.m; sourceTree = "<group>"; };
-		9C270F10ED50DF091746F21207DCBCC4 /* PGPArmor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPArmor.h; path = ObjectivePGP/PGPArmor.h; sourceTree = "<group>"; };
-		9C2957142867C274CE9EAB0B2F6C0097 /* Pods-Pass-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pass-resources.sh"; sourceTree = "<group>"; };
-		9D1B04D6FD17D35DAF203BC8BA7C0655 /* PGPMPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPMPI.m; path = ObjectivePGP/PGPMPI.m; sourceTree = "<group>"; };
-		9F61D2E5D461057B4EC61FEF92249171 /* PGPTrustPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPTrustPacket.h; path = ObjectivePGP/PGPTrustPacket.h; sourceTree = "<group>"; };
-		A1C15F91BBB392C0EE2EDACC3D7E23A4 /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
-		A2D2158988D1F53B3B26ECB7FABC47BA /* libPods-AddZip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AddZip.a"; path = "libPods-AddZip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2F3AD4A162D3E50FC706118FB5D6D7A /* WPZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPZipArchive.h; path = WPZipArchive/WPZipArchive.h; sourceTree = "<group>"; };
-		A39D45A316A19843EFA46CDF20F6B5B9 /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-ios/openssl/evp.h"; sourceTree = "<group>"; };
-		A4D6CABF271E12F3022C089C477F851D /* WPZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPZipArchive.xcconfig; sourceTree = "<group>"; };
-		A55C54B37FBC2794290E5CF8B225D066 /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-ios/openssl/ui_compat.h"; sourceTree = "<group>"; };
-		A6F4C76594BF05177968A8FAE4F327A3 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
-		A93069A87FDD3A9C6167CFD6440B17DD /* PGPSignatureSubpacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSignatureSubpacket.m; path = ObjectivePGP/PGPSignatureSubpacket.m; sourceTree = "<group>"; };
-		A93108DD15A60EE8C8E3991E5334BF15 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = WPZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
-		AA09A8D54D10ED1D2234E847E7843135 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
-		AC4E55CC3E074359DE2E5E923D0EA981 /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
-		AE94036922A316CA91016F1AD8E6A1EE /* PGPUserAttributePacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPUserAttributePacket.m; path = ObjectivePGP/PGPUserAttributePacket.m; sourceTree = "<group>"; };
-		B04447253BF380149EDADC21724AEEA2 /* PGPPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPacket.h; path = ObjectivePGP/PGPPacket.h; sourceTree = "<group>"; };
-		B06A17C81EA1DF41A62B9AB4FB1C2F85 /* PGPPublicSubKeyPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPublicSubKeyPacket.h; path = ObjectivePGP/PGPPublicSubKeyPacket.h; sourceTree = "<group>"; };
-		B1C62E5DBDC9BD128041DDFA23EA7DD4 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = WPZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
-		B2BA9E790E16B4647E8CBB186096D4A4 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = WPZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
-		B450B19BE96A7922DB90D666CA435837 /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-ios/openssl/dsa.h"; sourceTree = "<group>"; };
+		9421D99DD9BF5F148D1F0BA8EE092B8E /* PGPPublicKeyRSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPublicKeyRSA.m; path = ObjectivePGP/PGPPublicKeyRSA.m; sourceTree = "<group>"; };
+		97027BCD42159F723FFF8BF72077AB6B /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
+		97BA9A471C2BF88DD8F56F1ED1FEDDD9 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
+		997032F0C2B6E3B62316568836D369A6 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-ios/openssl/e_os2.h"; sourceTree = "<group>"; };
+		9C2B277B9F47B47A291042DBB26D54D6 /* PGPKeyID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPKeyID.h; path = ObjectivePGP/PGPKeyID.h; sourceTree = "<group>"; };
+		9D8BC71B5B443CCE7BFFDB2FA7B1C00F /* Pods-Pass-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pass-resources.sh"; sourceTree = "<group>"; };
+		9DDB0006FEB25ABC501F4575A84E9018 /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-ios/openssl/conf_api.h"; sourceTree = "<group>"; };
+		9EE1E2D44DB0B5BE37715EF7DB19F41C /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-ios/openssl/ecdh.h"; sourceTree = "<group>"; };
+		A1023A4A2AD39AEA099C6217E41B4D7E /* PGPPacketFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPacketFactory.h; path = ObjectivePGP/PGPPacketFactory.h; sourceTree = "<group>"; };
+		A2F08E6D45846C3FFF7A83D009084545 /* Pods-Pass-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pass-dummy.m"; sourceTree = "<group>"; };
+		A4D5AE46ACE09CBC8AB6EB2B5B510F59 /* PGPMPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPMPI.m; path = ObjectivePGP/PGPMPI.m; sourceTree = "<group>"; };
+		A61FAD1437E055CCFBC2E5E6CBFA91D6 /* ObjectivePGP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectivePGP.h; path = ObjectivePGP/ObjectivePGP.h; sourceTree = "<group>"; };
+		A6400ECD2C77A51EABF4A89337DC4242 /* ObjectivePGP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectivePGP-dummy.m"; sourceTree = "<group>"; };
+		A810D3713AF63C02C13F2268C9E1DBA4 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
+		A8127B92BBD9ECD8B0E21D8ABC3C9739 /* PGPMPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPMPI.h; path = ObjectivePGP/PGPMPI.h; sourceTree = "<group>"; };
+		A857E3F0AA1A3D7F373231BD2376FAC7 /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
+		A8674B4F922C0D3F66878C73E684C3E7 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
+		AB109C5BCFCE75EEA8A73E37B61E07F4 /* PGPOnePassSignaturePacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPOnePassSignaturePacket.m; path = ObjectivePGP/PGPOnePassSignaturePacket.m; sourceTree = "<group>"; };
+		ABC84E0429A074EEDB2CB87D226A4CBF /* Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.xcconfig; sourceTree = "<group>"; };
+		AC83E6B6CD89BD720937686446438B01 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
+		ACB4B0225907AAEB05701C5C6F284F89 /* PGPOnePassSignaturePacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPOnePassSignaturePacket.h; path = ObjectivePGP/PGPOnePassSignaturePacket.h; sourceTree = "<group>"; };
+		AE14CC944FCDAF9DC0100EB4C230041E /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-ios/openssl/des_old.h"; sourceTree = "<group>"; };
+		B35E4360C3B4B70174656CE86F6E1BFF /* PGPPKCSEme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPKCSEme.m; path = ObjectivePGP/PGPPKCSEme.m; sourceTree = "<group>"; };
 		B4690263E3C2DD3C24DEAC554FFBD486 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B46F0DC4AF064BDDABE245ED7A475EF6 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
-		B49BEA26DC93F1CCE7449710598F3A65 /* Pods-AddZip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AddZip-dummy.m"; sourceTree = "<group>"; };
-		B5E37431960B5B846BF6E5C8065E6A2C /* PGPSecretKeyPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSecretKeyPacket.m; path = ObjectivePGP/PGPSecretKeyPacket.m; sourceTree = "<group>"; };
-		B5EB2599296E57889271AB8186CF0992 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = WPZipArchive/minizip/zip.c; sourceTree = "<group>"; };
-		B75A2CD1308756F30255D1F424FF8CA4 /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-ios/openssl/rsa.h"; sourceTree = "<group>"; };
-		B971A590BBB841EBA8D7D19072CF7064 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
-		BA50259CF5788D1DCB603C134BD0118C /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-ios/openssl/blowfish.h"; sourceTree = "<group>"; };
-		BC01944EDDF6EE0445AAD8098B8C047A /* PGPArmor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPArmor.m; path = ObjectivePGP/PGPArmor.m; sourceTree = "<group>"; };
-		BF3012332916B09ED7DD96B400FFBC6D /* Pods-Pass-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pass-dummy.m"; sourceTree = "<group>"; };
-		BF7E501820125796F960B38398627A30 /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
-		BFF05EED857394C360AAF77216285786 /* Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.xcconfig; sourceTree = "<group>"; };
-		C06162B7C10CC8FB51BD2CAD0C2078F7 /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
-		C1BBE93A0D18EB56CBD1FFB9494ED27B /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
-		C1D80496C7AC8A5BBF1C4FE27D634A04 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
-		C28EFFF2ACB99690ADCD08F6C287AEED /* PGPMPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPMPI.h; path = ObjectivePGP/PGPMPI.h; sourceTree = "<group>"; };
-		C33E09C06A95D04EA13D2C00B1A7AD3B /* PGPPKCSEme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPKCSEme.m; path = ObjectivePGP/PGPPKCSEme.m; sourceTree = "<group>"; };
-		C75F507E37965C91F8B1FC62A734E28C /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m; path = ObjectivePGP/PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m; sourceTree = "<group>"; };
+		B7A283BD85603334FDF3834F5B929A6C /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-ios/openssl/rsa.h"; sourceTree = "<group>"; };
+		B848DD1733B6AB0F61BC6174EBBB60EC /* ObjectivePGP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectivePGP.xcconfig; sourceTree = "<group>"; };
+		B871E5F4E44463FCF3BBB572496E7E1B /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
+		B975AC695B5981B38B8B30682B9F0CE6 /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-ios/openssl/pem2.h"; sourceTree = "<group>"; };
+		BA5931EC4440C4BF53CD93A9D3401498 /* PGPUserAttributeSubpacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPUserAttributeSubpacket.m; path = ObjectivePGP/PGPUserAttributeSubpacket.m; sourceTree = "<group>"; };
+		BA6B1EFC37A9B68B82F24E0552B4C9CB /* PGPSignaturePacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSignaturePacket.m; path = ObjectivePGP/PGPSignaturePacket.m; sourceTree = "<group>"; };
+		BACE1A91C2553A02971DC6C42EABEA58 /* PGPModificationDetectionCodePacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPModificationDetectionCodePacket.h; path = ObjectivePGP/PGPModificationDetectionCodePacket.h; sourceTree = "<group>"; };
+		BBDE9464C309BE0EF9A550EBA8158240 /* PGPPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPacket.h; path = ObjectivePGP/PGPPacket.h; sourceTree = "<group>"; };
+		BBF46290D588E1FFC3DC50B0FA0E7F96 /* PGPPublicSubKeyPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPublicSubKeyPacket.h; path = ObjectivePGP/PGPPublicSubKeyPacket.h; sourceTree = "<group>"; };
+		BBF869049A5DE8C25198F2B530D9B175 /* PGPTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPTypes.h; path = ObjectivePGP/PGPTypes.h; sourceTree = "<group>"; };
+		BE84267C648B8B84F9C9F126B3ADE133 /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
+		BF648BD734C0B205DE23809F81C2CA96 /* VALSynchronizableValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSynchronizableValet.h; path = Valet/VALSynchronizableValet.h; sourceTree = "<group>"; };
+		C3F6D72CBB5A6E4FD72E0ECA1A04568F /* Pods-Pass-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pass-frameworks.sh"; sourceTree = "<group>"; };
+		C68F49F7A1DBDEC4E42B6CF04DB44481 /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
+		C7E82A8D667D9C7097FF854E7A754D13 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-ios/openssl/ecdsa.h"; sourceTree = "<group>"; };
+		CA1087FC8F0A5C82A8B612E48244E746 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m; path = ObjectivePGP/PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m; sourceTree = "<group>"; };
+		CA4E0146F261151C64AEF54506F3E024 /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-ios/openssl/bn.h"; sourceTree = "<group>"; };
 		CAFD15069DBFFAF7E7CD48183E2D230C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		CB3A1A09889F3EFB3AA68D796C45B521 /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Valet/Valet.h; sourceTree = "<group>"; };
-		CB519C2DC8B1C54BE42241DE9E72ADA1 /* ObjectivePGP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectivePGP.xcconfig; sourceTree = "<group>"; };
-		CB7E6D94022E2659EE4EED2BE75C89D5 /* PGPKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPKey.m; path = ObjectivePGP/PGPKey.m; sourceTree = "<group>"; };
-		D234B61E0A766212450E5F01D795E73A /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
-		D2793C8F6B5092D1192555433936A848 /* VALSynchronizableValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSynchronizableValet.h; path = Valet/VALSynchronizableValet.h; sourceTree = "<group>"; };
-		D29346FCF865BB0E3FEF7329D580DDEC /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
-		D315CF218D67F498A73F86F824C0062B /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-ios/openssl/cms.h"; sourceTree = "<group>"; };
-		D3B3FD61E3570747E97B874C007D5604 /* PGPPKCSEmsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPKCSEmsa.h; path = ObjectivePGP/PGPPKCSEmsa.h; sourceTree = "<group>"; };
-		D3B9C3E74AD250C89BD91357BA16B8E6 /* PGPFingerprint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPFingerprint.h; path = ObjectivePGP/PGPFingerprint.h; sourceTree = "<group>"; };
-		D584ABB4DBC8604CA20A3565F2841591 /* PGPCryptoUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPCryptoUtils.h; path = ObjectivePGP/PGPCryptoUtils.h; sourceTree = "<group>"; };
-		D6ABAE93389BE17670FF19CF839CA555 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = WPZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
-		D96CA09D59800B3238659EE97FC5DB68 /* PGPTrustPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPTrustPacket.m; path = ObjectivePGP/PGPTrustPacket.m; sourceTree = "<group>"; };
-		DD9CB05CA0BECAEA4FF4490A8FB4EF74 /* VALSecureEnclaveValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSecureEnclaveValet.h; path = Valet/VALSecureEnclaveValet.h; sourceTree = "<group>"; };
-		DE9F0F1EF83A677A592F4F64D0ABEA57 /* PGPCryptoCFB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPCryptoCFB.m; path = ObjectivePGP/PGPCryptoCFB.m; sourceTree = "<group>"; };
-		DFB045BD437D2713CF90CDA5D2AB7E68 /* PGPPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPacket.m; path = ObjectivePGP/PGPPacket.m; sourceTree = "<group>"; };
-		E232D2910DA2EEDCB118B1F492231FC9 /* NSValue+PGPUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+PGPUtils.h"; path = "ObjectivePGP/NSValue+PGPUtils.h"; sourceTree = "<group>"; };
-		E26495D68172898CDFC6F2A8D8DEF61E /* PGPUserAttributePacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPUserAttributePacket.h; path = ObjectivePGP/PGPUserAttributePacket.h; sourceTree = "<group>"; };
-		E34D3E19B00EF2C5AA80E5001CD790A5 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-ios/openssl/ssl23.h"; sourceTree = "<group>"; };
-		E39EEE9EADF12BBAB33AEFED32A5F288 /* NSValue+PGPUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+PGPUtils.m"; path = "ObjectivePGP/NSValue+PGPUtils.m"; sourceTree = "<group>"; };
-		E5521F93E50CC2FD1CFB69D769E54326 /* PGPPublicKeyPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPublicKeyPacket.m; path = ObjectivePGP/PGPPublicKeyPacket.m; sourceTree = "<group>"; };
-		E5D0E0A70CE6632FCCDBFD2DB45D29B9 /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-ios/openssl/conf_api.h"; sourceTree = "<group>"; };
-		E5DF1C792B23765914C2A9A5EAAA2BDA /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
-		E63498FF05A77C8DEAAA5E8CBE647F67 /* NSData+PGPUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+PGPUtils.m"; path = "ObjectivePGP/NSData+PGPUtils.m"; sourceTree = "<group>"; };
-		E7631C0D87D2FD10DEDD5432AA378A69 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = WPZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
-		E852838CE4613006120A17570CCB07A4 /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-ios/openssl/rc4.h"; sourceTree = "<group>"; };
-		E9C01547A144E0D902ECEB96A6885701 /* PGPPublicKeyEncryptedSessionKeyPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPublicKeyEncryptedSessionKeyPacket.m; path = ObjectivePGP/PGPPublicKeyEncryptedSessionKeyPacket.m; sourceTree = "<group>"; };
-		EB1F1D8327EB7B6F7B7F93B619B53B8E /* ObjectivePGP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjectivePGP.m; path = ObjectivePGP/ObjectivePGP.m; sourceTree = "<group>"; };
-		EBCD64863A6149CD3700CB69518A2454 /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-ios/openssl/mdc2.h"; sourceTree = "<group>"; };
-		EBF520209F21CF310DD2955D4445926C /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
-		ECE13183FFA39DCF1672B8130D2CA78C /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-ios/openssl/ripemd.h"; sourceTree = "<group>"; };
-		ED347EEAB25DCDF58933CDB4BDCE01FC /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-ios/openssl/hmac.h"; sourceTree = "<group>"; };
-		EE6406D93C2F63256E1D89FDA649C2B6 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
-		EE6DD1012A5FE63D26C377F20FDFC977 /* libWPZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWPZipArchive.a; path = libWPZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF91AAF3F883D19FACDBD0324E10A6C7 /* NSData+compression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+compression.m"; path = "ObjectivePGP/NSData+compression.m"; sourceTree = "<group>"; };
-		EFF1449CB1052ECADAF0D426FF54C9C2 /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-ios/openssl/opensslconf.h"; sourceTree = "<group>"; };
-		F070D5ECB7E67331F602641777341EA1 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
-		F15CFEAE6727B0FCAE93AC5F9D080F0C /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-ios/openssl/bio.h"; sourceTree = "<group>"; };
-		F26B19BE9730EB27408F20D1C1DA1CFE /* Pods-AddZip-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AddZip-resources.sh"; sourceTree = "<group>"; };
-		F2FBA98E87AAAABB5D5236FBAFDDC031 /* PGPSubKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPSubKey.m; path = ObjectivePGP/PGPSubKey.m; sourceTree = "<group>"; };
-		F374E7BC8B086AF3AF435581040868D9 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
-		F47C925CD34F6A85215FFA84C356DEC5 /* PGPCompressedPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPCompressedPacket.m; path = ObjectivePGP/PGPCompressedPacket.m; sourceTree = "<group>"; };
-		F48443C2AD7D690DA70D293856623849 /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
-		F6307408E0B1801B7CDA781918BCA78D /* Pods-AddZip-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AddZip-acknowledgements.plist"; sourceTree = "<group>"; };
-		F70246E5341FA5FE6549F94DC13831C6 /* Pods-Pass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pass.debug.xcconfig"; sourceTree = "<group>"; };
-		F770890AF75A5E3AC6EE412BA8AD12CA /* WPZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		F84277C5511F9E761D92B706D540760C /* PGPOnePassSignaturePacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPOnePassSignaturePacket.h; path = ObjectivePGP/PGPOnePassSignaturePacket.h; sourceTree = "<group>"; };
-		F8529DCD059D9C561A23669BAB5A78A7 /* PGPPublicKeyEncryptedSessionKeyPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPublicKeyEncryptedSessionKeyPacket.h; path = ObjectivePGP/PGPPublicKeyEncryptedSessionKeyPacket.h; sourceTree = "<group>"; };
-		F8C77DDC20E0E334754B5A58FC0C20D4 /* Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Common.h; path = WPZipArchive/Common.h; sourceTree = "<group>"; };
-		F922B4053474A9E1CA39C9312E262799 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-ios/openssl/e_os2.h"; sourceTree = "<group>"; };
-		FBDED6539BEB1DF241A41DB5044250EB /* PGPCompressedPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPCompressedPacket.h; path = ObjectivePGP/PGPCompressedPacket.h; sourceTree = "<group>"; };
-		FCF2AFEC6889E422481F249CE0D13187 /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-ios/openssl/pem2.h"; sourceTree = "<group>"; };
+		CEB83027EC28FFED6F7AA9E8F8A18340 /* PGPLiteralPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPLiteralPacket.h; path = ObjectivePGP/PGPLiteralPacket.h; sourceTree = "<group>"; };
+		D04B6AAF3ED582096340E47A7BFDA421 /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-ios/openssl/ripemd.h"; sourceTree = "<group>"; };
+		D06F82574E52D7934186DAADFA885EE1 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
+		D37C40CBC91156956EA7D2F98BCE4D6E /* PGPPublicKeyPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPublicKeyPacket.h; path = ObjectivePGP/PGPPublicKeyPacket.h; sourceTree = "<group>"; };
+		D40C4C1CE0E3DA82640F32080E046292 /* PGPKeyID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPKeyID.m; path = ObjectivePGP/PGPKeyID.m; sourceTree = "<group>"; };
+		D4E94E4585EEEBA36CBDD6B721442328 /* PGPPKCSEme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPKCSEme.h; path = ObjectivePGP/PGPPKCSEme.h; sourceTree = "<group>"; };
+		D94737764E1423A1854BF9D8B9B15F50 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-ios/libcrypto.a"; sourceTree = "<group>"; };
+		DB2D17B91E15E961E07B2416023E2F7F /* PGPCompressedPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPCompressedPacket.h; path = ObjectivePGP/PGPCompressedPacket.h; sourceTree = "<group>"; };
+		DF7A9BA5E2336B9FEA372A839B1F9352 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-ios/openssl/ssl23.h"; sourceTree = "<group>"; };
+		DFFA54A77B01E21089198CAB2D0DC325 /* Pods-Pass-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pass-acknowledgements.plist"; sourceTree = "<group>"; };
+		E094FCF70C82751BF5C953F3EAA7CB66 /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-ios/openssl/txt_db.h"; sourceTree = "<group>"; };
+		E0EBCA3F802D237CB51A51F741B0825B /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-ios/openssl/blowfish.h"; sourceTree = "<group>"; };
+		E1AFD4251BE324DFF6B323C4DA794E8C /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-ios/openssl/mdc2.h"; sourceTree = "<group>"; };
+		E1C1901B09ABA394A4248CFECA79E747 /* PGPPublicKeyEncryptedSessionKeyPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPPublicKeyEncryptedSessionKeyPacket.h; path = ObjectivePGP/PGPPublicKeyEncryptedSessionKeyPacket.h; sourceTree = "<group>"; };
+		E64A635125C1BBF827EF97F57B5FE78C /* PGPUserIDPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPUserIDPacket.h; path = ObjectivePGP/PGPUserIDPacket.h; sourceTree = "<group>"; };
+		E938B632EAA9CBF2FE344A245BDB8E53 /* PGPKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPKey.h; path = ObjectivePGP/PGPKey.h; sourceTree = "<group>"; };
+		EAD6A2EC67CF845F61327D042336DAEE /* PGPSignaturePacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSignaturePacket.h; path = ObjectivePGP/PGPSignaturePacket.h; sourceTree = "<group>"; };
+		EB9E8CC325BFB4E555ECE780E72DC84B /* PGPPublicKeyPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPPublicKeyPacket.m; path = ObjectivePGP/PGPPublicKeyPacket.m; sourceTree = "<group>"; };
+		EEF61C8E7C04421428B554F0DD46FFB2 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-ios/openssl/modes.h"; sourceTree = "<group>"; };
+		F016DC1366930310161AB5CE5CB2B131 /* PGPKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPKey.m; path = ObjectivePGP/PGPKey.m; sourceTree = "<group>"; };
+		F1173165C03D65C094A77E4FD6A7D582 /* NSValue+PGPUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+PGPUtils.h"; path = "ObjectivePGP/NSValue+PGPUtils.h"; sourceTree = "<group>"; };
+		F17E8DD3492C93735C851B55FE4A610B /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h; path = ObjectivePGP/PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h; sourceTree = "<group>"; };
+		F19C1F4117105F0F8FFB5287E09F05AF /* PGPCryptoCFB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPCryptoCFB.m; path = ObjectivePGP/PGPCryptoCFB.m; sourceTree = "<group>"; };
+		F56BDC711E7009413AA5463432C8E041 /* VALSynchronizableValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSynchronizableValet.m; path = Valet/VALSynchronizableValet.m; sourceTree = "<group>"; };
+		F7E46EA224FACA04EF9D069285252299 /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
+		F92B478D4BE6BA1F0E92396E6D5988AD /* libValet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libValet.a; path = libValet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE5C694E3B9F033A860D400B4432C97 /* NSData+PGPUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+PGPUtils.m"; path = "ObjectivePGP/NSData+PGPUtils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,22 +314,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BBE726618DDCEE9F694E9A4B8CEBF21 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				234005C3633F16172F32A4A2A7927F44 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D11B3DB25115282133DB07E04BDDCE67 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E097DE82CFC2A885C385A5003E4666B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E246DE2B90B21C119BA9F95A44D527B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,25 +325,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19FDBAFC1613DE03B7E0A3F92C3827F1 /* WPZipArchive */ = {
+		25D7199E28B79506C9736113A42D3170 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F8C77DDC20E0E334754B5A58FC0C20D4 /* Common.h */,
-				186D70BF690EC29931188313547A9207 /* crypt.h */,
-				D6ABAE93389BE17670FF19CF839CA555 /* ioapi.c */,
-				B1C62E5DBDC9BD128041DDFA23EA7DD4 /* ioapi.h */,
-				8B108887283C86ECEF0CF28F619785B3 /* mztools.c */,
-				A93108DD15A60EE8C8E3991E5334BF15 /* mztools.h */,
-				E7631C0D87D2FD10DEDD5432AA378A69 /* unzip.c */,
-				B2BA9E790E16B4647E8CBB186096D4A4 /* unzip.h */,
-				A2F3AD4A162D3E50FC706118FB5D6D7A /* WPZipArchive.h */,
-				59A7214494247A14004DFDF2ACB69F31 /* WPZipArchive.m */,
-				B5EB2599296E57889271AB8186CF0992 /* zip.c */,
-				18D2D5FBC10502D72807BF7457926A4D /* zip.h */,
-				8F75D61210A24072B55D754FFBE73749 /* Support Files */,
+				D94737764E1423A1854BF9D8B9B15F50 /* libcrypto.a */,
+				72D76DCA65D33517F66634E0929720F2 /* libssl.a */,
 			);
-			name = WPZipArchive;
-			path = WPZipArchive;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2E339049816F198EB76DEA4264EF8374 /* iOS */ = {
@@ -425,157 +351,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		43C9557A996CCD7CF6CBA511C538A372 /* Pods */ = {
+		51B846E2DA78D5B0C970825F851822AB /* Valet */ = {
 			isa = PBXGroup;
 			children = (
-				C4CFFB1A4D2FDEC3956D33746BC92362 /* ObjectivePGP */,
-				6124DACD632D52962F1C66A477332A5D /* OpenSSL-Universal */,
-				927903ABAD435A14AEFDEB21931FE073 /* Valet */,
-				19FDBAFC1613DE03B7E0A3F92C3827F1 /* WPZipArchive */,
+				3A84C620C5E120CC7244A9897D226B4D /* Valet.h */,
+				33A3E826575D9087B1C61418596EFECE /* ValetDefines.h */,
+				740E393B7B1BCFAC13521FD99020AC31 /* VALSecureEnclaveValet.h */,
+				2645296CD58DC9CA5CC9C54F395A57DC /* VALSecureEnclaveValet.m */,
+				BF648BD734C0B205DE23809F81C2CA96 /* VALSynchronizableValet.h */,
+				F56BDC711E7009413AA5463432C8E041 /* VALSynchronizableValet.m */,
+				1D67766610926B8969FFC3A543D17A01 /* VALValet.h */,
+				3A63C2C2218D9CD167C54A346D47A4DD /* VALValet.m */,
+				204C5E29E9F0071058DE0ADF41959999 /* VALValet_Protected.h */,
+				9140318D6D361FE913FE7E0FA7DA16CA /* Support Files */,
 			);
-			name = Pods;
+			name = Valet;
+			path = Valet;
 			sourceTree = "<group>";
 		};
-		46802D7B2E1D54586D3FD909E926A036 /* Pods-Pass */ = {
+		5F33BE714E53767A9D96F3EAFF8498C4 /* Pods-Pass */ = {
 			isa = PBXGroup;
 			children = (
-				916C6A0C628FCCA3B278A3D2449A810C /* Pods-Pass-acknowledgements.markdown */,
-				836BB5EB549F8AD4D1AB7BE305908768 /* Pods-Pass-acknowledgements.plist */,
-				BF3012332916B09ED7DD96B400FFBC6D /* Pods-Pass-dummy.m */,
-				6353B6A236EA66FC6CD8D3119057526D /* Pods-Pass-frameworks.sh */,
-				9C2957142867C274CE9EAB0B2F6C0097 /* Pods-Pass-resources.sh */,
-				F70246E5341FA5FE6549F94DC13831C6 /* Pods-Pass.debug.xcconfig */,
-				2DD23CFB79A83997290DDE84FC56809A /* Pods-Pass.release.xcconfig */,
+				4FBB5407887B84228DB8F574298FF921 /* Pods-Pass-acknowledgements.markdown */,
+				DFFA54A77B01E21089198CAB2D0DC325 /* Pods-Pass-acknowledgements.plist */,
+				A2F08E6D45846C3FFF7A83D009084545 /* Pods-Pass-dummy.m */,
+				C3F6D72CBB5A6E4FD72E0ECA1A04568F /* Pods-Pass-frameworks.sh */,
+				9D8BC71B5B443CCE7BFFDB2FA7B1C00F /* Pods-Pass-resources.sh */,
+				06F3FCA52844C6B0B8001CA9DC38DAA5 /* Pods-Pass.debug.xcconfig */,
+				0667CC0CA23A3DAD32C1071018BDF6C7 /* Pods-Pass.release.xcconfig */,
 			);
 			name = "Pods-Pass";
 			path = "Target Support Files/Pods-Pass";
-			sourceTree = "<group>";
-		};
-		5BCAB17EA064DDDC7EF96227A03627DF /* Pods-AddZip */ = {
-			isa = PBXGroup;
-			children = (
-				319C5568EDEB90384484249658166977 /* Pods-AddZip-acknowledgements.markdown */,
-				F6307408E0B1801B7CDA781918BCA78D /* Pods-AddZip-acknowledgements.plist */,
-				B49BEA26DC93F1CCE7449710598F3A65 /* Pods-AddZip-dummy.m */,
-				F26B19BE9730EB27408F20D1C1DA1CFE /* Pods-AddZip-resources.sh */,
-				499711C2D13880D0D82CCDDBA7F724AA /* Pods-AddZip.debug.xcconfig */,
-				3D615622F42E75377F439EF01CD40CB5 /* Pods-AddZip.release.xcconfig */,
-			);
-			name = "Pods-AddZip";
-			path = "Target Support Files/Pods-AddZip";
-			sourceTree = "<group>";
-		};
-		6124DACD632D52962F1C66A477332A5D /* OpenSSL-Universal */ = {
-			isa = PBXGroup;
-			children = (
-				7170B96FE22C26CF3FCF1CEA10C03D91 /* aes.h */,
-				601CC363679D1A1B27B587056949EA7B /* asn1.h */,
-				4D7B961E7FACAD4B9F8D77DDD0497BB2 /* asn1_mac.h */,
-				F48443C2AD7D690DA70D293856623849 /* asn1t.h */,
-				F15CFEAE6727B0FCAE93AC5F9D080F0C /* bio.h */,
-				BA50259CF5788D1DCB603C134BD0118C /* blowfish.h */,
-				83C831CAE729619F20BC64AA1263CFEA /* bn.h */,
-				7CB84294739A46DF3D5A52701412ED70 /* buffer.h */,
-				C06162B7C10CC8FB51BD2CAD0C2078F7 /* camellia.h */,
-				55591B682EF4CCB2B9EB739475383F17 /* cast.h */,
-				D29346FCF865BB0E3FEF7329D580DDEC /* cmac.h */,
-				D315CF218D67F498A73F86F824C0062B /* cms.h */,
-				318DB26BE8313A194CBD9C96066C770E /* comp.h */,
-				0FE250247E7074F43962F2898FD1C972 /* conf.h */,
-				E5D0E0A70CE6632FCCDBFD2DB45D29B9 /* conf_api.h */,
-				66F620D3F1376DD97D1C5FDA653332E9 /* crypto.h */,
-				27BE13EB51D90B89C993A8A20DC0A94C /* des.h */,
-				080B3136040A6204463EC3563CC162B2 /* des_old.h */,
-				F070D5ECB7E67331F602641777341EA1 /* dh.h */,
-				B450B19BE96A7922DB90D666CA435837 /* dsa.h */,
-				F374E7BC8B086AF3AF435581040868D9 /* dso.h */,
-				3E345F727DBE571431BA1E77887FAC73 /* dtls1.h */,
-				F922B4053474A9E1CA39C9312E262799 /* e_os2.h */,
-				AC4E55CC3E074359DE2E5E923D0EA981 /* ebcdic.h */,
-				0F2A29D9E1BA953227869493DA410539 /* ec.h */,
-				858280DC8D2A854538CCF8A59E8D4401 /* ecdh.h */,
-				159F765EA3666BEDAAAAFEFE0CB6C454 /* ecdsa.h */,
-				3ECAC95FC7AAFDA3B3EA433FA9F97994 /* engine.h */,
-				3B54E4BB7E9C1EFF76467105B57E0B81 /* err.h */,
-				A39D45A316A19843EFA46CDF20F6B5B9 /* evp.h */,
-				ED347EEAB25DCDF58933CDB4BDCE01FC /* hmac.h */,
-				2AF414E7E77E24E413034A8836EEE5A0 /* idea.h */,
-				3C6BB3EC377DFDEFD3185F782B9298DA /* krb5_asn.h */,
-				875C2708439E26E75BD2F03178CD9DCA /* kssl.h */,
-				28694ECA02D1228839AEA24662E6031A /* lhash.h */,
-				7BB9BE2F3E54CFB73BE75C83550F275F /* md4.h */,
-				C1D80496C7AC8A5BBF1C4FE27D634A04 /* md5.h */,
-				EBCD64863A6149CD3700CB69518A2454 /* mdc2.h */,
-				53FCB4A1E0FBA49F14E7FD93D88CD9C6 /* modes.h */,
-				81E515B04EAAB11A54E6F0F005C477F2 /* obj_mac.h */,
-				AA09A8D54D10ED1D2234E847E7843135 /* objects.h */,
-				D234B61E0A766212450E5F01D795E73A /* ocsp.h */,
-				EFF1449CB1052ECADAF0D426FF54C9C2 /* opensslconf.h */,
-				3A7FA7C8F72969C485D786B4C9DD7B52 /* opensslv.h */,
-				372D68F43E330311E1490A64A0807B23 /* ossl_typ.h */,
-				E5DF1C792B23765914C2A9A5EAAA2BDA /* pem.h */,
-				FCF2AFEC6889E422481F249CE0D13187 /* pem2.h */,
-				55FE0A2595CA3B037BA7F3220A8DA47E /* pkcs12.h */,
-				9301A42CA62894C0F14AA817E574CBC2 /* pkcs7.h */,
-				85719B5D7FB7A949D20A6D4F6E8F48ED /* pqueue.h */,
-				81E21BBDDBEE7EBE48C5E8DC1918A687 /* rand.h */,
-				801391BDEEBE2D5F2C17C29A5015F8DA /* rc2.h */,
-				E852838CE4613006120A17570CCB07A4 /* rc4.h */,
-				ECE13183FFA39DCF1672B8130D2CA78C /* ripemd.h */,
-				B75A2CD1308756F30255D1F424FF8CA4 /* rsa.h */,
-				72759B41FDFDA71072A768CA5B508445 /* safestack.h */,
-				5FB5120747516E24245A6B7CDE255FD1 /* seed.h */,
-				B971A590BBB841EBA8D7D19072CF7064 /* sha.h */,
-				EE6406D93C2F63256E1D89FDA649C2B6 /* srp.h */,
-				BF7E501820125796F960B38398627A30 /* srtp.h */,
-				A6F4C76594BF05177968A8FAE4F327A3 /* ssl.h */,
-				4B80502D8C3DC89EF3EBEF7514D70275 /* ssl2.h */,
-				E34D3E19B00EF2C5AA80E5001CD790A5 /* ssl23.h */,
-				B46F0DC4AF064BDDABE245ED7A475EF6 /* ssl3.h */,
-				8F845BF6A2F6BCAFE639F04660B981D3 /* stack.h */,
-				791D09DFD96B7FBA505E2AFC4009D20C /* symhacks.h */,
-				8E4310DD095D3CC1433062AABFEFDFE8 /* tls1.h */,
-				3753D602BA59196DCC6F9418F1E89947 /* ts.h */,
-				0B2E3B53E0466F006D769591F2FD4631 /* txt_db.h */,
-				0CD7FFC4A3F8E8FEA14870C541C521B1 /* ui.h */,
-				A55C54B37FBC2794290E5CF8B225D066 /* ui_compat.h */,
-				8A428D1784C4C33B08F8A0B1AF55978E /* whrlpool.h */,
-				5D6ABFEE1BC1BA4E64E624CCA9039F6E /* x509.h */,
-				27262FAC16154A303431BA309F039A23 /* x509_vfy.h */,
-				EBF520209F21CF310DD2955D4445926C /* x509v3.h */,
-				653F0AB244D8C182BEB2708BF6AEE28B /* Frameworks */,
-			);
-			name = "OpenSSL-Universal";
-			path = "OpenSSL-Universal";
-			sourceTree = "<group>";
-		};
-		653F0AB244D8C182BEB2708BF6AEE28B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6B3B66D9320672E1C9B03E2F3E293702 /* libcrypto.a */,
-				C1BBE93A0D18EB56CBD1FFB9494ED27B /* libssl.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		677622F854AFCD713D41970814ADE573 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CB519C2DC8B1C54BE42241DE9E72ADA1 /* ObjectivePGP.xcconfig */,
-				3958259AB678C46643272CE97F3F8041 /* ObjectivePGP-dummy.m */,
-				44065C55A0ADF43E58564EB8A465CFD6 /* ObjectivePGP-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ObjectivePGP";
-			sourceTree = "<group>";
-		};
-		7BAAE0CA2E32396E0A4214F214B1D40F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5BCAB17EA064DDDC7EF96227A03627DF /* Pods-AddZip */,
-				46802D7B2E1D54586D3FD909E926A036 /* Pods-Pass */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -583,163 +389,231 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				43C9557A996CCD7CF6CBA511C538A372 /* Pods */,
-				FF7576EA7CB0494D47A48D6C3AA96964 /* Products */,
-				7BAAE0CA2E32396E0A4214F214B1D40F /* Targets Support Files */,
+				CFE5B52BCF247C032A3CFD210D665774 /* Pods */,
+				9DFC599C261B3281B2E327122BF0DB97 /* Products */,
+				D78BA2FAD001024A0228B14CA296BDA3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8F75D61210A24072B55D754FFBE73749 /* Support Files */ = {
+		7FF55A742C706894A3B79C3201D7BAD1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A4D6CABF271E12F3022C089C477F851D /* WPZipArchive.xcconfig */,
-				1D93BCBA86A6C8E2E9F518E833090939 /* WPZipArchive-dummy.m */,
-				F770890AF75A5E3AC6EE412BA8AD12CA /* WPZipArchive-prefix.pch */,
+				B848DD1733B6AB0F61BC6174EBBB60EC /* ObjectivePGP.xcconfig */,
+				A6400ECD2C77A51EABF4A89337DC4242 /* ObjectivePGP-dummy.m */,
+				619DED952206886116F6B6D0831A1019 /* ObjectivePGP-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/WPZipArchive";
+			path = "../Target Support Files/ObjectivePGP";
 			sourceTree = "<group>";
 		};
-		927903ABAD435A14AEFDEB21931FE073 /* Valet */ = {
+		9140318D6D361FE913FE7E0FA7DA16CA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB3A1A09889F3EFB3AA68D796C45B521 /* Valet.h */,
-				5337DA5B0FECE3272A33B343F2783FCD /* ValetDefines.h */,
-				DD9CB05CA0BECAEA4FF4490A8FB4EF74 /* VALSecureEnclaveValet.h */,
-				31417EB8AA4133047810FA5E998790E7 /* VALSecureEnclaveValet.m */,
-				D2793C8F6B5092D1192555433936A848 /* VALSynchronizableValet.h */,
-				2EDEC559EC27DC5161AB9F76FB9EDEBE /* VALSynchronizableValet.m */,
-				13E1FC82770339FC6C12B1EF5CF7FB36 /* VALValet.h */,
-				44A92C034DDEA2B3E055ACF2E1878ED9 /* VALValet.m */,
-				82588D3C533344A9280348A30D4E98D2 /* VALValet_Protected.h */,
-				E600B0A18A5AE34FE8014EF97D650221 /* Support Files */,
-			);
-			name = Valet;
-			path = Valet;
-			sourceTree = "<group>";
-		};
-		C4CFFB1A4D2FDEC3956D33746BC92362 /* ObjectivePGP */ = {
-			isa = PBXGroup;
-			children = (
-				8DA8FF350FDDB3A9DC9A178741A5287F /* NSData+compression.h */,
-				EF91AAF3F883D19FACDBD0324E10A6C7 /* NSData+compression.m */,
-				4E75A2759716D36967B63D84766E3357 /* NSData+PGPUtils.h */,
-				E63498FF05A77C8DEAAA5E8CBE647F67 /* NSData+PGPUtils.m */,
-				E232D2910DA2EEDCB118B1F492231FC9 /* NSValue+PGPUtils.h */,
-				E39EEE9EADF12BBAB33AEFED32A5F288 /* NSValue+PGPUtils.m */,
-				53044F2148E5DB5CAC5BB097D8048CCE /* ObjectivePGP.h */,
-				EB1F1D8327EB7B6F7B7F93B619B53B8E /* ObjectivePGP.m */,
-				9C270F10ED50DF091746F21207DCBCC4 /* PGPArmor.h */,
-				BC01944EDDF6EE0445AAD8098B8C047A /* PGPArmor.m */,
-				FBDED6539BEB1DF241A41DB5044250EB /* PGPCompressedPacket.h */,
-				F47C925CD34F6A85215FFA84C356DEC5 /* PGPCompressedPacket.m */,
-				46DEDF7BD087D3AFA1E533837C8AAC62 /* PGPCryptoCFB.h */,
-				DE9F0F1EF83A677A592F4F64D0ABEA57 /* PGPCryptoCFB.m */,
-				D584ABB4DBC8604CA20A3565F2841591 /* PGPCryptoUtils.h */,
-				81081E37988E13DA1A545E169174BA84 /* PGPCryptoUtils.m */,
-				D3B9C3E74AD250C89BD91357BA16B8E6 /* PGPFingerprint.h */,
-				4C4AF4D7202EE8885D32025EB28A7E76 /* PGPFingerprint.m */,
-				1AC4F2099B5603A33DD3B65C914ECC63 /* PGPKey.h */,
-				CB7E6D94022E2659EE4EED2BE75C89D5 /* PGPKey.m */,
-				3BC7262618B71106619580A65BB6107A /* PGPKeyID.h */,
-				91889CDD2644306D5DE66AD17B73EA84 /* PGPKeyID.m */,
-				1059D85426EB4C595FB81621D8D0551B /* PGPLiteralPacket.h */,
-				80F98F7FE1D9B278233CE6BB8DB0463B /* PGPLiteralPacket.m */,
-				09E3AC4B28A1BCB739B5994F5B312742 /* PGPModificationDetectionCodePacket.h */,
-				91AC599BDEDA8E001C1F8347EC760438 /* PGPModificationDetectionCodePacket.m */,
-				C28EFFF2ACB99690ADCD08F6C287AEED /* PGPMPI.h */,
-				9D1B04D6FD17D35DAF203BC8BA7C0655 /* PGPMPI.m */,
-				F84277C5511F9E761D92B706D540760C /* PGPOnePassSignaturePacket.h */,
-				0E4828A6B8592C29499EBF6EAB0B9CFF /* PGPOnePassSignaturePacket.m */,
-				B04447253BF380149EDADC21724AEEA2 /* PGPPacket.h */,
-				DFB045BD437D2713CF90CDA5D2AB7E68 /* PGPPacket.m */,
-				0AF4EEB4D78A8DFA240FAB9B8FA32550 /* PGPPacketFactory.h */,
-				202E4C5A83865DC92BC86D42BCAC307E /* PGPPacketFactory.m */,
-				46F467815F6398F2FE7E50546DAC0194 /* PGPPKCSEme.h */,
-				C33E09C06A95D04EA13D2C00B1A7AD3B /* PGPPKCSEme.m */,
-				D3B3FD61E3570747E97B874C007D5604 /* PGPPKCSEmsa.h */,
-				15885E4C42F04CF1945AD2A06E7E8467 /* PGPPKCSEmsa.m */,
-				F8529DCD059D9C561A23669BAB5A78A7 /* PGPPublicKeyEncryptedSessionKeyPacket.h */,
-				E9C01547A144E0D902ECEB96A6885701 /* PGPPublicKeyEncryptedSessionKeyPacket.m */,
-				2549E780689EDD5DDED3AB436715932F /* PGPPublicKeyPacket.h */,
-				E5521F93E50CC2FD1CFB69D769E54326 /* PGPPublicKeyPacket.m */,
-				10CA0EF6CC3E00A9544A47032FA9BEE9 /* PGPPublicKeyRSA.h */,
-				5DBBBAD1E21932F8B3F98FF800F50819 /* PGPPublicKeyRSA.m */,
-				B06A17C81EA1DF41A62B9AB4FB1C2F85 /* PGPPublicSubKeyPacket.h */,
-				63CAAD92F44F0944533E8E0F70E97558 /* PGPPublicSubKeyPacket.m */,
-				0EEFEEB041EBB95C831235F875F69044 /* PGPS2K.h */,
-				1075189A5FC82B48EBFC27F31F9F9A21 /* PGPS2K.m */,
-				618344A5F9252B5CD9F15136007512F0 /* PGPSecretKeyPacket.h */,
-				B5E37431960B5B846BF6E5C8065E6A2C /* PGPSecretKeyPacket.m */,
-				4471CF80F9C8361B67F4D89873397FCD /* PGPSecretSubKeyPacket.h */,
-				705B63E941D4C7D7581EAFD48A3E1F45 /* PGPSecretSubKeyPacket.m */,
-				2CFD48D4E3EE5364F157E0DAF75D6C5D /* PGPSignaturePacket.h */,
-				44A3BAAC9FCC1A4277E2DEEE654CA792 /* PGPSignaturePacket.m */,
-				28402D2812FA8BA304DAA725914D1FF6 /* PGPSignatureSubpacket.h */,
-				A93069A87FDD3A9C6167CFD6440B17DD /* PGPSignatureSubpacket.m */,
-				44750CBE856FE6484AA56AF63D708F64 /* PGPSubKey.h */,
-				F2FBA98E87AAAABB5D5236FBAFDDC031 /* PGPSubKey.m */,
-				964EAA66E0A13970469AC8D8DFCE699B /* PGPSymmetricallyEncryptedDataPacket.h */,
-				5852C4003A9D1A70A52ED323A8F87248 /* PGPSymmetricallyEncryptedDataPacket.m */,
-				1B561AC9F275884EE9EA5610971D2F26 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h */,
-				C75F507E37965C91F8B1FC62A734E28C /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m */,
-				9F61D2E5D461057B4EC61FEF92249171 /* PGPTrustPacket.h */,
-				D96CA09D59800B3238659EE97FC5DB68 /* PGPTrustPacket.m */,
-				879C55A4D04B264D3799200144CD8212 /* PGPTypes.h */,
-				5C5058BF465073AD3321C125CC2C2131 /* PGPUser.h */,
-				9B77B6C0EEC7CF260E1A25E09F3D63EC /* PGPUser.m */,
-				E26495D68172898CDFC6F2A8D8DEF61E /* PGPUserAttributePacket.h */,
-				AE94036922A316CA91016F1AD8E6A1EE /* PGPUserAttributePacket.m */,
-				85794C5A259646ACB08324D3842C8C0B /* PGPUserAttributeSubpacket.h */,
-				89C66EF7FECAE5CD2068757C027443C6 /* PGPUserAttributeSubpacket.m */,
-				84B5D2CEAC8A4E15D49BE4824B46250D /* PGPUserIDPacket.h */,
-				0BB3552A5050DD1B351E61466086B9A3 /* PGPUserIDPacket.m */,
-				677622F854AFCD713D41970814ADE573 /* Support Files */,
-			);
-			name = ObjectivePGP;
-			path = ObjectivePGP;
-			sourceTree = "<group>";
-		};
-		E600B0A18A5AE34FE8014EF97D650221 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BFF05EED857394C360AAF77216285786 /* Valet.xcconfig */,
-				A1C15F91BBB392C0EE2EDACC3D7E23A4 /* Valet-dummy.m */,
-				1337B50583E2C098D5DA78DB7D1A4222 /* Valet-prefix.pch */,
+				ABC84E0429A074EEDB2CB87D226A4CBF /* Valet.xcconfig */,
+				7A808A5B3E48CE10A85632D7F3A396A5 /* Valet-dummy.m */,
+				923B1ABBC152E474FFFB346E3DE9D871 /* Valet-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Valet";
 			sourceTree = "<group>";
 		};
-		FF7576EA7CB0494D47A48D6C3AA96964 /* Products */ = {
+		978D157264D6C471BD1FAFEF444B8D92 /* OpenSSL-Universal */ = {
 			isa = PBXGroup;
 			children = (
-				94CE063DF6CBB16CD1809AEFD9D844AB /* libObjectivePGP.a */,
-				A2D2158988D1F53B3B26ECB7FABC47BA /* libPods-AddZip.a */,
-				95DF232BF0F6BB9195617593FD4B8CAE /* libPods-Pass.a */,
-				787302DDACCBD9DB28E189B29EBEE7CC /* libValet.a */,
-				EE6DD1012A5FE63D26C377F20FDFC977 /* libWPZipArchive.a */,
+				8C548E3FEDA2A648E08376873B1C8A3B /* aes.h */,
+				500EBC523ECB274E2B0CB358BD946040 /* asn1.h */,
+				000982739E18A7A37272804F1E1292D0 /* asn1_mac.h */,
+				A857E3F0AA1A3D7F373231BD2376FAC7 /* asn1t.h */,
+				1DB736A62998D420E607E6D1C8B5FCFC /* bio.h */,
+				E0EBCA3F802D237CB51A51F741B0825B /* blowfish.h */,
+				CA4E0146F261151C64AEF54506F3E024 /* bn.h */,
+				66F2BA6C41F051EC374C8B3CCC93C564 /* buffer.h */,
+				5AEF77C45D71941FE530DF19688489FA /* camellia.h */,
+				7311CA748FF0DDA4666CA01A0FE947E2 /* cast.h */,
+				6083C1D33B601914F6CE5D30CF941A55 /* cmac.h */,
+				8D1272A2D0287EDC3D0526ED68586E35 /* cms.h */,
+				555A41A92A92C4ABB33584680997691A /* comp.h */,
+				61B7431352D7F4114C453BF4C0E1ED4F /* conf.h */,
+				9DDB0006FEB25ABC501F4575A84E9018 /* conf_api.h */,
+				481EDCA65DD097D02FF132784710BFBB /* crypto.h */,
+				092E138A2B7F32405E5EEF5BAADA8777 /* des.h */,
+				AE14CC944FCDAF9DC0100EB4C230041E /* des_old.h */,
+				2D89B79E26C50278586B21C7DD4ACF6F /* dh.h */,
+				3381EEC6DD4BF86C06B3365BC4E7A38E /* dsa.h */,
+				2054A3B4B933239575616AF1CD964943 /* dso.h */,
+				534808024CDED3C251C786609F0A355C /* dtls1.h */,
+				997032F0C2B6E3B62316568836D369A6 /* e_os2.h */,
+				87A2AEE1B948FAA13D79079D0474E660 /* ebcdic.h */,
+				97027BCD42159F723FFF8BF72077AB6B /* ec.h */,
+				9EE1E2D44DB0B5BE37715EF7DB19F41C /* ecdh.h */,
+				C7E82A8D667D9C7097FF854E7A754D13 /* ecdsa.h */,
+				5127CB050C0C9E88E5F131AD2DF14403 /* engine.h */,
+				6AC756816DAC648F3B9094FF2CA35048 /* err.h */,
+				8CD638B586F672F66713F0372155E113 /* evp.h */,
+				5A4FB98C38EF3C8751A956BCEA15ECBE /* hmac.h */,
+				D06F82574E52D7934186DAADFA885EE1 /* idea.h */,
+				BE84267C648B8B84F9C9F126B3ADE133 /* krb5_asn.h */,
+				B871E5F4E44463FCF3BBB572496E7E1B /* kssl.h */,
+				1DB741D1443B1ACF9FA92A3FC935C86C /* lhash.h */,
+				6B2A4B387F7FA5E668A6C4CAE66BF479 /* md4.h */,
+				671F48C6342CFAE6A306021AA0A8BDCD /* md5.h */,
+				E1AFD4251BE324DFF6B323C4DA794E8C /* mdc2.h */,
+				EEF61C8E7C04421428B554F0DD46FFB2 /* modes.h */,
+				56F052CEF634EEAE45FD7BF2A1D071DB /* obj_mac.h */,
+				0D9E4E31712B487172FE28FE6FB14B37 /* objects.h */,
+				1ED10374F96978D3DE2ED5DD1FA7841E /* ocsp.h */,
+				3C8C650B43DBDC8388ED2E7415C8E7CD /* opensslconf.h */,
+				5A676E0C17173A351E25EFD12525212F /* opensslv.h */,
+				0F5CAA1C4493875D53FCFCCBBE97C59E /* ossl_typ.h */,
+				8ACA5BA34E4A49816BFD4DC7F0C1E42D /* pem.h */,
+				B975AC695B5981B38B8B30682B9F0CE6 /* pem2.h */,
+				00EF46668A2131521E465858FB33F994 /* pkcs12.h */,
+				70EDD2C00EA1DC310DE135D76FAAAB90 /* pkcs7.h */,
+				24D536A0F1A7B749E530F347FA423DF8 /* pqueue.h */,
+				78F56E1F584D8D987583423C69237EC1 /* rand.h */,
+				F7E46EA224FACA04EF9D069285252299 /* rc2.h */,
+				70664F385A23862AFCAFE3E09C0C6140 /* rc4.h */,
+				D04B6AAF3ED582096340E47A7BFDA421 /* ripemd.h */,
+				B7A283BD85603334FDF3834F5B929A6C /* rsa.h */,
+				217DC980DACD802B8B6B17AF75F395C0 /* safestack.h */,
+				1FA6894207261B0A43AAEB184129949F /* seed.h */,
+				97BA9A471C2BF88DD8F56F1ED1FEDDD9 /* sha.h */,
+				5D3C6D57DCD74E391C23F79108411404 /* srp.h */,
+				1FAA48DD1A1592A1BD16760FFB190943 /* srtp.h */,
+				1960F33FBB2A34A3FFE5659A22BF9825 /* ssl.h */,
+				074BFFC34EBF2DCF253E128B9006E46B /* ssl2.h */,
+				DF7A9BA5E2336B9FEA372A839B1F9352 /* ssl23.h */,
+				AC83E6B6CD89BD720937686446438B01 /* ssl3.h */,
+				14A4B134E0321357BF488D3F50CD9C96 /* stack.h */,
+				5CD9F2F33D942A716563999502F4BCEE /* symhacks.h */,
+				A810D3713AF63C02C13F2268C9E1DBA4 /* tls1.h */,
+				2DF228192153965653F0D905B4B8B787 /* ts.h */,
+				E094FCF70C82751BF5C953F3EAA7CB66 /* txt_db.h */,
+				A8674B4F922C0D3F66878C73E684C3E7 /* ui.h */,
+				7ED5E8EA0A386FB4F04BB26685F658E3 /* ui_compat.h */,
+				C68F49F7A1DBDEC4E42B6CF04DB44481 /* whrlpool.h */,
+				755642BE84D55FC3F7D06CBE95D26F2A /* x509.h */,
+				8D0D3264F69BA11EDFF7531DA0F7E3DD /* x509_vfy.h */,
+				240F0EC0B86317440B2C10075F489F45 /* x509v3.h */,
+				25D7199E28B79506C9736113A42D3170 /* Frameworks */,
+			);
+			name = "OpenSSL-Universal";
+			path = "OpenSSL-Universal";
+			sourceTree = "<group>";
+		};
+		99B02A3882A33BF97F8FBA97E2EBD6D6 /* ObjectivePGP */ = {
+			isa = PBXGroup;
+			children = (
+				2499D03CE02FAB11253DEDE2D36F8CCB /* NSData+compression.h */,
+				7367D9E6AC60DDF6E20222A6B2A32D0C /* NSData+compression.m */,
+				6246984028C2808381094B633EF6C820 /* NSData+PGPUtils.h */,
+				FFE5C694E3B9F033A860D400B4432C97 /* NSData+PGPUtils.m */,
+				F1173165C03D65C094A77E4FD6A7D582 /* NSValue+PGPUtils.h */,
+				081C573027D427BF76A71A59F951415F /* NSValue+PGPUtils.m */,
+				A61FAD1437E055CCFBC2E5E6CBFA91D6 /* ObjectivePGP.h */,
+				46E0B113FA7E47BA3B0F0ADACF2F4E58 /* ObjectivePGP.m */,
+				15300428671D12C6018A7329C3503F99 /* PGPArmor.h */,
+				5B230897A4A46CC7842440A2D7268258 /* PGPArmor.m */,
+				DB2D17B91E15E961E07B2416023E2F7F /* PGPCompressedPacket.h */,
+				22E33170C1467B563E3127D6284394D2 /* PGPCompressedPacket.m */,
+				81728BD5ABBFAA941FE900BE0DF45A36 /* PGPCryptoCFB.h */,
+				F19C1F4117105F0F8FFB5287E09F05AF /* PGPCryptoCFB.m */,
+				86532894E1FB24CA71EC3C5126AE12B2 /* PGPCryptoUtils.h */,
+				1DC89E8D9ADE9FF3012E78AB74023E9F /* PGPCryptoUtils.m */,
+				64EAC0B6CB45301383D33391AC34B660 /* PGPFingerprint.h */,
+				8C5C5F8B40CA744736CFEAD8334545C5 /* PGPFingerprint.m */,
+				E938B632EAA9CBF2FE344A245BDB8E53 /* PGPKey.h */,
+				F016DC1366930310161AB5CE5CB2B131 /* PGPKey.m */,
+				9C2B277B9F47B47A291042DBB26D54D6 /* PGPKeyID.h */,
+				D40C4C1CE0E3DA82640F32080E046292 /* PGPKeyID.m */,
+				CEB83027EC28FFED6F7AA9E8F8A18340 /* PGPLiteralPacket.h */,
+				5D891E6EB25FFAD01DF0D53F5EFE90F3 /* PGPLiteralPacket.m */,
+				BACE1A91C2553A02971DC6C42EABEA58 /* PGPModificationDetectionCodePacket.h */,
+				1F1B7BD471FDC48B335A9CD29EF59A60 /* PGPModificationDetectionCodePacket.m */,
+				A8127B92BBD9ECD8B0E21D8ABC3C9739 /* PGPMPI.h */,
+				A4D5AE46ACE09CBC8AB6EB2B5B510F59 /* PGPMPI.m */,
+				ACB4B0225907AAEB05701C5C6F284F89 /* PGPOnePassSignaturePacket.h */,
+				AB109C5BCFCE75EEA8A73E37B61E07F4 /* PGPOnePassSignaturePacket.m */,
+				BBDE9464C309BE0EF9A550EBA8158240 /* PGPPacket.h */,
+				40191C8EFB96847450C39202120F532B /* PGPPacket.m */,
+				A1023A4A2AD39AEA099C6217E41B4D7E /* PGPPacketFactory.h */,
+				280C13D487277346A573EDDBA044079C /* PGPPacketFactory.m */,
+				D4E94E4585EEEBA36CBDD6B721442328 /* PGPPKCSEme.h */,
+				B35E4360C3B4B70174656CE86F6E1BFF /* PGPPKCSEme.m */,
+				0CD562C3FE3150CD0DD8223E50EFED70 /* PGPPKCSEmsa.h */,
+				62D3E96805C4B3F4CF7854F8D5B262D3 /* PGPPKCSEmsa.m */,
+				E1C1901B09ABA394A4248CFECA79E747 /* PGPPublicKeyEncryptedSessionKeyPacket.h */,
+				89F240B6919BBAAA78109D9BC037C5D0 /* PGPPublicKeyEncryptedSessionKeyPacket.m */,
+				D37C40CBC91156956EA7D2F98BCE4D6E /* PGPPublicKeyPacket.h */,
+				EB9E8CC325BFB4E555ECE780E72DC84B /* PGPPublicKeyPacket.m */,
+				7A2D207702FBB4B581E435EA77F46F1C /* PGPPublicKeyRSA.h */,
+				9421D99DD9BF5F148D1F0BA8EE092B8E /* PGPPublicKeyRSA.m */,
+				BBF46290D588E1FFC3DC50B0FA0E7F96 /* PGPPublicSubKeyPacket.h */,
+				8D3D48E2EBD300B794FED4852B3B5089 /* PGPPublicSubKeyPacket.m */,
+				25238765BA55EB294FC2CD8031B0C54C /* PGPS2K.h */,
+				929C0FF9AF5FBB7ACA2A3D1C4CD19B3A /* PGPS2K.m */,
+				3ABAA99CDABB09487F912B266306714D /* PGPSecretKeyPacket.h */,
+				13BEDB47E0B365C551948FA3FB9ACF20 /* PGPSecretKeyPacket.m */,
+				70E6CD178450BD749060A35745F5CE87 /* PGPSecretSubKeyPacket.h */,
+				54D4BE419D7F57D73FD44E8B23427F67 /* PGPSecretSubKeyPacket.m */,
+				EAD6A2EC67CF845F61327D042336DAEE /* PGPSignaturePacket.h */,
+				BA6B1EFC37A9B68B82F24E0552B4C9CB /* PGPSignaturePacket.m */,
+				02C7FC6104FA5AC67933496AC0FA6E08 /* PGPSignatureSubpacket.h */,
+				7CE2EE2AF7FC4DBE9AB5EEFA40767AC8 /* PGPSignatureSubpacket.m */,
+				39FEB5E3CAE6FD0A636D585963C5F232 /* PGPSubKey.h */,
+				0F6828F675655513C998330CE5EA79E2 /* PGPSubKey.m */,
+				6916221B50F52EC9B40D6F550FD64600 /* PGPSymmetricallyEncryptedDataPacket.h */,
+				700B92BDB6F55D1EAF52A4E18CE87F72 /* PGPSymmetricallyEncryptedDataPacket.m */,
+				F17E8DD3492C93735C851B55FE4A610B /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h */,
+				CA1087FC8F0A5C82A8B612E48244E746 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m */,
+				6BF50347CF9C947B8D8727870A44B087 /* PGPTrustPacket.h */,
+				8597F6B08680AC10530B814F849410A6 /* PGPTrustPacket.m */,
+				BBF869049A5DE8C25198F2B530D9B175 /* PGPTypes.h */,
+				2A7D2DB30FCB892BFC0A44DC0917085A /* PGPUser.h */,
+				5DD87F757F84033A81E2650F48284040 /* PGPUser.m */,
+				472CEE551691FFFD51C9D5D463388F3F /* PGPUserAttributePacket.h */,
+				2769AF551E4BCBB94EEF47E8AF621AB2 /* PGPUserAttributePacket.m */,
+				4B8055ED12EEEA14EBE34DFCADBF42BC /* PGPUserAttributeSubpacket.h */,
+				BA5931EC4440C4BF53CD93A9D3401498 /* PGPUserAttributeSubpacket.m */,
+				E64A635125C1BBF827EF97F57B5FE78C /* PGPUserIDPacket.h */,
+				158D6E23FC2007894F6262402C2D88AD /* PGPUserIDPacket.m */,
+				7FF55A742C706894A3B79C3201D7BAD1 /* Support Files */,
+			);
+			name = ObjectivePGP;
+			path = ObjectivePGP;
+			sourceTree = "<group>";
+		};
+		9DFC599C261B3281B2E327122BF0DB97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BCBF7B5CA72249D29579CC55C2CC7D8 /* libObjectivePGP.a */,
+				34207E3BDD3034A8C2E557AFE4206E12 /* libPods-Pass.a */,
+				F92B478D4BE6BA1F0E92396E6D5988AD /* libValet.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CFE5B52BCF247C032A3CFD210D665774 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99B02A3882A33BF97F8FBA97E2EBD6D6 /* ObjectivePGP */,
+				978D157264D6C471BD1FAFEF444B8D92 /* OpenSSL-Universal */,
+				51B846E2DA78D5B0C970825F851822AB /* Valet */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D78BA2FAD001024A0228B14CA296BDA3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F33BE714E53767A9D96F3EAFF8498C4 /* Pods-Pass */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		002ED677772269EF30B1736AAD1AFEFB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5ECE2B99570FBA1A41E73E11FFB63BFF /* Common.h in Headers */,
-				E0D0BEEA2E92C0708335F5CAFB317626 /* crypt.h in Headers */,
-				F29C10DEE7B8C2F1F23A7CE0477E5230 /* ioapi.h in Headers */,
-				FD5E7E0F48C4605CC14BC2E2A3C4F9DC /* mztools.h in Headers */,
-				132DBF5F890A754CD1DA0CE01F426E37 /* unzip.h in Headers */,
-				5FFB8E62C6DC358E8036D4DD496C4E3E /* WPZipArchive.h in Headers */,
-				005C746C2113E46DD006C65BF0D52F59 /* zip.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		69BDED6BB69C75222FC5C4D0963C48F5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -800,23 +674,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4BFDD63E357941F2A7F2E5B8ABA80225 /* WPZipArchive */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 47885D49AFBC5D2828122916C02E22F1 /* Build configuration list for PBXNativeTarget "WPZipArchive" */;
-			buildPhases = (
-				D08A19D080D17337D434ECFD9B35FE60 /* Sources */,
-				D11B3DB25115282133DB07E04BDDCE67 /* Frameworks */,
-				002ED677772269EF30B1736AAD1AFEFB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WPZipArchive;
-			productName = WPZipArchive;
-			productReference = EE6DD1012A5FE63D26C377F20FDFC977 /* libWPZipArchive.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		6773637E46AD7B6BCBA35A9F9EDC361C /* Valet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A292A62CA1DFBCD1E1D08EF86B499734 /* Build configuration list for PBXNativeTarget "Valet" */;
@@ -831,7 +688,7 @@
 			);
 			name = Valet;
 			productName = Valet;
-			productReference = 787302DDACCBD9DB28E189B29EBEE7CC /* libValet.a */;
+			productReference = F92B478D4BE6BA1F0E92396E6D5988AD /* libValet.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		77EF323AA3E98E36B4E0002EA7009B2D /* ObjectivePGP */ = {
@@ -848,24 +705,7 @@
 			);
 			name = ObjectivePGP;
 			productName = ObjectivePGP;
-			productReference = 94CE063DF6CBB16CD1809AEFD9D844AB /* libObjectivePGP.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B1B9B8090A8CDD4E2F9E91C6F9AD9FF1 /* Pods-AddZip */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 76F4ED4F4E8750733D5B76940E4FB2C0 /* Build configuration list for PBXNativeTarget "Pods-AddZip" */;
-			buildPhases = (
-				A1DA5EBF59EAE819B6EFA5C20554FAD9 /* Sources */,
-				5BBE726618DDCEE9F694E9A4B8CEBF21 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AABFC244B5792286EAEC3936F763CC30 /* PBXTargetDependency */,
-			);
-			name = "Pods-AddZip";
-			productName = "Pods-AddZip";
-			productReference = A2D2158988D1F53B3B26ECB7FABC47BA /* libPods-AddZip.a */;
+			productReference = 1BCBF7B5CA72249D29579CC55C2CC7D8 /* libObjectivePGP.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C401244E7852897D3255D8B57EE6D070 /* Pods-Pass */ = {
@@ -883,7 +723,7 @@
 			);
 			name = "Pods-Pass";
 			productName = "Pods-Pass";
-			productReference = 95DF232BF0F6BB9195617593FD4B8CAE /* libPods-Pass.a */;
+			productReference = 34207E3BDD3034A8C2E557AFE4206E12 /* libPods-Pass.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -903,15 +743,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FF7576EA7CB0494D47A48D6C3AA96964 /* Products */;
+			productRefGroup = 9DFC599C261B3281B2E327122BF0DB97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				77EF323AA3E98E36B4E0002EA7009B2D /* ObjectivePGP */,
-				B1B9B8090A8CDD4E2F9E91C6F9AD9FF1 /* Pods-AddZip */,
 				C401244E7852897D3255D8B57EE6D070 /* Pods-Pass */,
 				6773637E46AD7B6BCBA35A9F9EDC361C /* Valet */,
-				4BFDD63E357941F2A7F2E5B8ABA80225 /* WPZipArchive */,
 			);
 		};
 /* End PBXProject section */
@@ -933,14 +771,6 @@
 				DEC3BEAFFB67FABB82E315A678C7960B /* VALSecureEnclaveValet.m in Sources */,
 				173C7D4F4AA380B8D757A2E587A7650B /* VALSynchronizableValet.m in Sources */,
 				D2A6B18386D97B4B1BB3582B734DE2E7 /* VALValet.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1DA5EBF59EAE819B6EFA5C20554FAD9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A6B9D2A7666542C046D812611114DA44 /* Pods-AddZip-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -988,19 +818,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D08A19D080D17337D434ECFD9B35FE60 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51B2599466CD94008244B2846D9B07B8 /* ioapi.c in Sources */,
-				BBF98533D4893E35DD6689DE13C11E6B /* mztools.c in Sources */,
-				5B367D640AC154968E30D6978D11E241 /* unzip.c in Sources */,
-				389B3F7E30689FB45082767DD4615656 /* WPZipArchive-dummy.m in Sources */,
-				64B14C9FE8B2658B572E5663F8BCAB56 /* WPZipArchive.m in Sources */,
-				208283ECE5B4A10BC2916AA5FE4263DE /* zip.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1009,12 +826,6 @@
 			name = ObjectivePGP;
 			target = 77EF323AA3E98E36B4E0002EA7009B2D /* ObjectivePGP */;
 			targetProxy = AE85B10BF7BB66EB5A4E94C7115A6CD8 /* PBXContainerItemProxy */;
-		};
-		AABFC244B5792286EAEC3936F763CC30 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WPZipArchive;
-			target = 4BFDD63E357941F2A7F2E5B8ABA80225 /* WPZipArchive */;
-			targetProxy = 6AD9F7F8AE5B2F6B85E9A1CF52458EF9 /* PBXContainerItemProxy */;
 		};
 		AF9871E34F3919669C5C5CA65D313BA9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1027,7 +838,7 @@
 /* Begin XCBuildConfiguration section */
 		05D3D136104290BB11135FC6E21DBE20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DD23CFB79A83997290DDE84FC56809A /* Pods-Pass.release.xcconfig */;
+			baseConfigurationReference = 0667CC0CA23A3DAD32C1071018BDF6C7 /* Pods-Pass.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1050,7 +861,7 @@
 		};
 		17D8DD70A132D227217B7A248B3504AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F70246E5341FA5FE6549F94DC13831C6 /* Pods-Pass.debug.xcconfig */;
+			baseConfigurationReference = 06F3FCA52844C6B0B8001CA9DC38DAA5 /* Pods-Pass.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1066,54 +877,6 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		3A4DD68F4981E7EA5627FC128C25C880 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 499711C2D13880D0D82CCDDBA7F724AA /* Pods-AddZip.debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5848250190CB9425B4214CDC9C3A1BD4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4D6CABF271E12F3022C089C477F851D /* WPZipArchive.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WPZipArchive/WPZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -1121,7 +884,7 @@
 		};
 		7BFC1A111AA4EC9EA1D12E2AEDD00B72 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFF05EED857394C360AAF77216285786 /* Valet.xcconfig */;
+			baseConfigurationReference = ABC84E0429A074EEDB2CB87D226A4CBF /* Valet.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1142,33 +905,9 @@
 			};
 			name = Release;
 		};
-		91DA82C5CA4949C1B298B3769957796E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4D6CABF271E12F3022C089C477F851D /* WPZipArchive.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WPZipArchive/WPZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		C9247E456431B2228A2A7F4B8A536043 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB519C2DC8B1C54BE42241DE9E72ADA1 /* ObjectivePGP.xcconfig */;
+			baseConfigurationReference = B848DD1733B6AB0F61BC6174EBBB60EC /* ObjectivePGP.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1233,33 +972,9 @@
 			};
 			name = Debug;
 		};
-		CF5D884EF6F17120AF40E8C40DE0063E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D615622F42E75377F439EF01CD40CB5 /* Pods-AddZip.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		E3A21EEA4407B76217D6DB8C39230E91 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB519C2DC8B1C54BE42241DE9E72ADA1 /* ObjectivePGP.xcconfig */;
+			baseConfigurationReference = B848DD1733B6AB0F61BC6174EBBB60EC /* ObjectivePGP.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1322,7 +1037,7 @@
 		};
 		F8D4A63137BFA32815AE93D6A1D82FCD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFF05EED857394C360AAF77216285786 /* Valet.xcconfig */;
+			baseConfigurationReference = ABC84E0429A074EEDB2CB87D226A4CBF /* Valet.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1360,24 +1075,6 @@
 			buildConfigurations = (
 				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
 				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		47885D49AFBC5D2828122916C02E22F1 /* Build configuration list for PBXNativeTarget "WPZipArchive" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5848250190CB9425B4214CDC9C3A1BD4 /* Debug */,
-				91DA82C5CA4949C1B298B3769957796E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		76F4ED4F4E8750733D5B76940E4FB2C0 /* Build configuration list for PBXNativeTarget "Pods-AddZip" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A4DD68F4981E7EA5627FC128C25C880 /* Debug */,
-				CF5D884EF6F17120AF40E8C40DE0063E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
