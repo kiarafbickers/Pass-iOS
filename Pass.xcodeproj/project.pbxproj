@@ -51,6 +51,7 @@
 		E90278EA1DD5586700D73381 /* PSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
 		E90278EB1DD5586700D73381 /* PSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
 		E90278F41DD6A2D100D73381 /* Pass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pass.entitlements; sourceTree = "<group>"; };
+		E972F0661E01DFB80089FCFB /* HockeyKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HockeyKey.h; sourceTree = "<group>"; };
 		E9E05EA71DF2896C002ED733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9E05EA91DF289A8002ED733 /* NSFileManager+PS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+PS.h"; sourceTree = "<group>"; };
 		E9E05EAA1DF289A8002ED733 /* NSFileManager+PS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+PS.m"; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				E90278F41DD6A2D100D73381 /* Pass.entitlements */,
+				E972F0661E01DFB80089FCFB /* HockeyKey.h */,
 				E9F650361DD540B900264433 /* AppDelegate.h */,
 				E9F650371DD540B900264433 /* AppDelegate.m */,
 				E90278E31DD5586700D73381 /* passwordstoreApplication.mm */,

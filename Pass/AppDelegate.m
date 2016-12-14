@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HockeyKey.h"
+@import HockeySDK;
 
 @interface AppDelegate ()
 
@@ -16,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:AppID];
+    // Do some additional configuration if needed here
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+    
     return YES;
 }
 

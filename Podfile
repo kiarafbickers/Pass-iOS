@@ -7,5 +7,6 @@ target 'Pass' do
 
   pod 'ObjectivePGP'
   pod 'Valet'
+  pod 'HockeySDK'
 
 end

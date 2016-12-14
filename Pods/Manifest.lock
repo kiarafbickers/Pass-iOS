@@ -1,18 +1,23 @@
 PODS:
+  - HockeySDK (4.1.3):
+    - HockeySDK/DefaultLib (= 4.1.3)
+  - HockeySDK/DefaultLib (4.1.3)
   - ObjectivePGP (0.5):
     - OpenSSL-Universal
   - OpenSSL-Universal (1.0.1.20)
   - Valet (2.2.3)
 
 DEPENDENCIES:
+  - HockeySDK
   - ObjectivePGP
   - Valet
 
 SPEC CHECKSUMS:
+  HockeySDK: 7dd8d7f5a4d71b7a5eebb320c8515cb22e99221b
   ObjectivePGP: d80f77471221fc543461fb329b769fac7bc7ca84
   OpenSSL-Universal: 71f2c4b2ae758e2218090f905e95ca0ac5c01be7
   Valet: c78c7d2e4b2d104d29b9bc62c8f9aa38fbc901eb
 
-PODFILE CHECKSUM: bc4de80dcc66f422586a78d13cec2c0f15e8f061
+PODFILE CHECKSUM: d2d84126c839ecdc07f8233d2ac6261c74bb4621
 
 COCOAPODS: 1.1.1
